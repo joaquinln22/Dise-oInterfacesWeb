@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css">
+	<script src="./js/bootstrap.bundle.min.js"></script>
+	<title>Botones</title>
+</head>
+<body>
+	<div class="container">
+		<div class="row">
+			<div class="col">
+				<h2>Estilos para botones</h2>
+				<button type="button" class="btn">Basic</button>
+				<button type="button" class="btn btn-primary">Primary</button>
+				<button type="button" class="btn btn-secondary">Secondary</button>
+				<button type="button" class="btn btn-success">Success</button>
+				<button type="button" class="btn btn-info">Info</button>
+				<button type="button" class="btn btn-warning">Warning</button>
+				<button type="button" class="btn btn-danger">Danger</button>
+				<button type="button" class="btn btn-link">Link</button>
+				<button type="button" class="btn btn-dark">Dark</button>
+				<button type="button" class="btn btn-light">Light</button>
+			</div>
+		</div>
+	</div>
+	<hr>
+	<div class="row">
+		<div class="col">
+			<h2>Botones outline</h2>
+			<button class="btn btn-primary" type="submit">Button</button>
+			<a class="btn btn-primary" href="#" role="button">Link</a>
+			<input class="btn btn-primary" type="button" value="Input">
+			<input class="btn btn-primary" type="button" value="Submit">
+			<input class="btn btn-primary" type="button" value="Reset">
+			<button type="button" class="btn btn-outline-primary">Primary</button>
+			<button type="button" class="btn btn-outline-secondary">Secondary</button>
+			<button type="button" class="btn btn-outline-success">Success</button>
+			<button type="button" class="btn btn-outline-info">Info</button>
+			<button type="button" class="btn btn-outline-warning">Warning</button>
+			<button type="button" class="btn btn-outline-danger">Danger</button>
+			<button type="button" class="btn btn-outline-link">Link</button>
+			<button type="button" class="btn btn-outline-dark">Dark</button>
+			<button type="button" class="btn btn-outline-light text-dark">Light</button>
+		</div>
+	</div>
+	<hr>
+	<div class="row">
+		<div class="col">
+			<h2>Tamaño de los botones</h2>
+			<button type="button" class="btn btn-primary btn-sm">Small button</button>
+			<button type="button" class="btn btn-primary">Default button</button>
+			<button type="button" class="btn btn-primary btn-lg">Large button</button>
+		</div>
+	</div>
+	<hr>
+	<div class="row">
+		<div class="col">
+			<!-- Botón de tipo bloque de ancho completo -->
+			<div class="d-grid">
+				<button type="button" class="btn btn-primary">Block button</button>
+			</div>
+			<br>
+			<!-- Botón de tipo bloque de ancho completo -->
+			<div class="d-grid col-6 mx-auto">
+				<button type="button" class="btn btn-primary">Block button</button>
+			</div>
+		</div>
+	</div>
+	<hr>
+	<div class="row">
+		<div class="col">
+			<h2>Botones disabled</h2>
+			<button type="button" class="btn btn-primary active">Botón Primario Activo</button>
+			<button type="button" class="btn btn-primary">Botón Primario Activo</button>
+			<button type="button" class="btn btn-primary" disabled>Botón Primario Desactivado</button>
+			<a href="#" class="btn btn-primary">Link activo</a>
+			<a href="#" class="btn btn-primary disabled">Link desactivado</a>
+		</div>
+	</div>
+	<hr>
+	<div class="row">
+		<div class="col">
+			<h2>Botones Dropdown</h2>
+			<div class="dropdown">
+				<button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">Botón DROPDOWN</button>
+				<ul class="dropdown-menu">
+					<li><a class="dropdown-item" href="#">Opción 1</a></li>
+					<li><a class="dropdown-item" href="#">Opción 2</a></li>
+					<li><a class="dropdown-item" href="#">Opción 3</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<hr>
+	<div class="row">
+		<div class="col">
+			<button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">Botón DROPDOWN</button>
+			<ul class="dropdown-menu">
+				<li><h6 class="dropdown-header">Cabecera Dropdown</h6></li>
+				<li><a class="dropdown-item" href="#">Opción 1</a></li>
+				<li><a class="dropdown-item" href="#">Opción 2</a></li>
+				<li><a class="dropdown-item" href="#">Opción 3</a></li>
+			</ul>
+		</div>
+	</div>
+	<hr>
+	<div class="row">
+		<div class="col">
+			<button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">Botón DROPDOWN</button>
+			<ul class="dropdown-menu">
+				<li><h6 class="dropdown-header">Cabecera Dropdown</h6></li>
+				<li><a class="dropdown-item" href="#">Opción 1</a></li>
+				<li><a class="dropdown-item" href="#">Opción 2</a></li>
+				<li><a class="dropdown-item" href="#">Opción 3</a></li>
+				<li></li>
+			</ul>
+		</div>
+	</div>
+	<hr>
+	<div class="row">
+		<div class="col">
+			<button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">Botón DROPDOWN</button>
+			<ul class="dropdown-menu">
+				<li><a class="dropdown-item" href="#">Opción 1</a></li>
+				<li><a class="dropdown-item" href="#">Opción 2</a></li>
+				<li><a class="dropdown-item" href="#">Opción 3</a></li>
+				<li><h6 class="dropdown-divider"></h6></li>
+				<li><a class="dropdown-item" href="#">Opción 4</a></li>
+			</ul>
+		</div>
+	</div>
+	<hr>
+	<div class="row">
+		<div class="col">
+			<button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">Botón DROPDOWN con menú desplegado a la derecha</button>
+			<ul class="dropdown-menu dropdown-menu-end">
+				<li><a class="dropdown-item" href="#">Opción 1</a></li>
+				<li><a class="dropdown-item" href="#">Opción 2</a></li>
+				<li><a class="dropdown-item" href="#">Opción 3</a></li>
+			</ul>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+		</div>
+	</div>
+	<hr>
+</body>
+</html>				

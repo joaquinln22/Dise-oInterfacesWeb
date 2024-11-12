@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
+		<script src="../js/bootstrap.bundle.min.js"></script>
+		<title>Ejemplo Final</title>
+		<style type="text/css">
+			header, footer{
+				background-color: black;
+				color: white;
+				text-align: center;
+				margin: 2px 0px;
+			}
+			.pantalla{
+				background-color: #66FFFF;
+				border: 1px solid white;
+				text-align: center;
+			}
+			.bloque1{
+				background-color: #99CCFF;
+				text-align: center;
+				border: 1px solid white;
+				height: 50px;
+			}
+			.bloque2{
+				background-color: #669999;
+				text-align: center;
+				border: 1px solid white;
+				height: 50px;
+			}
+			.bloque3{
+				background-color: #FFCC99;
+				text-align: center;
+				border: 1px solid white;
+				height: 50px;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="container">
+			<header class="row">
+				<div class="col">Cabecera</div>
+			</header>
+			<section class="row">
+				<div class="col-12">
+					<div class="row">
+						<div class="bloque1 col-6 col-sm-3 col-md-4 order-md-1">1</div>
+						<div class="bloque1 col-6 col-sm-3 col-md-4 order-md-3">2</div>
+						<div class="bloque1 col-6 col-sm-3 col-md-4 order-md-2 offset-md-4">3</div>
+						<div class="bloque1 col-6 col-sm-3 col-md-4 order-md-4 offset-md-4">4</div>
+					</div>
+				</div>
+				<div class="pantalla col-12 d-none d-sm-block d-md-none">Tablet</div>
+				<div class="col-12">
+					<div class="row">
+						<div class="bloque2 col-6 col-sm-3 order-md-4">A</div>
+						<div class="bloque2 col-6 col-sm-3 order-md-3">B</div>
+						<div class="bloque2 col-6 col-sm-3 order-md-2">C</div>
+						<div class="bloque2 col-6 col-sm-3 order-md-1">D</div>
+					</div>
+				</div>
+				<div class="pantalla col-12 d-none d-md-block">Desktop</div>
+				<div class="pantalla col-12 d-block d-sm-none">Smartphone</div>
+				<div class="col-12">
+					<div class="row justify-content-center">
+						<div class="bloque3 col-12 col-sm-6 col-md-4 order-md-2">:D</div>
+						<div class="bloque3 col-sm-6 d-none d-sm-block col-md-4 order-md-1">:(</div>
+					</div>
+				</div>
+			</section>
+			<footer class="row">
+				<div class="col-12 d-none d-sm-block">Pie</div>
+			</footer>
+		</div>
+	</body>
+</html>
