@@ -1,104 +1,88 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
-	<script src="../js/bootstrap.bundle.min.js"></script>
-	<title>Iniciar sesión en Amazon</title>
-	<link rel="icon" href="images/amazon_mini_logo.png" type="image/png">
-	<style>
-		.caja{
-			width: 375px;
-		}
-		form{
-			border: 1px solid gainsboro;
-			padding: 20px;
-			border-radius: 10px;
-			font-size: 0.8em;
-		}
-		img{
-			width: 45%;
-		}
-		.ayuda{
-			text-decoration: none;
-			font-size: 1.1em;
-			padding-left: 0px;
-		}
-		ul li a{
-			text-decoration: none;
-			font-size: 0.8em;
-		}
-		.bussiness{
-			text-decoration: none;
-		}
-		.hr-text {
-			border: none; 
-			border-top: 1px solid #000; 
-			color: black; 
-			overflow: visible; 
-			text-align: center;
-			font-size: 0.8em; 
-			height: 0; 
-		} 
-		.hr-text::before {
-			content: attr(data-content); 
-			display: inline-block; 
-			padding: 0 10px; 
-			background: white; 
-			position: relative; 
-			top: -0.7em; 
-		}
-		.crear_cuenta{
-			border: 1px solid gainsboro;
-			border-radius: 10px;
-		}
-	</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tipografia y encabezado</title>
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <style type="text/css">
+         .corte {
+            max-width: 410px;
+            margin: 2px auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 8px;
+            margin-top: 0px;
+        }
+        .corte1{ 
+            max-width: 410px;
+            margin: 2px auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 8px;
+            margin-top: 0px;}
+        .boton1 {
+            background-color:black;
+            color: white;
+            border-radius: 0;
+        }
+
+        .boton2{background-color: white; color: black; border: 1px solid black; border-radius: 0}
+        .amazon2{
+            max-width: 400px;
+            margin: 5px auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 8px;
+            text-align: center;
+        }
+          footer {
+            margin-top: 50px;
+            text-align: center;
+            font-size: 12px;
+            color: #555;
+        }
+        a{color: black;}
+        .text-normal{font-weight: normal;}
+        h4{letter-spacing: 20px;}
+      
+        img{width: 100px; align-content:center; margin-bottom: 0px; padding: 0;}
+    </style>
+    </style>
 </head>
 <body>
-	<div class="container">
-		<div class="row justify-content-center vh-100">
-			<div class="caja col-auto">
-				<img class="img-fluid d-block mx-auto" src="images/amazon_logo.png">
-				<form action="">
-					<h3>Iniciar sesión</h3>
-					<div class="col-auto">
-						<label for="user" class="col-form-label"><b>Dirección de e-mail o número de teléfono móvil</b></label>
-					</div>
-					<div class="col">
-						<input type="text" class="form-control" id="user" name="user" placeholder="">
-					</div>
-					<div class="col d-grid mt-3 mb-4">
-						<button type="button" class="btn btn-warning">Continuar</button>
-					</div>
-					<div class="col">
-						<p>Al continuar, aceptas las <a href="https://www.amazon.es/gp/help/customer/display.html/ref=ap_signin_notification_condition_of_use?ie=UTF8&nodeId=200545940">Condiciones de uso y venta</a> de Amazon. Consulta nuestro <a href="https://www.amazon.es/gp/help/customer/display.html/ref=ap_signin_notification_privacy_notice?ie=UTF8&nodeId=200545460">Aviso de privacidad</a>, nuestro <a href="https://www.amazon.es/gp/help/customer/display.html/?nodeId=201890250">Aviso sobre cookies</a> y nuestro <a href="https://www.amazon.es/gp/help/customer/display.html?nodeId=201909150">Aviso sobre anuncios basados en intereses</a>.</p>
-					</div>
-					<div class="col">
-						<div class="dropdown">
-							<a type="button" class="ayuda btn btn-link dropdown-toggle" data-bs-toggle="dropdown">¿Necesitas ayuda?</a>
-							<ul class="dropdown-menu">
-								<li><a class="dropdown-link" href="https://www.amazon.es/ap/forgotpassword?openid.pape.max_auth_age=0&openid.return_to=https%3A%2F%2Fwww.amazon.es%2F%3Ftag%3Dadmarketpl0c0-21%26ref%3Dnav_ya_signin%26mfadid%3Dadm&prevRID=JFDKB77HY8DTEMYE5T78&openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.assoc_handle=esflex&openid.mode=checkid_setup&prepopulatedLoginId=&failedSignInCount=0&openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&pageId=esflex&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0">¿Has olvidado la contraseña?</a></li>
-								<li><a class="dropdown-link" href="https://www.amazon.es/gp/help/customer/account-issues/ref=ap_login_with_otp_claim_collection?ie=UTF8">¿Más formas de obtener soporte?</a></li>
-							</ul>
-						</div>
-					</div>
-					<hr>
-					<div class="col">
-						<p class="compras mb-0"><b>¿Compras para tu empresa?</b></p>
-						<p><a class="bussiness" href="https://www.amazon.es/ap/signin?openid.pape.max_auth_age=0&openid.return_to=https%3A%2F%2Fwww.amazon.es%2Fbusiness%2Fregister%2Fcheck%2Fstatus%3Fref_%3Dab_welcome_bw_ckab_dsk%26originalRef%3Dab_reg_signin&openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.assoc_handle=amzn_ab_reg_web_es&openid.mode=checkid_setup&marketPlaceId=A1RKKUPIHCS9HS&language=es_ES&openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&pageId=ab_welcome_login_es&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0&ref_=ab_welcome_bw_ap-sn_dsk&disableLoginPrepopulate=1&openid.pape.preferred_auth_policies=Singlefactor&switch_account=signin">Comprar en Amazon Business</a></p>
-					</div>
-				</form>
-				<hr class="hr-text" data-content="¿Eres nuevo en Amazon?">
-				<div class="crear_cuenta col d-grid">
-					<button type="button" class="btn btn-basic" onclick="window.location.href='https://www.amazon.es/ap/register?openid.pape.max_auth_age=0&openid.return_to=https%3A%2F%2Fwww.amazon.es%2F%3Ftag%3Dadmarketpl0c0-21%26ref%3Dnav_ya_signin%26mfadid%3Dadm&prevRID=4SXZ3ABWP0NXKPJ04F4X&openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.assoc_handle=esflex&openid.mode=checkid_setup&prepopulatedLoginId=&failedSignInCount=0&openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&pageId=esflex&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0'">Crear tu cuenta de Amazon</button>
-				</div>
-				
-			</div>
-		</div>
-	</div>
-	<footer>
-		
-	</footer>
-</body>
-</html>
+
+    <div class="container">
+        <div class="corte1">
+            <h4 class="w-100 text-center">MI CUENTA</h4>
+            <img src="images/triangulo-logo.png" class="w-100">
+        </div>
+        <div class="corte">
+          <form action="" class="col-auto">
+            <div class="mb-2 text-center">
+                <h3>Inicia sesión</h3>
+                <h5 class="text-normal">Inicia sesión para acceder a todos nuestros servicios</h5>
+            </div>
+            <div class="mb-4">
+                <label for="cuenta">Cuenta de acceso</label>
+                <input type="text" name="cuenta" placeholder="Cuenta de acceso" class="form-control w-100">
+            </div>
+            <div class="mb-3">
+                <label for="contraseña">Contraseña</label>
+                <input type="text" name="contraseña" placeholder="Contraseña" class="form-control w-100">
+            </div>
+            <div class="mb-3 text-end w-100">
+                <p><a href="#">¿Problemas con tu contraseña?</a></p>
+            </div>
+            <br>
+            <div class="mb-3">
+                <button class="btn w-100 boton1">INCIAR SESIÓN</button>
+            </div>
+            <div class="mb-3">
+                <button class="btn w-100 boton2">¿AÚN SIN CÚENTA? RESISTRATE</button>
+            </div>
+          </form>
+          </div>
+
+    </div>

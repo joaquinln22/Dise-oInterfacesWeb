@@ -23,7 +23,7 @@
 			font-size: 0.8em;
 		}
 		img{
-			width: 15%;
+			width: 7.5%;
 		}
 		a{
 			text-decoration: none;
@@ -46,14 +46,17 @@
 			background-color: black;
 			border: transparent;
 			border-radius: 20px;
+			float: right;
 		}
 		.btn-dark:hover{
 			color: #b6d0fb;
 		}
+
 		.btn-light-blue{
 			background-color: #b6d0fb;
 			color: #123978;
 			border-radius: 20px;
+			float: right;
 		}
 		.btn-light-blue:hover{
 			background-color: #b6d0fb;
@@ -69,37 +72,37 @@
 					<div class="col">
 						<form action="">
 							<div class="row mb-3">
-								<div class="col-5">
+								<div class="col-12">
 									<img src="images/google_g_logo.png">
 								</div>
 							</div>
 							<div class="row">
-								<div class="col-6">
+								<div class="col col-12 col-lg-6">
 									<h3>Iniciar sesión</h3>	
 								</div>
-								<div class="col-6 form-floating mt-3 mb-3">
+								<div class="col col-12 col-lg-6 form-floating">
 									<input type="email" id="correo" class="form-control" placeholder="Correo electrónico o teléfono">
 									<label class="email" for="email">Correo electrónico o teléfono</label>
 								</div>
 							</div>
 							<div class="row mb-3">
-								<div class="col-6">
+								<div class="col col-12 col-lg-6">
 									<p>Utiliza tu cuenta de Google</p>
 								</div>
-								<div class="col-6">
+								<div class="col col-12 col-lg-6">
 									<p><a href="https://accounts.google.com/signin/v2/usernamerecovery?continue=https%3A%2F%2Fwww.google.com%2Fwebhp%3Fauthuser%3D1&ddm=1&dsh=S-602842484%3A1732001710387911&ec=GAZAmgQ&flowEntry=ServiceLogin&flowName=GlifWebSignIn&hl=es&ifkv=AcMMx-cvVcAPIx3u_EIx9S0HDnu3lWKXpOoXHlQMNxeUtqLt9_04Nu-CNYGlwPWrj6l_FkhLFIgNZg"><b>¿Has olvidado tu correo electrónico?</b></a></p>
 								</div>
 							</div>
 							<div class="row justify-content-end mb-3">
-								<div class="col-6">
+								<div class="col col-12 col-lg-6">
 									<p>¿No es tu ordenador? Usa el modo Invitado para iniciar sesión de forma privada. <a href="https://support.google.com/chrome/answer/6130773?hl=es">Más información sobre cómo usar el modo Invitado</a></p>
 								</div>
 							</div>
 							<div class="row justify-content-end">
-								<div class="col-3 justify-content-end">
-									<button class="btn btn-dark" type="submit" onclick="window.location.href='google_form_2.html'">Crear Cuenta</button>
+								<div class="col col-6 col-lg-3">
+									<button class="btn btn-dark" type="button" onclick="window.location.href='google_form_2.html'">Crear Cuenta</button>
 								</div>
-								<div class="col-3 justify-content-end">
+								<div class="siguiente col col-6 col-lg-3">
 									<button class="btn btn-light-blue" type="submit">Siguiente</button>
 								</div>
 							</div>

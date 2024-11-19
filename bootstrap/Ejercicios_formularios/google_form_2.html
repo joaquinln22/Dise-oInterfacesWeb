@@ -5,16 +5,17 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
 	<script src="../js/bootstrap.bundle.min.js"></script>
-	<title>Iniciar sesión en Amazon</title>
-	<link rel="icon" href="images/amazon_mini_logo.png" type="image/png">
+	<title>Inicia sesión: Cuentas de Google</title>
+	<link rel="icon" href="images/google_g_logo.png" type="image/png">
 	<style>
 		body{
 			background-color: #1e1f20;
 			color: white;
 		}
 		.caja{
-			width: 375px;
+			width: 849px;
 			background-color: #0e0e0e;
+			border-radius: 20px;
 		}
 		form{
 			padding: 20px;
@@ -22,38 +23,89 @@
 			font-size: 0.8em;
 		}
 		img{
-			width: 15%;
+			width: 7.5%;
 		}
 		a{
 			text-decoration: none;
+			color: #b6d0fb
 		}
-		.crear_cuenta{
-			border: 1px solid gainsboro;
-			border-radius: 10px;
+		label{
+			color: #b9c7c5;
+		}
+		.form-control{
+			background-color: black;
+			border: 1px solid grey;
+			border-radius: 5px;
+		}
+		.nombre{
+			background-color: transparent;
+			margin-left: 5px;
+		}
+		.apellidos{
+			background-color: transparent;
+			margin-left: 5px;
+		}
+		.btn-dark{
+			color: #b6d0fb;
+			background-color: black;
+			border: transparent;
+			border-radius: 20px;
+			float: right;
+		}
+		.btn-dark:hover{
+			color: #b6d0fb;
+		}
+
+		.btn-light-blue{
+			background-color: #b6d0fb;
+			color: #123978;
+			border-radius: 20px;
+			float: right;
+		}
+		.btn-light-blue:hover{
+			background-color: #b6d0fb;
+			color: #123978;
 		}
 	</style>
 </head>
 <body>
 	<div class="container">
-		<div class="row justify-content-center vh-100">
+		<div class="row justify-content-center align-items-center vh-100">
 			<div class="caja col-auto">
-				<img src="images/google_g_logo.png">
-				<form action="">
-					<h3>Iniciar sesión</h3>
-					<p>Utiliza tu cuenta de Google</p>
-					<div class="form-floating mt-3 mb-3">
-						<input type="email" id="correo" class="form-control" placeholder="Correo electrónico o teléfono">
-						<label for="email">Correo electrónico o teléfono</label>
-						<p><a href="https://accounts.google.com/signin/v2/usernamerecovery?continue=https%3A%2F%2Fwww.google.com%2Fwebhp%3Fauthuser%3D1&ddm=1&dsh=S-602842484%3A1732001710387911&ec=GAZAmgQ&flowEntry=ServiceLogin&flowName=GlifWebSignIn&hl=es&ifkv=AcMMx-cvVcAPIx3u_EIx9S0HDnu3lWKXpOoXHlQMNxeUtqLt9_04Nu-CNYGlwPWrj6l_FkhLFIgNZg"><b>¿Has olvidado tu correo electrónico?</b></a></p>
-					</div>
+				<div class="row">
 					<div class="col">
-						<p>¿No es tu ordenador? Usa el modo Invitado para iniciar sesión de forma privada. <a href="https://support.google.com/chrome/answer/6130773?hl=es">Más información sobre cómo usar el modo Invitado</a></p>
+						<form action="">
+							<div class="row mb-3">
+								<div class="col-12">
+									<img src="images/google_g_logo.png">
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-6">
+									<h3>Crear una cuenta de Google</h3>	
+								</div>
+								<div class="col-6 form-floating mb-3">
+									<input type="text" id="nombre" class="form-control" placeholder="Nombre">
+									<label class="nombre" for="nombre">Nombre</label>
+								</div>
+							</div>
+							<div class="row mb-3">
+								<div class="col-6">
+									<p>Introduce tu nombre</p>
+								</div>
+								<div class="col-6 form-floating">
+									<input type="text" id="apellidos" class="form-control" placeholder="Apellidos (opcional)">
+									<label class="apellidos" for="apellidos">Apellidos (opcional)</label>
+								</div>
+							</div>
+							<div class="row justify-content-end">
+								<div class="siguiente col col-md-6 col-lg-3">
+									<button class="btn btn-light-blue" type="submit">Siguiente</button>
+								</div>
+							</div>
+						</form>
 					</div>
-					<div class="col">
-						<button class="btn btn-light" type="submit" onclick="window.location.href='google_form_2.html'">Crear Cuenta</button>
-						<button class="btn btn-light-blue" type="submit">Siguiente</button>
-					</div>
-				</form>
+				</div>
 			</div>
 		</div>
 	</div>
