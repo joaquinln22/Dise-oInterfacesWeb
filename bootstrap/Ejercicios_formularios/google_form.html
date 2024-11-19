@@ -5,100 +5,109 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
 	<script src="../js/bootstrap.bundle.min.js"></script>
-	<title>Iniciar sesión en Amazon</title>
-	<link rel="icon" href="images/amazon_mini_logo.png" type="image/png">
+	<title>Inicia sesión: Cuentas de Google</title>
+	<link rel="icon" href="images/google_g_logo.png" type="image/png">
 	<style>
+		body{
+			background-color: #1e1f20;
+			color: white;
+		}
 		.caja{
-			width: 375px;
+			width: 849px;
+			background-color: #0e0e0e;
+			border-radius: 20px;
 		}
 		form{
-			border: 1px solid gainsboro;
 			padding: 20px;
 			border-radius: 10px;
 			font-size: 0.8em;
 		}
 		img{
-			width: 45%;
+			width: 15%;
 		}
-		.ayuda{
+		a{
 			text-decoration: none;
-			font-size: 1.1em;
-			padding-left: 0px;
+			color: #b6d0fb
 		}
-		ul li a{
-			text-decoration: none;
-			font-size: 0.8em;
+		label{
+			color: #b9c7c5;
 		}
-		.bussiness{
-			text-decoration: none;
+		.form-control{
+			background-color: black;
+			border: 1px solid grey;
+			border-radius: 5px;
 		}
-		.hr-text {
-			border: none; 
-			border-top: 1px solid #000; 
-			color: black; 
-			overflow: visible; 
-			text-align: center;
-			font-size: 0.8em; 
-			height: 0; 
-		} 
-		.hr-text::before {
-			content: attr(data-content); 
-			display: inline-block; 
-			padding: 0 10px; 
-			background: white; 
-			position: relative; 
-			top: -0.7em; 
+		.email{
+			background-color: transparent;
+			margin-left: 5px;
 		}
-		.crear_cuenta{
-			border: 1px solid gainsboro;
-			border-radius: 10px;
+		.btn-dark{
+			color: #b6d0fb;
+			background-color: black;
+			border: transparent;
+			border-radius: 20px;
+		}
+		.btn-dark:hover{
+			color: #b6d0fb;
+		}
+		.btn-light-blue{
+			background-color: #b6d0fb;
+			color: #123978;
+			border-radius: 20px;
+		}
+		.btn-light-blue:hover{
+			background-color: #b6d0fb;
+			color: #123978;
 		}
 	</style>
 </head>
 <body>
 	<div class="container">
-		<div class="row justify-content-center vh-100">
+		<div class="row justify-content-center align-items-center vh-100">
 			<div class="caja col-auto">
-				<img class="img-fluid d-block mx-auto" src="images/amazon_logo.png">
-				<form action="">
-					<h3>Iniciar sesión</h3>
-					<div class="col-auto">
-						<label for="user" class="col-form-label"><b>Dirección de e-mail o número de teléfono móvil</b></label>
-					</div>
+				<div class="row">
 					<div class="col">
-						<input type="text" class="form-control" id="user" name="user" placeholder="">
+						<form action="">
+							<div class="row mb-3">
+								<div class="col-5">
+									<img src="images/google_g_logo.png">
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-6">
+									<h3>Iniciar sesión</h3>	
+								</div>
+								<div class="col-6 form-floating mt-3 mb-3">
+									<input type="email" id="correo" class="form-control" placeholder="Correo electrónico o teléfono">
+									<label class="email" for="email">Correo electrónico o teléfono</label>
+								</div>
+							</div>
+							<div class="row mb-3">
+								<div class="col-6">
+									<p>Utiliza tu cuenta de Google</p>
+								</div>
+								<div class="col-6">
+									<p><a href="https://accounts.google.com/signin/v2/usernamerecovery?continue=https%3A%2F%2Fwww.google.com%2Fwebhp%3Fauthuser%3D1&ddm=1&dsh=S-602842484%3A1732001710387911&ec=GAZAmgQ&flowEntry=ServiceLogin&flowName=GlifWebSignIn&hl=es&ifkv=AcMMx-cvVcAPIx3u_EIx9S0HDnu3lWKXpOoXHlQMNxeUtqLt9_04Nu-CNYGlwPWrj6l_FkhLFIgNZg"><b>¿Has olvidado tu correo electrónico?</b></a></p>
+								</div>
+							</div>
+							<div class="row justify-content-end mb-3">
+								<div class="col-6">
+									<p>¿No es tu ordenador? Usa el modo Invitado para iniciar sesión de forma privada. <a href="https://support.google.com/chrome/answer/6130773?hl=es">Más información sobre cómo usar el modo Invitado</a></p>
+								</div>
+							</div>
+							<div class="row justify-content-end">
+								<div class="col-3 justify-content-end">
+									<button class="btn btn-dark" type="submit" onclick="window.location.href='google_form_2.html'">Crear Cuenta</button>
+								</div>
+								<div class="col-3 justify-content-end">
+									<button class="btn btn-light-blue" type="submit">Siguiente</button>
+								</div>
+							</div>
+						</form>
 					</div>
-					<div class="col d-grid mt-3 mb-4">
-						<button type="button" class="btn btn-warning">Continuar</button>
-					</div>
-					<div class="col">
-						<p>Al continuar, aceptas las <a href="https://www.amazon.es/gp/help/customer/display.html/ref=ap_signin_notification_condition_of_use?ie=UTF8&nodeId=200545940">Condiciones de uso y venta</a> de Amazon. Consulta nuestro <a href="https://www.amazon.es/gp/help/customer/display.html/ref=ap_signin_notification_privacy_notice?ie=UTF8&nodeId=200545460">Aviso de privacidad</a>, nuestro <a href="https://www.amazon.es/gp/help/customer/display.html/?nodeId=201890250">Aviso sobre cookies</a> y nuestro <a href="https://www.amazon.es/gp/help/customer/display.html?nodeId=201909150">Aviso sobre anuncios basados en intereses</a>.</p>
-					</div>
-					<div class="col">
-						<div class="dropdown">
-							<a type="button" class="ayuda btn btn-link dropdown-toggle" data-bs-toggle="dropdown">¿Necesitas ayuda?</a>
-							<ul class="dropdown-menu">
-								<li><a class="dropdown-link" href="https://www.amazon.es/ap/forgotpassword?openid.pape.max_auth_age=0&openid.return_to=https%3A%2F%2Fwww.amazon.es%2F%3Ftag%3Dadmarketpl0c0-21%26ref%3Dnav_ya_signin%26mfadid%3Dadm&prevRID=JFDKB77HY8DTEMYE5T78&openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.assoc_handle=esflex&openid.mode=checkid_setup&prepopulatedLoginId=&failedSignInCount=0&openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&pageId=esflex&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0">¿Has olvidado la contraseña?</a></li>
-								<li><a class="dropdown-link" href="https://www.amazon.es/gp/help/customer/account-issues/ref=ap_login_with_otp_claim_collection?ie=UTF8">¿Más formas de obtener soporte?</a></li>
-							</ul>
-						</div>
-					</div>
-					<hr>
-					<div class="col">
-						<p class="compras mb-0"><b>¿Compras para tu empresa?</b></p>
-						<p><a class="bussiness" href="https://www.amazon.es/ap/signin?openid.pape.max_auth_age=0&openid.return_to=https%3A%2F%2Fwww.amazon.es%2Fbusiness%2Fregister%2Fcheck%2Fstatus%3Fref_%3Dab_welcome_bw_ckab_dsk%26originalRef%3Dab_reg_signin&openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.assoc_handle=amzn_ab_reg_web_es&openid.mode=checkid_setup&marketPlaceId=A1RKKUPIHCS9HS&language=es_ES&openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&pageId=ab_welcome_login_es&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0&ref_=ab_welcome_bw_ap-sn_dsk&disableLoginPrepopulate=1&openid.pape.preferred_auth_policies=Singlefactor&switch_account=signin">Comprar en Amazon Business</a></p>
-					</div>
-				</form>
-				<hr class="hr-text" data-content="¿Eres nuevo en Amazon?">
-				<div class="crear_cuenta col d-grid">
-					<button type="button" class="btn btn-basic" onclick="window.location.href='https://www.amazon.es/ap/register?openid.pape.max_auth_age=0&openid.return_to=https%3A%2F%2Fwww.amazon.es%2F%3Ftag%3Dadmarketpl0c0-21%26ref%3Dnav_ya_signin%26mfadid%3Dadm&prevRID=4SXZ3ABWP0NXKPJ04F4X&openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.assoc_handle=esflex&openid.mode=checkid_setup&prepopulatedLoginId=&failedSignInCount=0&openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&pageId=esflex&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0'">Crear tu cuenta de Amazon</button>
 				</div>
-				
 			</div>
 		</div>
 	</div>
-	<footer>
-		
-	</footer>
 </body>
 </html>
