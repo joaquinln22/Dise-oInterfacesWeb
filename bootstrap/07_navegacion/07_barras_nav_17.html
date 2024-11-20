@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.1/font/bootstrap-icons.css">
+	<script src="../js/bootstrap.bundle.min.js"></script>
+	<title>Barra de navegación</title>
+</head>
+<body>
+	<!-- Contenedor interno -->
+	<nav class="navbar navbar-expand-sm bg-secondary navbar-dark">
+		<div class="container">
+			<!-- Logotipo -->
+			<a href="#" class="navbar-brand">
+				<img src="../images/logoVM_blanco.png" alt="Vega Media" style="width: 60px;">
+			</a>
+
+			<!-- Botón toggler -->
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#burguer">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+
+			<!-- Enlaces -->
+			<div class="collapse navbar-collapse" id="burguer">
+				<ul class="navbar-nav me-auto">
+					<li class="nav-item">
+						<a href="#" class="nav-link active"><i class="bi bi-house"> Inicio</i></a>
+					</li>
+					<li class="nav-item">
+						<a href="#" class="nav-link"><i class="bi bi-book"> Blog</i></a>
+					</li>
+					<!-- Dropdown -->
+					<li class="nav-item dropdown">
+						<a href="#" class="nav-link dropdown-toggle" id="navbardrop" data-bs-toggle="dropdown"><i class="bi bi-mortarboard"> Enseñanzas</i></a>
+						<div class="dropdown-menu">
+							<a href="#" class="dropdown-item">Infantil y Primaria</a>
+							<a href="#" class="dropdown-item">Educación Secundaria Obligatoria</a>
+							<a href="#" class="dropdown-item">Ciclos Formativos</a>
+						</div>
+					</li>
+				</ul>
+				<!-- Formulario -->
+				<form action="#" class="d-flex">
+					<input type="text" class="form-control me-2" placeholder="Buscar...">
+					<button class="btn btn-info" type="submit"><i class="bi bi-search"></i></button>
+				</form>
+			</div>
+		</div>
+	</nav>
+</body>
+</html>
