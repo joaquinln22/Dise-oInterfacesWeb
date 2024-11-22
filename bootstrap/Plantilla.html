@@ -8,15 +8,57 @@
 	<title>Plantilla</title>
 </head>
 <body>
-	<header>
-		Cabecera
+	<!-- Cabecera -->
+	<header class="bg-primary text-white text-center">
+		<h1>Cabecera</h1>
+		<p>Plantilla web usando Bootstrap 5</p>
 	</header>
-	<section>
-		<main>Parte principal</main>
-		<aside>Barra lateral</aside>
+	<!-- Barra de navegación -->
+	<nav class="navbar navbar-expand-sm bg-light">	<!-- Expand: para poner en horizontal la barra de navegación -->
+		<div class="container-fluid">
+			<!-- Enlaces -->
+			<ul class="navbar-nav">
+				<li class="nav-item">
+					<a href="#" class="nav-link">Home</a>
+				</li>
+				<li class="nav-item">
+					<a href="#" class="nav-link">Blog</a>
+				</li>
+				<li class="nav-item">
+					<a href="#" class="nav-link">Galería</a>
+				</li>
+				<li class="nav-item">
+					<a href="#" class="nav-link">Contacto</a>
+				</li>
+			</ul>
+		</div>
+	</nav>
+	<section class="container mt-5">
+		<div class="row">
+			<!-- Parte principal -->
+			<main class="col-sm-9">
+				<article>
+					<h2>Artículo 1</h2>
+					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem aliquid id asperiores dignissimos odio earum illum, aspernatur laudantium vero blanditiis magnam modi perspiciatis velit, laboriosam, molestiae distinctio eos consequatur deserunt.</p>
+				</article>
+				<article>
+					<h2>Artículo 2</h2>
+					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem aliquid id asperiores dignissimos odio earum illum, aspernatur laudantium vero blanditiis magnam modi perspiciatis velit, laboriosam, molestiae distinctio eos consequatur deserunt.</p>
+				</article>
+			</main>
+			<!-- Barra lateral -->
+			<aside class="col-sm-3">
+				<h2>ASIDE</h2>
+				<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Libero earum labore odit, eum, similique magni quo voluptatem? Optio reiciendis sint quaerat libero ad nisi dolor, quis sit facere asperiores inventore.</p>
+			</aside>
+		</div>
+		
+
+		
 	</section>
-	<footer>
-		Pie
+	<footer class="bg-dark text-white text-center p-3 mt-5"> <!-- p: el padding -->
+		<h2>Footer</h2>
+		<p class="lead"> Todos los derechos reservados </p> <!-- lead: hace más fino el texto -->
 	</footer>
 </body>
 </html>

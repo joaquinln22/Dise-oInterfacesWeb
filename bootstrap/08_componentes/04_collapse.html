@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
+	<script src="../js/bootstrap.bundle.min.js"></script>
+	<title>Collapse</title>
+</head>
+<body>
+	<div class="container">
+		<!-- Ejemplo con botón y con enlace -->
+		<div class="row">
+			<div class="col">
+				<h2>Plegable simple con botón</h2>
+				<p>Haz click sobre el botón para mostrar/ocultar el contenido</p>
+				<button type="button" class="btn btn-primary" data-bs-toggle="collapse" data-bs-target="#plegable1">Plegable</button>
+				<div id="plegable1" class="collapse">
+					Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores dignissimos quae ipsam vel reiciendis quibusdam, ea, minus incidunt. Neque consectetur porro, provident quidem illo quod est exercitationem esse quo quasi?
+				</div>
+			</div>
+			<div class="col">
+				<h2>Plegable simple con enlace</h2>
+				<p>Haz click sobre el enlace para mostrar/ocultar el contenido</p>
+				<a href="#plegable2" class="btn btn-primary" data-bs-toggle="collapse">Plegable enlace</a>
+				<div id="plegable2" class="collapse">
+					Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores dignissimos quae ipsam vel reiciendis quibusdam, ea, minus incidunt. Neque consectetur porro, provident quidem illo quod est exercitationem esse quo quasi?
+				</div>
+			</div>
+		</div>
+		<hr>
+
+		<!-- Ejemplo SHOW -->
+		<div class="row">
+			<div class="col">
+				<button type="button" class="btn btn-primary" data-bs-toggle="collapse" data-bs-target="#plegable">Mostrar/Ocultar</button>
+				<div id="plegable" class="collapse show">
+					Lorem ipsum dolor sit amet consectetur adipisicing, elit. Ipsam accusamus voluptas et perspiciatis libero, quaerat architecto exercitationem corrupti repellat praesentium, facere fugiat perferendis? Nostrum, ad, officiis. Ipsa hic aperiam veniam.
+				</div>
+			</div>
+		</div>
+		
+	</div>
+</body>
+</html>

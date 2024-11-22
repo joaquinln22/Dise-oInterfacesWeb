@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
+	<script src="../js/bootstrap.bundle.min.js"></script>
+	<title>Ventanas Modales</title>
+</head>
+<body>
+	<h3>Modal Básico</h3>
+
+	<!-- Botón para abrir el Modal -->
+	<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">Abrir Modal</button>
+
+	<!-- Ventana Modal -->
+	<div class="modal fade" id="myModal">
+		<div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-sm"> <!--modal-sm(pequeña) || modal-lg(grande) || modal-xl(extra grande) || modal-fullscreen-->
+			<div class="modal-content">
+				<!-- Modal header -->
+				<div class="modal-header">
+					<h4 class="modal-title"> Título del Modal </h4>
+					<button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+				</div>
+
+				<!-- Modal body -->
+				<div class="modal-body">
+					<p>Contenido del Modal</p>
+					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, eum. Et eligendi maxime necessitatibus aperiam laborum repellat molestiae doloremque qui at optio, deleniti aspernatur adipisci, sint beatae impedit a repellendus?</p>
+				</div>
+
+				<!-- Modal footer -->
+				<div class="modal-footer">
+					<button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cerrar</button>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
