@@ -7,15 +7,17 @@
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.1/font/bootstrap-icons.css">
 	<script src="../js/bootstrap.bundle.min.js"></script>
 	<title>Joaquín Lorca Nieto</title>
+	<link rel="icon" href="images/logo_pangolin.png" type="image/png">
 	<style>
 		.nav-link {
 			color: white;
 		}
-
 		.nav-link:hover{
 			color: #dc3545;
 		}
-
+		nav img{
+			width: 5%;
+		}
 		footer a img{
 			width: 10%;
 		}
@@ -23,9 +25,10 @@
 </head>
 <body>
 	<!-- Barra de navegación -->
-	<nav class="navbar fixed-top navbar-expand-sm bg-dark ">	<!-- Expand: para poner en horizontal la barra de navegación -->
+	<nav class="navbar fixed-top navbar-expand-sm bg-dark">	<!-- Expand: para poner en horizontal la barra de navegación -->
 		<div class="container justify-content-center">
 			<!-- Enlaces -->
+			<img src="images/logo_pangolin.png">
 			<ul class="nav nav-tabs">
 				<li class="nav-item">
 					<a href="#" class="nav-link"><i class="bi bi-house-door-fill"> Sobre mí</i></a>
@@ -42,47 +45,63 @@
 			</ul>
 		</div>
 	</nav>
-	<div class="carousel slide" data-bs-ride="carousel" id="ejemplo-carousel">
-		<!-- Primera parte con las imágenes de la presentación -->
-		<div class="carousel-inner">
-			<div class="carousel-item active">
-				<img src="../images/.jpg" alt="Fachada" class="d-block w-100">
-				<div class="carousel-caption">
-					<h4> C.E.S. Vega Media </h4>
-					<p> Ctra. Mula, 37 - Alguazas (Murcia) </p>
+	<div class="container">
+		<div class="card-border-secondary">
+			<div class="carousel slide" data-bs-ride="carousel" id="ejemplo-carousel">
+				<!-- Primera parte con las imágenes de la presentación -->
+				<div class="carousel-inner">
+					<div class="carousel-item active">
+						<img src="images/pisos077.jpg" alt="Portada" class="d-block w-100">
+						<div class="carousel-caption">
+							<h4> Alguazas </h4>
+						</div>
+					</div>
+					<div class="carousel-item">
+						<img src="images/paintball.jpg" alt="Paintball" class="d-block w-100">
+						<div class="carousel-caption">
+							<h4> Bullas </h4>
+							<p> Paintball con los colegas </p>
+						</div>
+					</div>
+					<div class="carousel-item">
+						<img src="images/rivet.jpg" alt="Rivet" class="d-block w-100">
+						<div class="carousel-caption">
+							<h4> Casa </h4>
+							<p> Jugando con Rivet </p>
+						</div>
+					</div>
 				</div>
-			</div>
-			<div class="carousel-item">
-				<img src="../images/.jpg" alt="Patio Infantil" class="d-block w-100">
-				<div class="carousel-caption">
-					<h4> Patio de Infantil </h4>
-					<p> 3, 4 y 5 años </p>
-				</div>
-			</div>
-			<div class="carousel-item">
-				<img src="../images/.jpg" alt="Campo de fútbol" class="d-block w-100">
-				<div class="carousel-caption">
-					<h4> Instalaciones deportivas </h4>
-					<p> Campo de fútbol municipal de Alguazas </p>
+
+				<!-- Segunda parte con los controles derecha e izquierda -->
+				<button class="carousel-control-prev" type="button" data-bs-slide="prev" data-bs-target="#ejemplo-carousel">
+					<span class="carousel-control-prev-icon"></span>
+				</button>
+				<button class="carousel-control-next" type="button" data-bs-slide="next" data-bs-target="#ejemplo-carousel">
+					<span class="carousel-control-next-icon"></span>
+				</button>
+
+				<!-- Tercera parte con los indicadores -->
+				<div class="carousel-indicators">
+					<button type="button" data-bs-target="#ejemplo-carousel" data-bs-slide-to="0" class="active"></button>
+					<button type="button" data-bs-target="#ejemplo-carousel" data-bs-slide-to="1"></button>
+					<button type="button" data-bs-target="#ejemplo-carousel" data-bs-slide-to="2"></button>
 				</div>
 			</div>
 		</div>
-
-		<!-- Segunda parte con los controles derecha e izquierda -->
-		<button class="carousel-control-prev" type="button" data-bs-slide="prev" data-bs-target="#ejemplo-carousel">
-			<span class="carousel-control-prev-icon"></span>
-		</button>
-		<button class="carousel-control-next" type="button" data-bs-slide="next" data-bs-target="#ejemplo-carousel">
-			<span class="carousel-control-next-icon"></span>
-		</button>
-
-		<!-- Tercera parte con los indicadores -->
-		<div class="carousel-indicators">
-			<button type="button" data-bs-target="#ejemplo-carousel" data-bs-slide-to="0" class="active"></button>
-			<button type="button" data-bs-target="#ejemplo-carousel" data-bs-slide-to="1"></button>
-			<button type="button" data-bs-target="#ejemplo-carousel" data-bs-slide-to="2"></button>
+		<hr>
+		<div class="card border-secondary col-6" style="width: 50%">
+			<div class="card-body">
+				<h2 class="card-title">Sobre mí</h2>
+				<p class="card-text">Bueno, pues este soy yo. Soy Joaquín Lorca Nieto, tengo 22 años y vivo en un pequeño pueblo de Murcia, Alguazas.</p>
+				<p class="card-text">Actualmente, estoy estudiando Desarrollo de Aplicaciones Web (DAW), y trabajando a la vez, de repartidor en un pizzeria, Telepizza. Espero poder empezar pronto a trabajar de desarrollador y dedicarme a lo que me gusta.</p>
+			</div>
 		</div>
+		<img class="card img-center col-6" src="../images/avatar3.png" alt="Joaquín Lorca" style="width: 50%">
 	</div>
+	
+	
+	
+	
 	<footer class="bg-danger text-black text-center p-3 mt-5"> <!-- p: el padding -->
 		<div class="container">
 			<div class="row justify-content-center">
