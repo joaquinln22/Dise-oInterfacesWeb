@@ -131,7 +131,7 @@
 			</div>
 		</div>
 		<div class="row justify-content-center">
-			<div class="col col-8 col-md-6 col-lg-4">
+			<div class="col col-8 col-md-6 col-lg-4 mb-4">
 				<div class="card border-primary" style="height: 500px;">
 					<img class="card-img-top img-fluid" src="images/deporte.jpg" alt="Deporte" style="width: 100%; height: 220px;">
 					<div class="card-body text-center">
@@ -141,7 +141,7 @@
 					
 				</div>
 			</div>
-			<div class="col col-8 col-md-6 col-lg-4">
+			<div class="col col-8 col-md-6 col-lg-4 mb-4">
 				<div class="card border-primary" style="height: 500px;">
 					<img class="card-img-top img-fluid" src="images/videojuegos.jpg" alt="Juegos" style="width: 100%; height: 220px;">
 					<div class="card-body text-center">
@@ -171,26 +171,26 @@
 				<div class="container">
 				    <div class="row justify-content-center">
 				        <!-- Primera fila -->
-				        <div class="col col-6 col-md-4" style="height: 220px;">
+				        <div class="col-8 col-md-6 col-lg-4 d-flex align-items-center justify-content-center" style="height: 220px;">
 				            <img src="images/image1.jpg" class="img-fluid" alt="Imagen 1" data-bs-toggle="modal" data-bs-target="#modal1">
 				        </div>
-				        <div class="col col-6 col-md-4" style="height: 220px;">
+				        <div class="col-8 col-md-6 col-lg-4 d-flex align-items-center justify-content-center" style="height: 220px;">
 				            <img src="images/image2.jpeg" class="img-fluid" alt="Imagen 2" data-bs-toggle="modal" data-bs-target="#modal2">
 				        </div>
-				        <div class="col col-6 col-md-4" style="height: 220px;">
+				        <div class="col-8 col-md-6 col-lg-4 d-flex align-items-center justify-content-center" style="height: 220px;">
 				            <img src="images/image3.jpg" class="img-fluid mx-auto d-block" alt="Imagen 3" data-bs-toggle="modal" data-bs-target="#modal3">
 				        </div>
 				    </div>
 
 				    <div class="row justify-content-center">
 				        <!-- Segunda fila -->
-				        <div class="col col-6 col-md-4" style="height: 220px;">
+				        <div class="col-8 col-md-6 col-lg-4 d-flex align-items-center justify-content-center" style="height: 220px;">
 				            <img src="images/image4.jpg" class="img-fluid" alt="Imagen 4" data-bs-toggle="modal" data-bs-target="#modal4">
 				        </div>
-				        <div class="col col-6 col-md-4" style="height: 220px;">
+				        <div class="col-8 col-md-6 col-lg-4 d-flex align-items-center justify-content-center" style="height: 220px;">
 				            <img src="images/image5.jpg" class="img-fluid" alt="Imagen 5" data-bs-toggle="modal" data-bs-target="#modal5">
 				        </div>
-				        <div class="col col-6 col-md-4" style="height: 220px;">
+				        <div class="col-8 col-md-6 col-lg-4 d-flex align-items-center justify-content-center" style="height: 220px;">
 				            <img src="images/image6.jpg" class="img-fluid mx-auto d-block" alt="Imagen 6" data-bs-toggle="modal" data-bs-target="#modal6">
 				        </div>
 				    </div>
@@ -296,7 +296,7 @@
 					<div class="card-header bg-dark text-white">
 						<h2><u>Contacto</u></h2>
 					</div>
-					<div class="card-body bg-light">
+					<div class="card-body bg-secondary">
 						<div class="row mb-2 d-flex justify-content-center">
 							<div class="col col-4">
 								<input type="text" class="form-control" name="nombre" placeholder="Nombre">
@@ -305,7 +305,16 @@
 								<input type="text" class="form-control" name="correo" placeholder="Correo">
 							</div>
 						</div>
-						<textarea class="form-control w-100" name="mensaje" id="mensaje" rows="4">Mensaje...</textarea>
+						<div class="row mb-2 d-flex justify-content-center">
+							<div class="col col-8">
+								<input type="text" class="form-control" name="asunto" placeholder="Asunto">
+							</div>
+						</div>
+						<div class="row mb-2 d-flex justify-content-center">
+							<div class="col col-8">
+								<textarea class="form-control w-100" name="mensaje" id="mensaje" rows="3">Mensaje...</textarea>
+							</div>
+						</div>
 					</div>
 					<div class="card-footer bg-dark">
 						<button class="btn btn-danger" type="button" id="toastbtn">Enviar</button>
