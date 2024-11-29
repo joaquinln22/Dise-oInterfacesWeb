@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.1/font/bootstrap-icons.css">
+	<script src="../js/bootstrap.bundle.min.js"></script>
+	<title>Centro - C.E.S. Vega Media</title>
+	<link rel="icon" href="images/grifo.png" type="image/png">
+	<style>
+		nav{
+			background-color: #2d2e2c;
+		}
+		.nav-link{
+			color: #9dbe15;
+		}
+		.nav-link:hover{
+			color: #aff55f;
+		}
+		i{
+			font-style: normal;
+		}
+		footer{
+			background-color: #2d2e2c;
+			color: #9dbe15;
+		}
+		footer h5{
+			margin-bottom: 25px;
+		}
+		footer img{
+			width: 150px;
+			height: 150px;
+		}
+		footer p{
+			color: white;
+			margin: 0px;
+		}
+		footer a{
+			color: white;
+			text-decoration: none;
+			font-size: 0.9em;
+		}
+		footer .logo img{
+			filter: invert(68%) sepia(98%) saturate(422%) hue-rotate(22deg) brightness(90%) contrast(86%);
+			width: 30px;
+    		height: 30px;
+    		margin-top: 10px;
+    		margin-right: 10px;
+		}
+	</style>
+</head>
+<body>
+	<!-- Barra de navegación -->
+	<nav class="navbar navbar-expand-sm">	<!-- Expand: para poner en horizontal la barra de navegación -->
+		<div class="container-fluid">
+
+			<!-- Botón toggler -->
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#burguer">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+
+			<!-- Enlaces -->
+			<div class="collapse navbar-collapse" id="burguer">
+				<ul class="navbar-nav">
+					<li class="nav-item">
+						<a href="principal.html" class="nav-link"><i class="bi bi-house-door"> Centro</i></a>
+					</li>
+					<li class="nav-item">
+						<a href="etapas.html" class="nav-link"><i class="bi bi-mortarboard"> Etapas Educativas</i></a>
+					</li>
+					<li class="nav-item">
+						<a href="instalaciones.html" class="nav-link"><i class="bi bi-signpost-split"> Instalaciones</i></a>
+					</li>
+					<li class="nav-item">
+						<a href="servicios.html" class="nav-link"><i class="bi bi-plus-circle"> Servicios</i></a>
+					</li>
+					<li class="nav-item">
+						<a href="contacto.html" class="nav-link"><i class="bi bi-telephone"> Contacto</i></a>
+					</li>
+				</ul>
+			</div>
+			
+		</div>
+	</nav>
+	<section class="container mt-5">
+		<div class="row">
+			<!-- Parte principal -->
+			<main class="col-sm-9">
+				<article>
+					<h2>Artículo 1</h2>
+					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem aliquid id asperiores dignissimos odio earum illum, aspernatur laudantium vero blanditiis magnam modi perspiciatis velit, laboriosam, molestiae distinctio eos consequatur deserunt.</p>
+				</article>
+				<article>
+					<h2>Artículo 2</h2>
+					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem aliquid id asperiores dignissimos odio earum illum, aspernatur laudantium vero blanditiis magnam modi perspiciatis velit, laboriosam, molestiae distinctio eos consequatur deserunt.</p>
+				</article>
+			</main>
+			<!-- Barra lateral -->
+			<aside class="col-sm-3">
+				<h2>ASIDE</h2>
+				<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Libero earum labore odit, eum, similique magni quo voluptatem? Optio reiciendis sint quaerat libero ad nisi dolor, quis sit facere asperiores inventore.</p>
+			</aside>
+		</div>
+		
+
+		
+	</section>
+	<footer class="d-flex justify-content-center text-left pt-4 pb-4 mt-3 ps-5"> <!-- p: el padding -->
+		<div class="row mt-2">
+			<div class="col-auto me-2">
+				<h5>Información</h5>
+				<p><a href="https://ces-vegamedia.es/aviso-legal/">Aviso legal</a></p>
+				<p><a href="https://ces-vegamedia.es/privacidad/">Política de privacidad</a></p>
+				<p><a href="https://ces-vegamedia.es/cookies/">Política de cookies</a></p>
+				<p><a href="https://ces-vegamedia.es/condiciones-de-compra/">Condiciones generales de contratación</a></p>
+			</div>
+			<div class="col-auto me-2">
+				<h5>Formación</h5>
+				<p><a href="">Infantil</a></p>
+				<p><a href="">Primaria</a></p>
+				<p><a href="">Secundaria</a></p>
+				<p><a href="">Ciclos formativos</a></p>
+			</div>
+			<div class="col-auto me-2">
+				<h5>Visítanos</h5>
+				<p>CES VEGA MEDIA, S. COOP.</p>
+				<p>Ctra. De Mula, 37 - Alguazas</p>
+				<p>30560 - Murcia</p>
+				<p><a style="color: #aff55f;" href="https://www.google.es/maps/place/CES+Vega+Media/@38.0515582,-1.2558907,17z/data=!3m1!4b1!4m5!3m4!1s0xd647ed425284579:0xc1fae33ccb32d958!8m2!3d38.0515582!4d-1.253702">Ver mapa</a></p>
+			</div>
+			<div class="col-auto me-2">
+				<h5>Contacto</h5>
+				<p>Tlfn: 968 620 913</p>
+				<p>vegamedia@ces-vegamedia.es</p>
+				<a class="logo" href="" target="_blank"><img src="images/facebook.svg" alt="Facebook"></a>
+				<a class="logo" href="" target="_blank"><img src="images/twitter-x.svg" alt="Twitter"></a>
+				<a class="logo" href="" target="_blank"><img src="images/youtube.svg" alt="Youtube"></a>
+				<a class="logo" href="" target="_blank"><img src="images/instagram.svg" alt="Instagram"></a>
+			</div>
+			<div class="col-auto">
+				<a href="principal.html" target="_parent"><img src="images/grifo.png" alt="C.E.S. Vega Media"></a>
+			</div>
+		</div>
+	</footer>
+</body>
+</html>
