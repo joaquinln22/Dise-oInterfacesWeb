@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.1/font/bootstrap-icons.css">
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <title>Bootstrap 5</title>
+    <link rel="icon" href="images/logo.png" type="image/png">
+    <style>
+        body{
+            font-size: 0.8em;
+        }
+        header{
+            text-align: center;
+        }
+        nav{
+            background-color: grey;
+            border-radius: 5px;
+        }
+        nav ul{
+            list-style: none;
+            margin: 0px;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            padding-left: 0px;
+            padding-right: 0px;
+        }
+        nav ul li{
+            text-align: center;
+        }
+        nav ul li a{
+            text-decoration: none;
+            color: white;
+        }
+        nav ul li a:hover{
+            color: blueviolet;
+        }
+        .ejemplo>div{
+            background-color: #E2E2E2; border: 1px solid #808080; text-align: center; margin: 5px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-auto text-center">
+                <h2>Grid de Bootstrap</h2>
+                <img src="images/dimensiones.png" alt="Dimensiones">
+            </div>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="col-6">
+                <div>
+                    <h1>Ejemplo sin Bootstrap</h1>
+                    <p>Lorem ipsum dolor sit, amet consectetur, adipisicing elit. Quis, reprehenderit necessitatibus obcaecati eligendi quisquam fugiat assumenda aspernatur voluptates in sequi odio est vero officiis, commodi perferendis consequuntur. Aliquam, perferendis, esse!</p>
+                    <p>Earum dolorem nesciunt aspernatur incidunt harum quaerat quae corrupti doloremque obcaecati mollitia dolor nihil qui perferendis quos exercitationem atque placeat accusantium similique iure nobis cum officia, voluptatem nam neque! Laborum.</p>
+                    <button>Botón</button>
+                </div>
+            </div>
+            <div class="col-6">
+                <div class="container">
+                    <h1>Ejemplo con Bootstrap</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum dicta repellendus odio temporibus veritatis. Harum itaque, consequatur ipsa quis, corporis cum cupiditate quam iure, praesentium enim quibusdam! Voluptatibus, delectus nisi.</p>
+                    <p>Autem pariatur, nihil mollitia, reiciendis doloremque similique consequuntur sunt corporis, odio labore optio sed nemo dicta incidunt quibusdam molestias laborum aspernatur? Recusandae, earum, qui. Est quaerat, tenetur consequuntur ipsa culpa?</p>
+                    <button class="btn btn-primary">Botón</button>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="col-6">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 col-sm-12 col-md-6 col-lg-4" >
+                            <h3>Bloque 1</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim odit ipsum nulla ut quos incidunt eveniet ullam maxime provident sit quae ducimus, obcaecati culpa exercitationem excepturi quod recusandae! Cum, quis.</p>
+                        </div>
+                        <div class="col-12 col-sm-6 col-md-6 col-lg-4">
+                            <h3>Bloque 2</h3>
+                            <p>Amet, veniam possimus vel natus, culpa incidunt. Error nihil quisquam provident! Ipsa, qui enim cum molestias mollitia atque, numquam veritatis corporis ad laborum dolore porro tenetur eligendi nemo ullam reprehenderit.</p>
+                        </div>
+                        <div class="col-12 col-sm-6 col-md-12 col-lg-4">
+                            <h3>Bloque 3</h3>
+                            <p>Impedit, fugiat? Amet nihil molestias dolor optio explicabo deserunt dolores vel in, est, soluta nobis exercitationem aliquam sed qui eum ratione voluptate cupiditate officiis asperiores, obcaecati impedit tempora accusamus minima?</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6">
+                <pre><code>
+                    &lt;div class="container"&gt;
+                        &lt;div class="row"&gt; 
+                            &lt;div class="col-12 col-sm-12 col-md-6 col-lg-4"&gt; 
+                                &lt;h3&gt;Bloque 1&lt;/h3&gt; 
+                                &lt;p&gt;Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim odit ipsum nulla ut quos incidunt eveniet ullam maxime provident sit quae ducimus, obcaecati culpa exercitationem excepturi quod recusandae! Cum, quis.&lt;/p&gt; 
+                            &lt;/div&gt; 
+                            &lt;div class="col-12 col-sm-6 col-md-6 col-lg-4"&gt; 
+                                &lt;h3&gt;Bloque 2&lt;/h3&gt; 
+                                &lt;p&gt;Amet, veniam possimus vel natus, culpa incidunt. Error nihil quisquam provident! Ipsa, qui enim cum molestias mollitia atque, numquam veritatis corporis ad laborum dolore porro tenetur eligendi nemo ullam reprehenderit.&lt;/p&gt; 
+                            &lt;/div&gt; 
+                            &lt;div class="col-12 col-sm-6 col-md-12 col-lg-4"&gt; 
+                                &lt;h3&gt;Bloque 3&lt;/h3&gt; 
+                                &lt;p&gt;Impedit, fugiat? Amet nihil molestias dolor optio explicabo deserunt dolores vel in, est, soluta nobis exercitationem aliquam sed qui eum ratione voluptate cupiditate officiis asperiores, obcaecati impedit tempora accusamus minima?&lt;/p&gt; 
+                            &lt;/div&gt; 
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                </code></pre>
+            </div>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="col-6">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-6 ">
+                            <h3 class="text-center">Bloque 1</h3>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing, elit. Quas quaerat facere nobis nemo, dolore, quae enim officiis nam. Magni dolor error odio perspiciatis doloremque? Eos voluptates consequuntur, a aut reprehenderit.</p>
+                        </div>
+                        <div class="col-6">
+                            <h3 class="text-center">Bloque 2</h3>
+                            <p>Nihil cumque culpa corrupti, voluptas assumenda modi officia sint! Optio vitae laborum impedit possimus quo itaque explicabo perspiciatis voluptate neque, doloremque tempore magni, veritatis sequi, fuga sit, iste autem harum?</p>
+                        </div>
+                        <div class="col-6">
+                            <h3 class="text-center">Bloque 3</h3>
+                            <p>Delectus aspernatur accusantium a cupiditate excepturi omnis asperiores deleniti, magni. Doloremque magni non explicabo quod consequuntur, exercitationem odit, ab, voluptas impedit ea, neque deleniti accusamus eum! Deleniti blanditiis quidem nemo.</p>
+                        </div>
+                        <div class="col-6">
+                            <h3 class="text-center">Bloque 4</h3>
+                            <p>Distinctio eos qui omnis sequi debitis. Mollitia, provident neque quis cupiditate in ab facere laudantium dolorum! Consequatur alias a, accusamus nemo excepturi, accusantium sapiente expedita cumque eum numquam magni ratione.</p>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="row">
+                        <div class="col-12">
+                            <h3 class="text-center">Bloque 5</h3>
+                            <p>Quas fuga ipsa, voluptates explicabo fugiat at rerum porro, amet asperiores voluptate distinctio eum impedit, quia autem atque ipsam eligendi quibusdam tempore voluptas similique qui esse molestias voluptatibus beatae quisquam.</p>
+                        </div>
+                        <div class="col-4">
+                            <h3 class="text-center">Bloque 6</h3>
+                            <p>Consequatur suscipit, labore qui nemo iusto voluptas necessitatibus, perferendis. Eveniet, vel illum assumenda maxime asperiores quos quo quaerat sint dolores veniam at saepe veritatis labore, nobis nam animi, molestiae provident?</p>
+                        </div>
+                        <div class="col-4">
+                            <h3 class="text-center">Bloque 7</h3>
+                            <p>A minima aliquam reiciendis, consequuntur, aspernatur culpa dolorum tenetur, tempore harum ab, voluptas accusantium in. Eaque, officiis placeat error voluptatum sequi eos eveniet, architecto voluptatibus sed odit facere tenetur ea.</p>
+                        </div>
+                        <div class="col-4">
+                            <h3 class="text-center">Bloque 8</h3>
+                            <p>Ab dolore, debitis nobis molestiae minima alias temporibus, est neque asperiores sint nulla incidunt consequuntur dignissimos, maiores, quibusdam reiciendis doloribus porro aspernatur dolorem. Veniam tempora minima quam, optio iusto mollitia.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6">
+                <pre><code>
+                    &lt;div class="container"&gt;
+                        &lt;div class="row"&gt;
+                            &lt;div class="col-6 "&gt;
+                                &lt;h3 class="text-center"&gt;Bloque 1&lt;/h3&gt;
+                                &lt;p&gt;Lorem ipsum dolor, sit amet consectetur adipisicing, elit. Quas quaerat facere nobis nemo, dolore, quae enim officiis nam. Magni dolor error odio perspiciatis doloremque? Eos voluptates consequuntur, a aut reprehenderit.&lt;/p&gt;
+                            &lt;/div&gt;
+                            &lt;div class="col-6"&gt;
+                                &lt;h3 class="text-center"&gt;Bloque 2&lt;/h3&gt;
+                                &lt;p&gt;Nihil cumque culpa corrupti, voluptas assumenda modi officia sint! Optio vitae laborum impedit possimus quo itaque explicabo perspiciatis voluptate neque, doloremque tempore magni, veritatis sequi, fuga sit, iste autem harum?&lt;/p&gt;
+                            &lt;/div&gt;
+                            &lt;div class="col-6"&gt;
+                                &lt;h3 class="text-center"&gt;Bloque 3&lt;/h3&gt;
+                                &lt;p&gt;Delectus aspernatur accusantium a cupiditate excepturi omnis asperiores deleniti, magni. Doloremque magni non explicabo quod consequuntur, exercitationem odit, ab, voluptas impedit ea, neque deleniti accusamus eum! Deleniti blanditiis quidem nemo.&lt;/p&gt;
+                            &lt;/div&gt;
+                            &lt;div class="col-6"&gt;
+                                &lt;h3 class="text-center"&gt;Bloque 4&lt;/h3&gt;
+                                &lt;p&gt;Distinctio eos qui omnis sequi debitis. Mollitia, provident neque quis cupiditate in ab facere laudantium dolorum! Consequatur alias a, accusamus nemo excepturi, accusantium sapiente expedita cumque eum numquam magni ratione.&lt;/p&gt;
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+                        &lt;hr&gt;
+                        &lt;div class="row"&gt;
+                            &lt;div class="col-12"&gt;
+                                &lt;h3 class="text-center"&gt;Bloque 5&lt;/h3&gt;
+                                &lt;p&gt;Quas fuga ipsa, voluptates explicabo fugiat at rerum porro, amet asperiores voluptate distinctio eum impedit, quia autem atque ipsam eligendi quibusdam tempore voluptas similique qui esse molestias voluptatibus beatae quisquam.&lt;/p&gt;
+                            &lt;/div&gt;
+                            &lt;div class="col-4"&gt;
+                                &lt;h3 class="text-center"&gt;Bloque 6&lt;/h3&gt;
+                                &lt;p&gt;Consequatur suscipit, labore qui nemo iusto voluptas necessitatibus, perferendis. Eveniet, vel illum assumenda maxime asperiores quos quo quaerat sint dolores veniam at saepe veritatis labore, nobis nam animi, molestiae provident?&lt;/p&gt;
+                            &lt;/div&gt;
+                            &lt;div class="col-4"&gt;
+                                &lt;h3 class="text-center"&gt;Bloque 7&lt;/h3&gt;
+                                &lt;p&gt;A minima aliquam reiciendis, consequuntur, aspernatur culpa dolorum tenetur, tempore harum ab, voluptas accusantium in. Eaque, officiis placeat error voluptatum sequi eos eveniet, architecto voluptatibus sed odit facere tenetur ea.&lt;/p&gt;
+                            &lt;/div&gt;
+                            &lt;div class="col-4"&gt;
+                                &lt;h3 class="text-center"&gt;Bloque 8&lt;/h3&gt;
+                                &lt;p&gt;Ab dolore, debitis nobis molestiae minima alias temporibus, est neque asperiores sint nulla incidunt consequuntur dignissimos, maiores, quibusdam reiciendis doloribus porro aspernatur dolorem. Veniam tempora minima quam, optio iusto mollitia.&lt;/p&gt;
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                </code></pre>   
+            </div>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="col-6">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-2">
+                            <h3>Bloque 1</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim odit ipsum nulla ut quos incidunt eveniet ullam maxime provident sit quae ducimus, obcaecati culpa exercitationem excepturi quod recusandae! Cum, quis.</p>
+                        </div>
+                        <div class="col-4">
+                            <h3>Bloque 2</h3>
+                            <p>Amet, veniam possimus vel natus, culpa incidunt. Error nihil quisquam provident! Ipsa, qui enim cum molestias mollitia atque, numquam veritatis corporis ad laborum dolore porro tenetur eligendi nemo ullam reprehenderit.</p>
+                        </div>
+                        <div class="col-6">
+                            <h3>Bloque 3</h3>
+                            <p>Impedit, fugiat? Amet nihil molestias dolor optio explicabo deserunt dolores vel in, est, soluta nobis exercitationem aliquam sed qui eum ratione voluptate cupiditate officiis asperiores, obcaecati impedit tempora accusamus minima?</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6">
+                <pre><code>
+                    &lt;div class="container"&gt;
+                        &lt;div class="row"&gt;
+                            &lt;div class="col-2"&gt;
+                                &lt;h1&gt;Bloque 1&lt;/h1&gt;
+                                &lt;p&gt;Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim odit ipsum nulla ut quos incidunt eveniet ullam maxime provident sit quae ducimus, obcaecati culpa exercitationem excepturi quod recusandae! Cum, quis.&lt;/p&gt;
+                            &lt;/div&gt;
+                            &lt;div class="col-4"&gt;
+                                &lt;h1&gt;Bloque 2&lt;/h1&gt;
+                                &lt;p&gt;Amet, veniam possimus vel natus, culpa incidunt. Error nihil quisquam provident! Ipsa, qui enim cum molestias mollitia atque, numquam veritatis corporis ad laborum dolore porro tenetur eligendi nemo ullam reprehenderit.&lt;/p&gt;
+                            &lt;/div&gt;
+                            &lt;div class="col-6"&gt;
+                                &lt;h1&gt;Bloque 3&lt;/h1&gt;
+                                &lt;p&gt;Impedit, fugiat? Amet nihil molestias dolor optio explicabo deserunt dolores vel in, est, soluta nobis exercitationem aliquam sed qui eum ratione voluptate cupiditate officiis asperiores, obcaecati impedit tempora accusamus minima?&lt;/p&gt;
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                </code></pre>
+            </div>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="col-6">
+                <div class="container">
+                    <div class="row" style="background-color: #E2E2E2; border: 1px solid #808080; margin: 5px 0; text-align: center">
+                        <div class="col-12 col-sm-12 col-md-8">Columna 1</div>
+                        <div class="col-6 col-md-4">Columna 2</div>
+                    </div>
+                    <div class="row" style="background-color: #E2E2E2; border: 1px solid #808080; margin: 5px 0; text-align: center">
+                        <div class="col-6 col-md-4">Columna 3</div>
+                        <div class="col-6 col-md-4">Columna 4</div>
+                        <div class="col-6 col-md-4">Columna 5</div>
+                    </div>
+                    <div class="row" style="background-color: #E2E2E2; border: 1px solid #808080; margin: 5px 0; text-align: center">
+                        <div class="col-12 col-md-8">Columna 6</div>
+                        <div class="col-12 col-md-8">Columna 7</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6">
+                <pre><code>
+                    &lt;div class="container"&gt;
+                        &lt;div class="row" style="background-color: #E2E2E2; border: 1px solid #808080; margin: 5px 0; text-align: center"&gt;
+                            &lt;div class="col-12 col-sm-12 col-md-8"&gt;Columna 1&lt;/div&gt;
+                            &lt;div class="col-6 col-md-4"&gt;Columna 2&lt;/div&gt;
+                        &lt;/div&gt;
+                        &lt;div class="row" style="background-color: #E2E2E2; border: 1px solid #808080; margin: 5px 0; text-align: center"&gt;
+                            &lt;div class="col-6 col-md-4"&gt;Columna 3&lt;/div&gt;
+                            &lt;div class="col-6 col-md-4"&gt;Columna 4&lt;/div&gt;
+                            &lt;div class="col-6 col-md-4"&gt;Columna 5&lt;/div&gt;
+                        &lt;/div&gt;
+                        &lt;div class="row" style="background-color: #E2E2E2; border: 1px solid #808080; margin: 5px 0; text-align: center"&gt;
+                            &lt;div class="col-12 col-md-8"&gt;Columna 6&lt;/div&gt;
+                            &lt;div class="col-12 col-md-8"&gt;Columna 7&lt;/div&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                </code></pre>
+            </div>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="col-6">
+                <div class="container">
+                    <div class="ejemplo row">
+                        <div class="col-sm-6 col-md-4 col-lg-3">
+                            <h3>Bloque 1</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam eveniet ad vel pariatur vitae ab facilis. Impedit nobis accusantium aliquam possimus sunt odit ipsam, non nulla odio. Quia, alias, aperiam!</p>
+                        </div>
+                        <div class="col-sm-6 col-md-4 col-lg-3">
+                            <h3>Bloque 2</h3>
+                            <p>Exercitationem, laudantium, soluta, porro ipsum, velit aliquam dicta alias distinctio iure dolorem nesciunt illo hic doloribus quam animi doloremque eveniet odit error labore accusamus. Magni blanditiis, expedita nobis suscipit qui!</p>
+                        </div>
+                        <div class="col-sm-6 col-md-4 col-lg-3">
+                            <h3>Bloque 3</h3>
+                            <p>Rerum harum quas libero doloremque unde omnis ducimus quam quis beatae culpa corporis laborum incidunt sint eveniet ab, quia delectus! Dignissimos cumque consequuntur, eos cum eius sit molestiae delectus eaque.</p>
+                        </div>
+                        <div class="col-sm-6 col-md-4 col-lg-3">
+                            <h3>Bloque 4</h3>
+                            <p>At, vero obcaecati unde magni. Odio officiis quos ipsa dicta excepturi doloremque velit corporis aut quibusdam quidem, accusantium, et quod dolorum commodi natus iure consequatur non, libero quia aspernatur obcaecati.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6">
+                <pre><code>
+                    &lt;!DOCTYPE html&gt;
+                        &lt;html&gt;
+                        &lt;head&gt;
+                            &lt;meta charset="utf-8"&gt;
+                            &lt;meta name="viewport" content="width=device-width, initial-scale=1"&gt;
+                            &lt;link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css"&gt;
+                            &lt;script src="../js/bootstrap.bundle.min.js"&gt;&lt;/script&gt;
+                            &lt;title&gt;Ejemplo 7&lt;/title&gt;
+                            &lt;style type="text/css"&gt;
+                                .row&gt;div{background-color: #E2E2E2; border: 1px solid #808080; text-align: center; margin: 5px 0} 
+                            &lt;/style&gt;
+                        &lt;/head&gt;
+                        &lt;body&gt;
+                            &lt;div class="container"&gt;
+                                &lt;div class="row"&gt;
+                                    &lt;div class="col-sm-6 col-md-4 col-lg-3"&gt;
+                                        &lt;h1&gt;Bloque 1&lt;/h1&gt;
+                                        &lt;p&gt;Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam eveniet ad vel pariatur vitae ab facilis. Impedit nobis accusantium aliquam possimus sunt odit ipsam, non nulla odio. Quia, alias, aperiam!&lt;/p&gt;
+                                    &lt;/div&gt;
+                                    &lt;div class="col-sm-6 col-md-4 col-lg-3"&gt;
+                                        &lt;h1&gt;Bloque 2&lt;/h1&gt;
+                                        &lt;p&gt;Exercitationem, laudantium, soluta, porro ipsum, velit aliquam dicta alias distinctio iure dolorem nesciunt illo hic doloribus quam animi doloremque eveniet odit error labore accusamus. Magni blanditiis, expedita nobis suscipit qui!&lt;/p&gt;
+                                    &lt;/div&gt;
+                                    &lt;div class="col-sm-6 col-md-4 col-lg-3"&gt;
+                                        &lt;h1&gt;Bloque 3&lt;/h1&gt;
+                                        &lt;p&gt;Rerum harum quas libero doloremque unde omnis ducimus quam quis beatae culpa corporis laborum incidunt sint eveniet ab, quia delectus! Dignissimos cumque consequuntur, eos cum eius sit molestiae delectus eaque.&lt;/p&gt;
+                                    &lt;/div&gt;
+                                    &lt;div class="col-sm-6 col-md-4 col-lg-3"&gt;
+                                        &lt;h1&gt;Bloque 4&lt;/h1&gt;
+                                        &lt;p&gt;At, vero obcaecati unde magni. Odio officiis quos ipsa dicta excepturi doloremque velit corporis aut quibusdam quidem, accusantium, et quod dolorum commodi natus iure consequatur non, libero quia aspernatur obcaecati.&lt;/p&gt;
+                                    &lt;/div&gt;
+                                &lt;/div&gt;
+                            &lt;/div&gt;
+                        &lt;/body&gt;
+                        &lt;/html&gt;
+                </code></pre>
+            </div>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="col-6">
+                <div class="container">
+                    <div class="ejemplo row">
+                        <div class="col col-lg-2">Columna 1</div>
+                        <div class="col-md-auto">Columna 2 (ajustada al texto)</div>
+                        <div class="col col-lg-2">Columna 3 (sin ajustar al texto)</div>
+                    </di
+                    <div class="ejemplo row">
+                        <div class="col">Columna 1</div>
+                        <div class="col-md-auto">Columna 2 (ajustada al texto)</div>
+                        <div class="col col-lg-2">Columna 3 (sin ajustar al texto)</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6">
+                <pre><code>
+                    &lt;!DOCTYPE html&gt;
+                    &lt;html&gt;
+                    &lt;head&gt;
+                        &lt;meta charset="utf-8"&gt;
+                        &lt;meta name="viewport" content="width=device-width, initial-scale=1"&gt;
+                        &lt;link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css"&gt;
+                        &lt;script src="../js/bootstrap.bundle.min.js"&gt;&lt;/script&gt;
+                        &lt;title&gt;Ejemplo 8&lt;/title&gt;
+                        &lt;style type="text/css"&gt;
+                            .row&gt;div{background-color: #E2E2E2; border: 1px solid #808080; text-align: center; margin: 5px 0} 
+                        &lt;/style&gt;
+                    &lt;/head&gt;
+                    &lt;body&gt;
+                        &lt;div class="container"&gt;
+                            &lt;div class="row"&gt;
+                                &lt;div class="col col-lg-2"&gt;Columna 1&lt;/div&gt;
+                                &lt;div class="col-md-auto"&gt;Columna 2 (ajustada al texto)&lt;/div&gt;
+                                &lt;div class="col col-lg-2"&gt;Columna 3 (sin ajustar al texto)&lt;/div&gt;
+                            &lt;/div&gt;
+                            &lt;div class="row"&gt;
+                                &lt;div class="col"&gt;Columna 1&lt;/div&gt;
+                                &lt;div class="col-md-auto"&gt;Columna 2 (ajustada al texto)&lt;/div&gt;
+                                &lt;div class="col col-lg-2"&gt;Columna 3 (sin ajustar al texto)&lt;/div&gt;
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+                    &lt;/body&gt;
+                    &lt;/html&gt;
+                </code></pre>
+            </div>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="col-6">
+                <div class="container">
+                    <div class="ejemplo row">
+                        <div class="col-6 col-sm-3">Columna 1 de 4</div>
+                        <div class="col-6 col-sm-3">Columna 2 de 4</div>
+            
+                        <div class="w-100"></div>
+            
+                        <div class="col-6 col-sm-3">Columna 3 de 4</div>
+                        <div class="col-6 col-sm-3">Columna 4 de 4</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6">
+                <pre><code>
+                    &lt;!DOCTYPE html&gt;
+                    &lt;html&gt;
+                    &lt;head&gt;
+                        &lt;meta charset="utf-8"&gt;
+                        &lt;meta name="viewport" content="width=device-width, initial-scale=1"&gt;
+                        &lt;link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css"&gt;
+                        &lt;script src="../js/bootstrap.bundle.min.js"&gt;&lt;/script&gt;
+                        &lt;title&gt;Ejemplo 8&lt;/title&gt;
+                        &lt;style type="text/css"&gt;
+                            .row&gt;div{background-color: #E2E2E2; border: 1px solid #808080; text-align: center; margin: 5px 0} 
+                        &lt;/style&gt;
+                    &lt;/head&gt;
+                    &lt;body&gt;
+                        &lt;div class="container"&gt;
+                            &lt;div class="row"&gt;
+                                &lt;div class="col-6 col-sm-3"&gt;Columna 1 de 4&lt;/div&gt;
+                                &lt;div class="col-6 col-sm-3"&gt;Columna 2 de 4&lt;/div&gt;
+
+                                &lt;div class="w-100"&gt;&lt;/div&gt;
+
+                                &lt;div class="col-6 col-sm-3"&gt;Columna 3 de 4&lt;/div&gt;
+                                &lt;div class="col-6 col-sm-3"&gt;Columna 4 de 4&lt;/div&gt;
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+                    &lt;/body&gt;
+                    &lt;/html&gt;
+                </code></pre>
+            </div>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="col-6">
+                <div class="container">
+                    <div class="ejemplo row">
+                        <div class="col-sm-9">
+                            Nivel 1
+                            <div class="ejemplo row">
+                                <div class="col-8 col-sm-6">Nivel 2</div>
+                                <div class="col-8 col-sm-6">Nivel 3</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6">
+                <pre><code>
+                    &lt;!DOCTYPE html&gt;
+                    &lt;html&gt;
+                    &lt;head&gt;
+                        &lt;meta charset="utf-8"&gt;
+                        &lt;meta name="viewport" content="width=device-width, initial-scale=1"&gt;
+                        &lt;link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css"&gt;
+                        &lt;script src="../js/bootstrap.bundle.min.js"&gt;&lt;/script&gt;
+                        &lt;title&gt;Ejemplo 8&lt;/title&gt;
+                        &lt;style type="text/css"&gt;
+                            .row&gt;div{background-color: #E2E2E2; border: 1px solid #808080; text-align: center; margin: 5px 0} 
+                        &lt;/style&gt;
+                    &lt;/head&gt;
+                    &lt;body&gt;
+                        &lt;div class="container"&gt;
+                            &lt;div class="row"&gt;
+                                &lt;div class="col-6 col-sm-3"&gt;Columna 1 de 4&lt;/div&gt;
+                                &lt;div class="col-6 col-sm-3"&gt;Columna 2 de 4&lt;/div&gt;
+
+                                &lt;div class="w-100"&gt;&lt;/div&gt;
+
+                                &lt;div class="col-6 col-sm-3"&gt;Columna 3 de 4&lt;/div&gt;
+                                &lt;div class="col-6 col-sm-3"&gt;Columna 4 de 4&lt;/div&gt;
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+                    &lt;/body&gt;
+                    &lt;/html&gt;
+                </code></pre>
+            </div>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="col-6">
+                <div class="container">
+                    <div class="ejemplo row">
+                        <div class="col-4">Columna 1</div>
+                        <div class="col-8">Columna 2
+                            <div class="ejemplo row">
+                                <div class="col-12 col-md-12">Columna 2a</div>
+                                <div class="col-12 col-md-12">Columna 2a</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6">
+                <pre><code>
+                    &lt;!DOCTYPE html&gt;
+                    &lt;html&gt;
+                    &lt;head&gt;
+                        &lt;meta charset="utf-8"&gt;
+                        &lt;meta name="viewport" content="width=device-width, initial-scale=1"&gt;
+                        &lt;link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css"&gt;
+                        &lt;script src="../js/bootstrap.bundle.min.js"&gt;&lt;/script&gt;
+                        &lt;title&gt;Ejemplo 11&lt;/title&gt;
+                        &lt;style type="text/css"&gt;
+                            .row&gt;div{background-color: #E2E2E2; border: 1px solid #808080; text-align: center; margin: 5px 0} 
+                        &lt;/style&gt;
+                    &lt;/head&gt;
+                    &lt;body&gt;
+                        &lt;div class="container"&gt;
+                            &lt;div class="row"&gt;
+                                &lt;div class="col-4"&gt;Columna 1&lt;/div&gt;
+                                &lt;div class="col-8"&gt;Columna 2
+                                    &lt;div class="row"&gt;
+                                        &lt;div class="col-12 col-md-12"&gt;Columna 2a&lt;/div&gt;
+                                        &lt;div class="col-12 col-md-12"&gt;Columna 2a&lt;/div&gt;
+                                    &lt;/div&gt;
+                                &lt;/div&gt;
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+                    &lt;/body&gt;
+                    &lt;/html&gt;
+                </code></pre>
+            </div>
+        </div>
+        <hr>
+        
+    </div>
+</body>
+</html>
