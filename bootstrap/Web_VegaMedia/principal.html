@@ -13,24 +13,26 @@
 			background-color: #2d2e2c;
 		}
 		.nav-link{
-			color: #9dbe15;
+			color: #6EAC23;
 		}
 		.nav-link:hover{
 			color: #aff55f;
 		}
+		.navbar-toggler{
+			background-color: #6EAC23;
+		}
 		i{
 			font-style: normal;
 		}
+		body{
+			padding-top: 40px;
+		}
 		footer{
 			background-color: #2d2e2c;
-			color: #9dbe15;
+			color: #6EAC23;
 		}
 		footer h5{
 			margin-bottom: 25px;
-		}
-		footer img{
-			width: 150px;
-			height: 150px;
 		}
 		footer p{
 			color: white;
@@ -42,7 +44,7 @@
 			font-size: 0.9em;
 		}
 		footer .logo img{
-			filter: invert(68%) sepia(98%) saturate(422%) hue-rotate(22deg) brightness(90%) contrast(86%);
+			filter: invert(57%) sepia(47%) saturate(639%) hue-rotate(45deg) brightness(93%) contrast(95%);
 			width: 30px;
     		height: 30px;
     		margin-top: 10px;
@@ -52,8 +54,13 @@
 </head>
 <body>
 	<!-- Barra de navegación -->
-	<nav class="navbar navbar-expand-sm">	<!-- Expand: para poner en horizontal la barra de navegación -->
+	<nav class="navbar fixed-top navbar-expand-lg">	<!-- Expand: para poner en horizontal la barra de navegación -->
 		<div class="container-fluid">
+			<!-- Logotipo -->
+       	    <a href="principal.html" class="navbar-brand">
+                <img src="../images/logoVM_verde.jpg" alt="Vega Media" style="width: 60px;">
+                <span class="ms-3" style="color: white;">C.E.S. Vega Media</span>
+            </a>
 
 			<!-- Botón toggler -->
 			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#burguer">
@@ -62,7 +69,7 @@
 
 			<!-- Enlaces -->
 			<div class="collapse navbar-collapse" id="burguer">
-				<ul class="navbar-nav">
+				<ul class="navbar-nav ms-auto">
 					<li class="nav-item">
 						<a href="principal.html" class="nav-link"><i class="bi bi-house-door"> Centro</i></a>
 					</li>
@@ -80,7 +87,6 @@
 					</li>
 				</ul>
 			</div>
-			
 		</div>
 	</nav>
 	<section class="container mt-5">
@@ -106,7 +112,7 @@
 
 		
 	</section>
-	<footer class="d-flex justify-content-center text-left pt-4 pb-4 mt-3 ps-5"> <!-- p: el padding -->
+	<footer class="d-flex justify-content-around pt-4 pb-4 mt-3"> <!-- p: el padding -->
 		<div class="row mt-2">
 			<div class="col-auto me-2">
 				<h5>Información</h5>
@@ -138,8 +144,8 @@
 				<a class="logo" href="" target="_blank"><img src="images/youtube.svg" alt="Youtube"></a>
 				<a class="logo" href="" target="_blank"><img src="images/instagram.svg" alt="Instagram"></a>
 			</div>
-			<div class="col-auto">
-				<a href="principal.html" target="_parent"><img src="images/grifo.png" alt="C.E.S. Vega Media"></a>
+			<div class="col-auto d-flex align-items-center">
+				<a href="principal.html" target="_parent"><img src="images/logoVM_blanco.png" alt="C.E.S. Vega Media"></a>
 			</div>
 		</div>
 	</footer>
