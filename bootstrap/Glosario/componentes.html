@@ -1,0 +1,883 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.1/font/bootstrap-icons.css">
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <title>Bootstrap 5</title>
+    <link rel="icon" href="images/logo.png" type="image/png">
+    <style>
+		.carousel-caption{
+			color: black;
+		}
+	</style>
+</head>
+<body>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-auto text-center">
+                <h2>Alerts</h2>
+            </div>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="col-6">
+                <div class="alert alert-success">
+                    <strong>Success!</strong> Este cuadro de alerta indica una acción positiva o exitosa.
+                </div>
+                <div class="alert alert-info">
+                    <strong>Info!</strong> Este cuadro de alerta indica un cambio o una acción informativa neutra.
+                </div>
+                <div class="alert alert-warning">
+                    <strong>Warning!</strong> Este cuadro de alerta podría indicar una advertencia que podría requerir atención.
+                </div>
+                <div class="alert alert-danger">
+                    <strong>Danger!</strong> Este cuadro de alerta podría indicar una acción peligrosa o potencialmente negativa.
+                </div>
+                <div class="alert alert-primary">
+                    <strong>Primary!</strong> Este cuadro de alerta indica una acción importante.
+                </div>
+                <div class="alert alert-secondary">
+                    <strong>Secondary!</strong> Este cuadro de alerta indica una acción menos importante.
+                </div>
+                <div class="alert alert-light border-dark">
+                    <strong>Light!</strong> Cuadro de alerta gris claro.
+                </div>
+                <div class="alert alert-dark">
+                    <strong>Darck!</strong> Cuadro de alerta gris oscuro.
+                </div>
+                <div class="alert alert-danger">
+                    <strong>Peligro!</strong> Cuidado con el contenido.
+                    <a href="#" class="alert-link"></a> Pinche aquí para más detalles
+                </div>
+                <div class="alert alert-warning">
+                    <strong>Advertencia!</strong> Debe leer <a href="#" class="alert-link">este mensaje</a> antes de continuar.
+                </div>
+                <div class="alert alert-success alert-dismissible">
+                    <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+                    Haz click sobre el símbolo "X" a la derecha para cerrarme.
+                </div>
+                <div class="alert alert-success alert-dismissible fade show">
+                    <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+                    Verás un efecto de atenuación al cerrar este mensaje.
+                </div>
+            </div>
+            <div class="col-6">
+                <pre><code>
+                    &lt;div class="alert alert-success"&gt;
+                        &lt;strong&gt;Success!&lt;/strong&gt; Este cuadro de alerta indica una acción positiva o exitosa.
+                    &lt;/div&gt;
+                    &lt;div class="alert alert-info"&gt;
+                        &lt;strong&gt;Info!&lt;/strong&gt; Este cuadro de alerta indica un cambio o una acción informativa neutra.
+                    &lt;/div&gt;
+                    &lt;div class="alert alert-warning"&gt;
+                        &lt;strong&gt;Warning!&lt;/strong&gt; Este cuadro de alerta podría indicar una advertencia que podría requerir atención.
+                    &lt;/div&gt;
+                    &lt;div class="alert alert-danger"&gt;
+                        &lt;strong&gt;Danger!&lt;/strong&gt; Este cuadro de alerta podría indicar una acción peligrosa o potencialmente negativa.
+                    &lt;/div&gt;
+                    &lt;div class="alert alert-primary"&gt;
+                        &lt;strong&gt;Primary!&lt;/strong&gt; Este cuadro de alerta indica una acción importante.
+                    &lt;/div&gt;
+                    &lt;div class="alert alert-secondary"&gt;
+                        &lt;strong&gt;Secondary!&lt;/strong&gt; Este cuadro de alerta indica una acción menos importante.
+                    &lt;/div&gt;
+                    &lt;div class="alert alert-light border-dark"&gt;
+                        &lt;strong&gt;Light!&lt;/strong&gt; Cuadro de alerta gris claro.
+                    &lt;/div&gt;
+                    &lt;div class="alert alert-dark"&gt;
+                        &lt;strong&gt;Dark!&lt;/strong&gt; Cuadro de alerta gris oscuro.
+                    &lt;/div&gt;
+                    &lt;div class="alert alert-danger"&gt;
+                        &lt;strong&gt;Peligro!&lt;/strong&gt; Cuidado con el contenido.
+                        &lt;a href="#" class="alert-link"&gt;&lt;/a&gt; Pinche aquí para más detalles
+                    &lt;/div&gt;
+                    &lt;div class="alert alert-warning"&gt;
+                        &lt;strong&gt;Advertencia!&lt;/strong&gt; Debe leer &lt;a href="#" class="alert-link"&gt;este mensaje&lt;/a&gt; antes de continuar.
+                    &lt;/div&gt;
+                    &lt;div class="alert alert-success alert-dismissible"&gt;
+                        &lt;button type="button" class="btn-close" data-bs-dismiss="alert"&gt;&lt;/button&gt;
+                        Haz click sobre el símbolo "X" a la derecha para cerrarme.
+                    &lt;/div&gt;
+                    &lt;div class="alert alert-success alert-dismissible fade show"&gt;
+                        &lt;button type="button" class="btn-close" data-bs-dismiss="alert"&gt;&lt;/button&gt;
+                        Verás un efecto de atenuación al cerrar este mensaje.
+                    &lt;/div&gt;                    
+                </code></pre>
+            </div>
+        </div>
+        <hr>
+        <div class="row justify-content-center">
+            <div class="col-auto text-center">
+                <h2>Badges</h2>
+            </div>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="col-6">
+                <h2>Badges o Insignias</h2>
+                <h1>Encabezado<span class="badge bg-secondary">Nuevo</span></h1>
+                <h2>Encabezado<span class="badge bg-secondary">Nuevo</span></h2>
+                <h3>Encabezado<span class="badge bg-secondary">Nuevo</span></h3>
+                <h4>Encabezado<span class="badge bg-secondary">Nuevo</span></h4>
+                <h5>Encabezado<span class="badge bg-secondary">Nuevo</span></h5>
+                <h6>Encabezado<span class="badge bg-secondary">Nuevo</span></h6>
+            </div>
+            <div class="col-6">
+                <pre><code>
+                    &lt;h2&gt;Badges o Insignias&lt;/h2&gt;
+                    &lt;h1&gt;Encabezado&lt;span class="badge bg-secondary"&gt;Nuevo&lt;/span&gt;&lt;/h1&gt;
+                    &lt;h2&gt;Encabezado&lt;span class="badge bg-secondary"&gt;Nuevo&lt;/span&gt;&lt;/h2&gt;
+                    &lt;h3&gt;Encabezado&lt;span class="badge bg-secondary"&gt;Nuevo&lt;/span&gt;&lt;/h3&gt;
+                    &lt;h4&gt;Encabezado&lt;span class="badge bg-secondary"&gt;Nuevo&lt;/span&gt;&lt;/h4&gt;
+                    &lt;h5&gt;Encabezado&lt;span class="badge bg-secondary"&gt;Nuevo&lt;/span&gt;&lt;/h5&gt;
+                    &lt;h6&gt;Encabezado&lt;span class="badge bg-secondary"&gt;Nuevo&lt;/span&gt;&lt;/h6&gt;                    
+                </code></pre>
+            </div>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="col-6">
+                <h2>Badges Contextuales</h2> <!-- Cambiar el color de los badges -->
+                <h3>Encabezado <span class="badge bg-primary">Primary</span></h3>
+                <h3>Encabezado <span class="badge bg-secondary">Secondary</span></h3>
+                <h3>Encabezado <span class="badge bg-success">Success</span></h3>
+                <h3>Encabezado <span class="badge bg-danger">Danger</span></h3>
+                <h3>Encabezado <span class="badge bg-warning">Warning</span></h3>
+                <h3>Encabezado <span class="badge bg-info">Info</span></h3>
+                <h3>Encabezado <span class="badge bg-light text-dark">Light</span></h3>
+                <h3>Encabezado <span class="badge bg-dark">Dark</span></h3>
+            </div>
+            <div class="col-6">
+                <pre><code>
+                    &lt;h2&gt;Badges Contextuales&lt;/h2&gt; &lt;!-- Cambiar el color de los badges --&gt;
+                    &lt;h3&gt;Encabezado &lt;span class="badge bg-primary"&gt;Primary&lt;/span&gt;&lt;/h3&gt;
+                    &lt;h3&gt;Encabezado &lt;span class="badge bg-secondary"&gt;Secondary&lt;/span&gt;&lt;/h3&gt;
+                    &lt;h3&gt;Encabezado &lt;span class="badge bg-success"&gt;Success&lt;/span&gt;&lt;/h3&gt;
+                    &lt;h3&gt;Encabezado &lt;span class="badge bg-danger"&gt;Danger&lt;/span&gt;&lt;/h3&gt;
+                    &lt;h3&gt;Encabezado &lt;span class="badge bg-warning"&gt;Warning&lt;/span&gt;&lt;/h3&gt;
+                    &lt;h3&gt;Encabezado &lt;span class="badge bg-info"&gt;Info&lt;/span&gt;&lt;/h3&gt;
+                    &lt;h3&gt;Encabezado &lt;span class="badge bg-light text-dark"&gt;Light&lt;/span&gt;&lt;/h3&gt;
+                    &lt;h3&gt;Encabezado &lt;span class="badge bg-dark"&gt;Dark&lt;/span&gt;&lt;/h3&gt;                    
+                </code></pre>
+            </div>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="col-6">
+                <h2>Pill Badges</h2> <!-- Redondear los badges -->
+                <h3>Encabezado <span class="badge rounded-pill bg-primary">Primary</span></h3>
+                <h3>Encabezado <span class="badge rounded-pill bg-secondary">Secondary</span></h3>
+                <h3>Encabezado <span class="badge rounded-pill bg-success">Success</span></h3>
+                <h3>Encabezado <span class="badge rounded-pill bg-danger">Danger</span></h3>
+                <h3>Encabezado <span class="badge rounded-pill bg-warning">Warning</span></h3>
+                <h3>Encabezado <span class="badge rounded-pill bg-info">Info</span></h3>
+                <h3>Encabezado <span class="badge rounded-pill bg-light text-dark">Light</span></h3>
+                <h3>Encabezado <span class="badge rounded-pill bg-dark">Dark</span></h3>
+            </div>
+            <div class="col-6">
+                <pre><code>
+                    &lt;h2&gt;Pill Badges&lt;/h2&gt; &lt;!-- Redondear los badges --&gt;
+                    &lt;h3&gt;Encabezado &lt;span class="badge rounded-pill bg-primary"&gt;Primary&lt;/span&gt;&lt;/h3&gt;
+                    &lt;h3&gt;Encabezado &lt;span class="badge rounded-pill bg-secondary"&gt;Secondary&lt;/span&gt;&lt;/h3&gt;
+                    &lt;h3&gt;Encabezado &lt;span class="badge rounded-pill bg-success"&gt;Success&lt;/span&gt;&lt;/h3&gt;
+                    &lt;h3&gt;Encabezado &lt;span class="badge rounded-pill bg-danger"&gt;Danger&lt;/span&gt;&lt;/h3&gt;
+                    &lt;h3&gt;Encabezado &lt;span class="badge rounded-pill bg-warning"&gt;Warning&lt;/span&gt;&lt;/h3&gt;
+                    &lt;h3&gt;Encabezado &lt;span class="badge rounded-pill bg-info"&gt;Info&lt;/span&gt;&lt;/h3&gt;
+                    &lt;h3&gt;Encabezado &lt;span class="badge rounded-pill bg-light text-dark"&gt;Light&lt;/span&gt;&lt;/h3&gt;
+                    &lt;h3&gt;Encabezado &lt;span class="badge rounded-pill bg-dark"&gt;Dark&lt;/span&gt;&lt;/h3&gt;                    
+                </code></pre>
+            </div>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="col-6">
+                <h2>Badge dentro de un Button</h2> <!-- Meter badges dentro de un botón -->
+                <button type="button" class="btn btn-outline-secondary">
+                    Notificaciones <span class="badge bg-danger">8</span>
+                </button>
+                <button type="button" class="btn btn-primary">
+                    Mensajes <span class="badge bg-light text-dark">12</span>
+                </button>
+            </div>
+            <div class="col-6">
+                <pre><code>
+                    &lt;h2&gt;Badge dentro de un Button&lt;/h2&gt; &lt;!-- Meter badges dentro de un botón --&gt;
+                    &lt;button type="button" class="btn btn-outline-secondary"&gt;
+                        Notificaciones &lt;span class="badge bg-danger"&gt;8&lt;/span&gt;
+                    &lt;/button&gt;
+                    &lt;button type="button" class="btn btn-primary"&gt;
+                        Mensajes &lt;span class="badge bg-light text-dark"&gt;12&lt;/span&gt;
+                    &lt;/button&gt;                    
+                </code></pre>
+            </div>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="col-6">
+                <h2>Cambiar posición badge dentro de un botón</h2>
+                <button type="button" class="btn btn-primary position-relative"> 
+                    Recibidos  <span class="badge rounded-pill bg-danger position-absolute top-0 start-100 translate-middle">+99</span>
+                </button>
+                <button type="button" class="btn btn-primary position-relative ms-5"> 
+                    Alertas  <span class="rounded-circle p-2 border border-light bg-danger position-absolute top-0 start-100 translate-middle"></span>
+                </button>
+            </div>
+            <div class="col-6">
+                <pre><code>
+                    &lt;h2&gt;Cambiar posición badge dentro de un botón&lt;/h2&gt;
+                    &lt;button type="button" class="btn btn-primary position-relative"&gt; 
+                        Recibidos  &lt;span class="badge rounded-pill bg-danger position-absolute top-0 start-100 translate-middle"&gt;+99&lt;/span&gt;
+                    &lt;/button&gt;
+                    &lt;button type="button" class="btn btn-primary position-relative ms-5"&gt; 
+                        Alertas  &lt;span class="rounded-circle p-2 border border-light bg-danger position-absolute top-0 start-100 translate-middle"&gt;&lt;/span&gt;
+                    &lt;/button&gt;                    
+                </code></pre>
+            </div>
+        </div>
+        <hr>
+        <div class="row justify-content-center">
+            <div class="col-auto text-center">
+                <h2>Cards</h2>
+            </div>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="col-6">
+                <h2>Cards: header, basic and footer </h2>
+				<div class="card mb-3">
+					<div class="card-body">Basic card</div>
+				</div>
+				<div class="card">
+					<div class="card-header">Header</div>
+					<div class="card-body">Contenido</div>
+					<div class="card-footer">Footer</div>
+				</div>
+            </div>
+            <div class="col-6">
+                <pre><code>
+                    &lt;h2&gt;Cards: header, basic and footer &lt;/h2&gt;
+                    &lt;div class="card mb-3"&gt;
+                        &lt;div class="card-body"&gt;Basic card&lt;/div&gt;
+                    &lt;/div&gt;
+                    &lt;div class="card"&gt;
+                        &lt;div class="card-header"&gt;Header&lt;/div&gt;
+                        &lt;div class="card-body"&gt;Contenido&lt;/div&gt;
+                        &lt;div class="card-footer"&gt;Footer&lt;/div&gt;
+                    &lt;/div&gt;                    
+                </code></pre>
+            </div>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="col-6">
+                <h2>Cards with Contextual Classes</h2>
+				<div class="card">
+					<div class="card-body">Basic card</div>
+				</div>
+				<br>
+		  		<div class="card bg-primary text-white">
+		  			<div class="card-body">Primary card</div>
+				</div>
+				<br>
+				<div class="card bg-success text-white">
+					<div class="card-body">Success card</div>
+				</div>
+				<br>
+				<div class="card bg-info text-white">
+				    <div class="card-body">Info card</div>
+				</div>
+				<br>
+				<div class="card bg-warning text-white">
+				    <div class="card-body">Warning card</div>
+				</div>
+				<br>
+				<div class="card bg-danger text-white">
+				    <div class="card-body">Danger card</div>
+				</div>
+				<br>
+				<div class="card bg-secondary text-white">
+				    <div class="card-body">Secondary card</div>
+				</div>
+				<br>
+				<div class="card bg-dark text-white">
+				    <div class="card-body">Dark card</div>
+				</div>
+				<br>
+				<div class="card bg-light text-dark">
+				    <div class="card-body">Light card</div>
+				</div>
+            </div>
+            <div class="col-6">
+                <pre><code>
+                    &lt;h2&gt;Cards with Contextual Classes&lt;/h2&gt;
+                    &lt;div class="card"&gt;
+                        &lt;div class="card-body"&gt;Basic card&lt;/div&gt;
+                    &lt;/div&gt;
+                    &lt;br&gt;
+                    &lt;div class="card bg-primary text-white"&gt;
+                        &lt;div class="card-body"&gt;Primary card&lt;/div&gt;
+                    &lt;/div&gt;
+                    &lt;br&gt;
+                    &lt;div class="card bg-success text-white"&gt;
+                        &lt;div class="card-body"&gt;Success card&lt;/div&gt;
+                    &lt;/div&gt;
+                    &lt;br&gt;
+                    &lt;div class="card bg-info text-white"&gt;
+                        &lt;div class="card-body"&gt;Info card&lt;/div&gt;
+                    &lt;/div&gt;
+                    &lt;br&gt;
+                    &lt;div class="card bg-warning text-white"&gt;
+                        &lt;div class="card-body"&gt;Warning card&lt;/div&gt;
+                    &lt;/div&gt;
+                    &lt;br&gt;
+                    &lt;div class="card bg-danger text-white"&gt;
+                        &lt;div class="card-body"&gt;Danger card&lt;/div&gt;
+                    &lt;/div&gt;
+                    &lt;br&gt;
+                    &lt;div class="card bg-secondary text-white"&gt;
+                        &lt;div class="card-body"&gt;Secondary card&lt;/div&gt;
+                    &lt;/div&gt;
+                    &lt;br&gt;
+                    &lt;div class="card bg-dark text-white"&gt;
+                        &lt;div class="card-body"&gt;Dark card&lt;/div&gt;
+                    &lt;/div&gt;
+                    &lt;br&gt;
+                    &lt;div class="card bg-light text-dark"&gt;
+                        &lt;div class="card-body"&gt;Light card&lt;/div&gt;
+                    &lt;/div&gt;                    
+                </code></pre>
+            </div>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="col-6">
+                <h2>Bordes y justificación del texto</h2>
+				<div class="card border-danger mb-3">
+					<div class="card-body">Card con borde <em>Danger</em> y texto alineado a la izquierda</div>
+				</div>
+				<div class="card border-primary mb-3">
+					<div class="card-body text-center">Card con borde <em>Primary</em> y texto centrado</div>
+				</div>
+				<div class="card border-info">
+					<div class="card-body text-end">Card con borde <em>Info</em> y texto alineado a la derecha</div>
+				</div>
+            </div>
+            <div class="col-6">
+                <pre><code>
+                    &lt;h2&gt;Bordes y justificación del texto&lt;/h2&gt;
+                    &lt;div class="card border-danger mb-3"&gt;
+                        &lt;div class="card-body"&gt;Card con borde &lt;em&gt;Danger&lt;/em&gt; y texto alineado a la izquierda&lt;/div&gt;
+                    &lt;/div&gt;
+                    &lt;div class="card border-primary mb-3"&gt;
+                        &lt;div class="card-body text-center"&gt;Card con borde &lt;em&gt;Primary&lt;/em&gt; y texto centrado&lt;/div&gt;
+                    &lt;/div&gt;
+                    &lt;div class="card border-info"&gt;
+                        &lt;div class="card-body text-end"&gt;Card con borde &lt;em&gt;Info&lt;/em&gt; y texto alineado a la derecha&lt;/div&gt;
+                    &lt;/div&gt;                    
+                </code></pre>
+            </div>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="col-6">
+                <h2>Tamaños</h2>
+				<div class="card bg-primary text-white w-100 mb-3">
+					<div class="card-body text-end">Tamaño 100%</div>
+				</div>
+				<div class="card bg-primary text-white w-75 mb-3">
+					<div class="card-body text-end">Tamaño 75%</div>
+				</div>
+				<div class="card bg-primary text-white w-50 mb-3">
+					<div class="card-body text-end">Tamaño 50%</div>
+				</div>
+				<div class="card bg-primary text-white w-25 mb-3">
+					<div class="card-body text-end">Tamaño 25%</div>
+				</div>
+				<div class="card bg-primary text-white mb-3" style="width: 300px">
+					<div class="card-body text-end">Tamaño de 300px</div>
+				</div>
+            </div>
+            <div class="col-6">
+                <pre><code>
+                    &lt;h2&gt;Tamaños&lt;/h2&gt;
+                    &lt;div class="card bg-primary text-white w-100 mb-3"&gt;
+                        &lt;div class="card-body text-end"&gt;Tamaño 100%&lt;/div&gt;
+                    &lt;/div&gt;
+                    &lt;div class="card bg-primary text-white w-75 mb-3"&gt;
+                        &lt;div class="card-body text-end"&gt;Tamaño 75%&lt;/div&gt;
+                    &lt;/div&gt;
+                    &lt;div class="card bg-primary text-white w-50 mb-3"&gt;
+                        &lt;div class="card-body text-end"&gt;Tamaño 50%&lt;/div&gt;
+                    &lt;/div&gt;
+                    &lt;div class="card bg-primary text-white w-25 mb-3"&gt;
+                        &lt;div class="card-body text-end"&gt;Tamaño 25%&lt;/div&gt;
+                    &lt;/div&gt;
+                    &lt;div class="card bg-primary text-white mb-3" style="width: 300px"&gt;
+                        &lt;div class="card-body text-end"&gt;Tamaño de 300px&lt;/div&gt;
+                    &lt;/div&gt;                    
+                </code></pre>
+            </div>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="col-6">
+                <h2>Tittle, text, link</h2>
+				<br>
+				<div class="card-body">
+					<h4 class="card-title">Título</h4>
+					<p class="card-text">Ejemplo de texto. Puedes escribir lo que quieras.</p>
+					<a href="#" class="card-link">Card link</a>
+					<a href="#" class="card-link">Otro link</a>
+				</div>
+            </div>
+            <div class="col-6">
+                <pre><code>
+                    &lt;h2&gt;Tittle, text, link&lt;/h2&gt;
+                    &lt;br&gt;
+                    &lt;div class="card-body"&gt;
+                        &lt;h4 class="card-title"&gt;Título&lt;/h4&gt;
+                        &lt;p class="card-text"&gt;Ejemplo de texto. Puedes escribir lo que quieras.&lt;/p&gt;
+                        &lt;a href="#" class="card-link"&gt;Card link&lt;/a&gt;
+                        &lt;a href="#" class="card-link"&gt;Otro link&lt;/a&gt;
+                    &lt;/div&gt;                    
+                </code></pre>
+            </div>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="col-6">
+                <div class="card mb-3" style="width:300px">
+					<img class="card-img-top" src="../images/avatar2.png" alt="Alex López" style="width: 100%">
+					<div class="card-body text-center">
+					    <h4 class="card-title">Alex López</h4>
+					    <p class="card-text">Desarrollador web. Experto en HTML, CSS y Bootstrap.</p>
+					    <a href="#" class="btn btn-primary">Ver perfil</a>
+				  	</div>
+				</div>
+				<div class="card w-25">
+					<div class="card-body text-center">
+					    <h4 class="card-title">María Bermejo</h4>
+					    <p class="card-text">Desarrollador web. Experto en HTML, CSS y Bootstrap.</p>
+					    <a href="#" class="btn btn-primary">Ver perfil</a>
+				  	</div>
+				  	<img class="card-img-bottom" src="../images/avatar5.png" alt="María Bermejo" style="width: 100%">
+				</div>
+            </div>
+            <div class="col-6">
+                <pre><code>
+                    &lt;div class="card mb-3" style="width:300px"&gt;
+                        &lt;img class="card-img-top" src="../images/avatar2.png" alt="Alex López" style="width: 100%"&gt;
+                        &lt;div class="card-body text-center"&gt;
+                            &lt;h4 class="card-title"&gt;Alex López&lt;/h4&gt;
+                            &lt;p class="card-text"&gt;Desarrollador web. Experto en HTML, CSS y Bootstrap.&lt;/p&gt;
+                            &lt;a href="#" class="btn btn-primary"&gt;Ver perfil&lt;/a&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                    &lt;div class="card w-25"&gt;
+                        &lt;div class="card-body text-center"&gt;
+                            &lt;h4 class="card-title"&gt;María Bermejo&lt;/h4&gt;
+                            &lt;p class="card-text"&gt;Desarrollador web. Experto en HTML, CSS y Bootstrap.&lt;/p&gt;
+                            &lt;a href="#" class="btn btn-primary"&gt;Ver perfil&lt;/a&gt;
+                        &lt;/div&gt;
+                        &lt;img class="card-img-bottom" src="../images/avatar5.png" alt="María Bermejo" style="width: 100%"&gt;
+                    &lt;/div&gt;                
+                </code></pre>
+            </div>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="col-6">
+                <button type="button" class="btn" style="background-color: blueviolet; color: white;" onclick="window.location.href='../08_componentes/03_ejercicio_cards.html'">Ejemplo cards</button>
+            </div>
+            <div class="col-6">
+                <pre><code>
+                    &lt;!DOCTYPE html&gt;
+                    &lt;html&gt;
+                    &lt;head&gt;
+                        &lt;meta charset="utf-8"&gt;
+                        &lt;meta name="viewport" content="width=device-width, initial-scale=1"&gt;
+                        &lt;link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css"&gt;
+                        &lt;script src="../js/bootstrap.bundle.min.js"&gt;&lt;/script&gt;
+                        &lt;title&gt;Cards&lt;/title&gt;
+                    &lt;/head&gt;
+                    &lt;body&gt;
+                        &lt;div class="container"&gt;
+                            &lt;div class="card border-secondary"&gt;
+                                &lt;img class="card-img-top" src="../images/vegamedia.jpg" alt="C.E.S. Vega Media" style="width: 100%"&gt;
+                                &lt;div class="card-body"&gt;
+                                    &lt;h4 class="card-title"&gt;C.E.S. Vega Media&lt;/h4&gt;
+                                    &lt;p class="card-text text-muted"&gt;Centro de Enseñanza Concertada&lt;/p&gt;
+                                    &lt;p class="card-text"&gt;Educación Infantil y Primaria, Educación Secundaria Obligatoria, Formación Profesional Básicas (Servicios Administrativos), Ciclos Formativos de Grado Medio (Gestión Administrativa, Cuidados Auxiliares de Enfermería, Instalaciones Eléctricas y Automáticas) y Ciclos Formativos de Grado Superior (Educación Infantil, Desarrollo de Aplicaciones Web)&lt;/p&gt;
+                                    &lt;a href="#"&gt;www.ces-vegamedia.es&lt;/a&gt;
+                                &lt;/div&gt;
+                            &lt;/div&gt;
+                            &lt;hr&gt;
+                            &lt;div class="card border-secondary" style="width: 300px;"&gt;
+                                &lt;img class="card-img-top" src="../images/user-5.jpg" alt="Antonio González" style="width: 100%"&gt;
+                                &lt;div class="card-body text-center"&gt;
+                                    &lt;h4 class="card-title"&gt;Antonio González&lt;/h4&gt;
+                                    &lt;p class="card-text"&gt;Programador web. Experto en HTML, CSS, JavaScript y Bootstrap.&lt;/p&gt;
+                                    &lt;a href="#" class="btn btn-primary"&gt;Ver perfil&lt;/a&gt;
+                                &lt;/div&gt;
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+                    &lt;/body&gt;
+                    &lt;/html&gt;                    
+                </code></pre>
+            </div>
+        </div>
+        <hr>
+        <div class="row justify-content-center">
+            <div class="col-auto text-center">
+                <h2>Collapse</h2>
+            </div>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="col-6">
+                <h2>Plegable simple con botón</h2>
+				<p>Haz click sobre el botón para mostrar/ocultar el contenido</p>
+				<button type="button" class="btn btn-primary" data-bs-toggle="collapse" data-bs-target="#plegable1">Plegable</button>
+				<div id="plegable1" class="collapse">
+					Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores dignissimos quae ipsam vel reiciendis quibusdam, ea, minus incidunt. Neque consectetur porro, provident quidem illo quod est exercitationem esse quo quasi?
+				</div>
+            </div>
+            <div class="col-6">
+                <pre><code>
+                    &lt;h2&gt;Plegable simple con botón&lt;/h2&gt;
+                    &lt;p&gt;Haz click sobre el botón para mostrar/ocultar el contenido&lt;/p&gt;
+                    &lt;button type="button" class="btn btn-primary" data-bs-toggle="collapse" data-bs-target="#plegable1"&gt;Plegable&lt;/button&gt;
+                    &lt;div id="plegable1" class="collapse"&gt;
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores dignissimos quae ipsam vel reiciendis quibusdam, ea, minus incidunt. Neque consectetur porro, provident quidem illo quod est exercitationem esse quo quasi?
+                    &lt;/div&gt;                    
+                </code></pre>
+            </div>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="col-6">
+                <h2>Plegable simple con enlace</h2>
+				<p>Haz click sobre el enlace para mostrar/ocultar el contenido</p>
+				<a href="#plegable2" class="btn btn-primary" data-bs-toggle="collapse">Plegable enlace</a>
+				<div id="plegable2" class="collapse">
+					Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores dignissimos quae ipsam vel reiciendis quibusdam, ea, minus incidunt. Neque consectetur porro, provident quidem illo quod est exercitationem esse quo quasi?
+				</div>
+            </div>
+            <div class="col-6">
+                <pre><code>
+                    &lt;h2&gt;Plegable simple con enlace&lt;/h2&gt;
+                    &lt;p&gt;Haz click sobre el enlace para mostrar/ocultar el contenido&lt;/p&gt;
+                    &lt;a href="#plegable2" class="btn btn-primary" data-bs-toggle="collapse"&gt;Plegable enlace&lt;/a&gt;
+                    &lt;div id="plegable2" class="collapse"&gt;
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores dignissimos quae ipsam vel reiciendis quibusdam, ea, minus incidunt. Neque consectetur porro, provident quidem illo quod est exercitationem esse quo quasi?
+                    &lt;/div&gt;                    
+                </code></pre>
+            </div>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="col-6">
+                <h2>Ejemplo show</h2>
+                <button type="button" class="btn btn-primary" data-bs-toggle="collapse" data-bs-target="#plegable">Mostrar/Ocultar</button>
+				<div id="plegable" class="collapse show">
+					Lorem ipsum dolor sit amet consectetur adipisicing, elit. Ipsam accusamus voluptas et perspiciatis libero, quaerat architecto exercitationem corrupti repellat praesentium, facere fugiat perferendis? Nostrum, ad, officiis. Ipsa hic aperiam veniam.
+				</div>
+            </div>
+            <div class="col-6">
+                <pre><code>
+                    &lt;button type="button" class="btn btn-primary" data-bs-toggle="collapse" data-bs-target="#plegable"&gt;Mostrar/Ocultar&lt;/button&gt;
+                    &lt;div id="plegable" class="collapse show"&gt;
+                        Lorem ipsum dolor sit amet consectetur adipisicing, elit. Ipsam accusamus voluptas et perspiciatis libero, quaerat architecto exercitationem corrupti repellat praesentium, facere fugiat perferendis? Nostrum, ad, officiis. Ipsa hic aperiam veniam.
+                    &lt;/div&gt;                    
+                </code></pre>
+            </div>
+        </div>
+        <hr>
+        <div class="row justify-content-center">
+            <div class="col-auto text-center">
+                <h2>Accordion</h2>
+            </div>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="col-6">
+                <div class="accordion" id="EjemploAcordeon">
+                    <!-- Item 1 -->
+                    <div class="accordion-item">
+                        <div class="accordion-header">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#plegableUNO">
+                                Accordion Item UNO
+                            </button>
+                        </div>
+                        <div id="plegableUNO" class="accodion-collapse collapse show" data-bs-parent="#EjemploAcordeon">
+                            <div class="accordion-body">
+                                Éste es el <strong>primer ítem</strong> del acordeón. Se muestra por defecto (<code>.show</code>).
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Item 2 -->
+                    <div class="accordion-item">
+                        <div class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#plegableDOS">
+                                Accordion Item DOS
+                            </button>
+                        </div>
+                        <div id="plegableDOS" class="accodion-collapse collapse" data-bs-parent="#EjemploAcordeon">
+                            <div class="accordion-body">
+                                Éste es el <strong>segundo ítem</strong> del acordeón. Se muestra oculto por defecto (<code>.collapsed</code>).
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Item 3 -->
+                    <div class="accordion-item">
+                        <div class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#plegableTRES">
+                                Accordion Item TRES
+                            </button>
+                        </div>
+                        <div id="plegableTRES" class="accodion-collapse collapse" data-bs-parent="#EjemploAcordeon">
+                            <div class="accordion-body">
+                                Éste es el <strong>tercer ítem</strong> del acordeón. Se muestra por defecto (<code>.collapsed</code>).
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6">
+                <pre><code>
+                    &lt;div class="accordion" id="EjemploAcordeon"&gt;
+                        <!-- Item 1 -->
+                        &lt;div class="accordion-item"&gt;
+                            &lt;div class="accordion-header"&gt;
+                                &lt;button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#plegableUNO"&gt;
+                                    Accordion Item UNO
+                                &lt;/button&gt;
+                            &lt;/div&gt;
+                            &lt;div id="plegableUNO" class="accodion-collapse collapse show" data-bs-parent="#EjemploAcordeon"&gt;
+                                &lt;div class="accordion-body"&gt;
+                                    Éste es el &lt;strong&gt;primer ítem&lt;/strong&gt; del acordeón. Se muestra por defecto (&lt;code&gt;.show&lt;/code&gt;).
+                                &lt;/div&gt;
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+                        <!-- Item 2 -->
+                        &lt;div class="accordion-item"&gt;
+                            &lt;div class="accordion-header"&gt;
+                                &lt;button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#plegableDOS"&gt;
+                                    Accordion Item DOS
+                                &lt;/button&gt;
+                            &lt;/div&gt;
+                            &lt;div id="plegableDOS" class="accodion-collapse collapse" data-bs-parent="#EjemploAcordeon"&gt;
+                                &lt;div class="accordion-body"&gt;
+                                    Éste es el &lt;strong&gt;segundo ítem&lt;/strong&gt; del acordeón. Se muestra oculto por defecto (&lt;code&gt;.collapsed&lt;/code&gt;).
+                                &lt;/div&gt;
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+                        <!-- Item 3 -->
+                        &lt;div class="accordion-item"&gt;
+                            &lt;div class="accordion-header"&gt;
+                                &lt;button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#plegableTRES"&gt;
+                                    Accordion Item TRES
+                                &lt;/button&gt;
+                            &lt;/div&gt;
+                            &lt;div id="plegableTRES" class="accodion-collapse collapse" data-bs-parent="#EjemploAcordeon"&gt;
+                                &lt;div class="accordion-body"&gt;
+                                    Éste es el &lt;strong&gt;tercer ítem&lt;/strong&gt; del acordeón. Se muestra por defecto (&lt;code&gt;.collapsed&lt;/code&gt;).
+                                &lt;/div&gt;
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;                
+                </code></pre>
+            </div>
+        </div>
+        <hr>
+        <div class="row justify-content-center">
+            <div class="col-auto text-center">
+                <h2>Carousel</h2>
+            </div>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="col-6">
+                <div class="carousel slide" data-bs-ride="carousel" id="ejemplo-carousel">
+                    <!-- Primera parte con las imágenes de la presentación -->
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="../images/vegamedia01.jpg" alt="Fachada" class="d-block w-100">
+                            <div class="carousel-caption">
+                                <h4> C.E.S. Vega Media </h4>
+                                <p> Ctra. Mula, 37 - Alguazas (Murcia) </p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../images/vegamedia02.jpg" alt="Patio Infantil" class="d-block w-100">
+                            <div class="carousel-caption">
+                                <h4> Patio de Infantil </h4>
+                                <p> 3, 4 y 5 años </p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../images/vegamedia03.jpg" alt="Campo de fútbol" class="d-block w-100">
+                            <div class="carousel-caption">
+                                <h4> Instalaciones deportivas </h4>
+                                <p> Campo de fútbol municipal de Alguazas </p>
+                            </div>
+                        </div>
+                    </div>
+            
+                    <!-- Segunda parte con los controles derecha e izquierda -->
+                    <button class="carousel-control-prev" type="button" data-bs-slide="prev" data-bs-target="#ejemplo-carousel">
+                        <span class="carousel-control-prev-icon"></span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-slide="next" data-bs-target="#ejemplo-carousel">
+                        <span class="carousel-control-next-icon"></span>
+                    </button>
+            
+                    <!-- Tercera parte con los indicadores -->
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#ejemplo-carousel" data-bs-slide-to="0" class="active"></button>
+                        <button type="button" data-bs-target="#ejemplo-carousel" data-bs-slide-to="1"></button>
+                        <button type="button" data-bs-target="#ejemplo-carousel" data-bs-slide-to="2"></button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6">
+                <pre><code>
+                    &lt;!DOCTYPE html&gt;
+                    &lt;html&gt;
+                    &lt;head&gt;
+                        &lt;meta charset="utf-8"&gt;
+                        &lt;meta name="viewport" content="width=device-width, initial-scale=1"&gt;
+                        &lt;link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css"&gt;
+                        &lt;script src="../js/bootstrap.bundle.min.js"&gt;&lt;/script&gt;
+                        &lt;title&gt;Carousel&lt;/title&gt;
+                        &lt;style&gt;
+                            .carousel-caption {
+                                color: black;
+                            }
+                        &lt;/style&gt;
+                    &lt;/head&gt;
+                    &lt;body&gt;
+                        &lt;div class="carousel slide" data-bs-ride="carousel" id="ejemplo-carousel"&gt;
+                            <!-- Primera parte con las imágenes de la presentación -->
+                            &lt;div class="carousel-inner"&gt;
+                                &lt;div class="carousel-item active"&gt;
+                                    &lt;img src="../images/vegamedia01.jpg" alt="Fachada" class="d-block w-100"&gt;
+                                    &lt;div class="carousel-caption"&gt;
+                                        &lt;h4&gt; C.E.S. Vega Media &lt;/h4&gt;
+                                        &lt;p&gt; Ctra. Mula, 37 - Alguazas (Murcia) &lt;/p&gt;
+                                    &lt;/div&gt;
+                                &lt;/div&gt;
+                                &lt;div class="carousel-item"&gt;
+                                    &lt;img src="../images/vegamedia02.jpg" alt="Patio Infantil" class="d-block w-100"&gt;
+                                    &lt;div class="carousel-caption"&gt;
+                                        &lt;h4&gt; Patio de Infantil &lt;/h4&gt;
+                                        &lt;p&gt; 3, 4 y 5 años &lt;/p&gt;
+                                    &lt;/div&gt;
+                                &lt;/div&gt;
+                                &lt;div class="carousel-item"&gt;
+                                    &lt;img src="../images/vegamedia03.jpg" alt="Campo de fútbol" class="d-block w-100"&gt;
+                                    &lt;div class="carousel-caption"&gt;
+                                        &lt;h4&gt; Instalaciones deportivas &lt;/h4&gt;
+                                        &lt;p&gt; Campo de fútbol municipal de Alguazas &lt;/p&gt;
+                                    &lt;/div&gt;
+                                &lt;/div&gt;
+                            &lt;/div&gt;
+                    
+                            <!-- Segunda parte con los controles derecha e izquierda -->
+                            &lt;button class="carousel-control-prev" type="button" data-bs-slide="prev" data-bs-target="#ejemplo-carousel"&gt;
+                                &lt;span class="carousel-control-prev-icon"&gt;&lt;/span&gt;
+                            &lt;/button&gt;
+                            &lt;button class="carousel-control-next" type="button" data-bs-slide="next" data-bs-target="#ejemplo-carousel"&gt;
+                                &lt;span class="carousel-control-next-icon"&gt;&lt;/span&gt;
+                            &lt;/button&gt;
+                    
+                            <!-- Tercera parte con los indicadores -->
+                            &lt;div class="carousel-indicators"&gt;
+                                &lt;button type="button" data-bs-target="#ejemplo-carousel" data-bs-slide-to="0" class="active"&gt;&lt;/button&gt;
+                                &lt;button type="button" data-bs-target="#ejemplo-carousel" data-bs-slide-to="1"&gt;&lt;/button&gt;
+                                &lt;button type="button" data-bs-target="#ejemplo-carousel" data-bs-slide-to="2"&gt;&lt;/button&gt;
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+                    &lt;/body&gt;
+                    &lt;/html&gt;                    
+                </code></pre>
+            </div>
+        </div>
+        <hr>
+        <div class="row justify-content-center">
+            <div class="col-auto text-center">
+                <h2>Ventanas modales</h2>
+            </div>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="col-6">
+                <h3>Modal Básico</h3>
+                <!-- Botón para abrir el Modal -->
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">Abrir Modal</button>
+
+                <!-- Ventana Modal -->
+                <div class="modal fade" id="myModal">
+                    <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-sm"> <!--modal-sm(pequeña) || modal-lg(grande) || modal-xl(extra grande) || modal-fullscreen-->
+                        <div class="modal-content">
+                            <!-- Modal header -->
+                            <div class="modal-header">
+                                <h4 class="modal-title"> Título del Modal </h4>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                            </div>
+
+                            <!-- Modal body -->
+                            <div class="modal-body">
+                                <p>Contenido del Modal</p>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, eum. Et eligendi maxime necessitatibus aperiam laborum repellat molestiae doloremque qui at optio, deleniti aspernatur adipisci, sint beatae impedit a repellendus?</p>
+                            </div>
+
+                            <!-- Modal footer -->
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cerrar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6">
+                <pre><code>
+                    &lt;h3&gt;Modal Básico&lt;/h3&gt;
+
+                    <!-- Botón para abrir el Modal -->
+                    &lt;button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal"&gt;Abrir Modal&lt;/button&gt;
+                    
+                    <!-- Ventana Modal -->
+                    &lt;div class="modal fade" id="myModal"&gt;
+                        &lt;div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-sm"&gt; 
+                            <!--modal-sm(pequeña) || modal-lg(grande) || modal-xl(extra grande) || modal-fullscreen-->
+                            &lt;div class="modal-content"&gt;
+                    
+                                <!-- Modal header -->
+                                &lt;div class="modal-header"&gt;
+                                    &lt;h4 class="modal-title"&gt; Título del Modal &lt;/h4&gt;
+                                    &lt;button type="button" class="btn-close" data-bs-dismiss="modal"&gt;&lt;/button&gt;
+                                &lt;/div&gt;
+                    
+                                <!-- Modal body -->
+                                &lt;div class="modal-body"&gt;
+                                    &lt;p&gt;Contenido del Modal&lt;/p&gt;
+                                    &lt;p&gt;Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, eum. Et eligendi maxime necessitatibus aperiam laborum repellat molestiae doloremque qui at optio, deleniti aspernatur adipisci, sint beatae impedit a repellendus?&lt;/p&gt;
+                                &lt;/div&gt;
+                    
+                                <!-- Modal footer -->
+                                &lt;div class="modal-footer"&gt;
+                                    &lt;button type="button" class="btn btn-danger" data-bs-dismiss="modal"&gt;Cerrar&lt;/button&gt;
+                                &lt;/div&gt;
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;                    
+                </code></pre>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -9,10 +9,10 @@
 	<style type="text/css">
 		.row{
 			background: #E8E8E8;
-			height: 150px;
-			margin-top: 20px;
+			margin-top: 40px;
+			margin-bottom: 40px;
 		}
-		.col{
+		.columna{
 			background: #F2F2F2;
 			padding: 10px;
 			text-align: center;
@@ -23,19 +23,13 @@
 <body>
 	<div class="container">
 		<div class="row">
-			<div class="col">Columna 1</div>
-			<div class="col">Columna 2</div>
-			<div class="col">Columna 3</div>
+			<div class="columna col-2 offset-1">Columna</div>
+			<div class="columna col-2 offset-md-2">Columna</div>
+			<div class="columna col-2 offset-md-2">Columna</div>
 		</div>
 		<div class="row">
-			<div class="col">Columna 1</div>
-			<div class="col">Columna 2</div>
-			<div class="col">Columna 3</div>
-		</div>
-		<div class="row">
-			<div class="col">Columna 1</div>
-			<div class="col">Columna 2</div>
-			<div class="col">Columna 3</div>
+			<div class="columna col-4 offset-1">Columna</div>
+			<div class="columna col-4 offset-md-3">Columna</div>
 		</div>
 	</div>
 </body>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
+	<script src="../js/bootstrap.bundle.min.js"></script>
+	<title>Tamaño pantallas responsive</title>
+	<style type="text/css">
+		.row>div{
+			background: #E8E8E8;
+			border: 1px solid #808080;
+			margin: 5px 0px;
+			text-align: center;
+		}
+	</style>
+</head>
+<body>
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col d-block d-sm-none">Pantalla de tamaño extra pequeño (xs)</div>
+			<div class="col d-none d-sm-block d-md-none">Pantalla de tamaño pequeño (sm)</div>
+			<div class="col d-none d-md-block d-lg-none">Pantalla de tamaño mediano (md)</div>
+			<div class="col d-none d-lg-block d-xl-none">Pantalla de tamaño grande (lg)</div>
+			<div class="col d-none d-xl-block d-xxl-none">Pantalla de tamaño extra grande (xl)</div>
+			<div class="col d-none d-xxl-block">Pantalla de tamaño extra extra grande (xxl)</div>
+		</div>
+	</div>
+</body>
+</html>

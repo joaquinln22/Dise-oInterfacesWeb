@@ -40,6 +40,52 @@
         .ejemplo>div{
             background-color: #E2E2E2; border: 1px solid #808080; text-align: center; margin: 5px 0;
         }
+        header, footer{
+			background-color: black;
+			color: white;
+			text-align: center;
+			margin: 2px 0px;
+		}
+		.pantalla{
+			background-color: #66FFFF;
+			border: 1px solid white;
+			text-align: center;
+		}
+		.bloque1{
+			background-color: #99CCFF;
+			text-align: center;
+			border: 1px solid white;
+			height: 50px;
+		}
+		.bloque2{
+			background-color: #669999;
+			text-align: center;
+			border: 1px solid white;
+			height: 50px;
+		}
+		.bloque3{
+			background-color: #FFCC99;
+			text-align: center;
+			border: 1px solid white;
+			height: 50px;
+		}
+        .bloque4{
+			background-color: #00CC99;
+			text-align: center;
+			border: 1px solid white;
+		}
+		.bloque5{
+			background-color: #669999;
+			text-align: center;
+			border: 1px solid white;
+			height: 75px;
+		}
+		.bloque6{
+			background-color: #99CCFF;
+			text-align: center;
+			border: 1px solid white;
+			height: 50px;
+        }
     </style>
 </head>
 <body>
@@ -491,6 +537,7 @@
                             <div class="ejemplo row">
                                 <div class="col-12 col-md-12">Columna 2a</div>
                                 <div class="col-12 col-md-12">Columna 2a</div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -527,7 +574,1068 @@
             </div>
         </div>
         <hr>
-        
+        <div class="row">
+            <div class="col-6">
+                <div class="container">
+                    <div class="ejemplo row">
+                        <div class="col-4">Columna 1</div>
+                        <div class="col-8">Columna 2
+                            <div class="ejemplo row">
+                                <div class="col-12 col-md-6">Columna 2a</div>
+                                <div class="col-12 col-md-6">Columna 2a</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6">
+                <pre><code>
+                    &lt;!DOCTYPE html&gt;
+                    &lt;html&gt;
+                    &lt;head&gt;
+                        &lt;meta charset="utf-8"&gt;
+                        &lt;meta name="viewport" content="width=device-width, initial-scale=1"&gt;
+                        &lt;link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css"&gt;
+                        &lt;script src="../js/bootstrap.bundle.min.js"&gt;&lt;/script&gt;
+                        &lt;title&gt;Ejemplo 12&lt;/title&gt;
+                        &lt;style type="text/css"&gt;
+                            .row&gt;div{background-color: #E2E2E2; border: 1px solid #808080; text-align: center; margin: 5px 0}	
+                        &lt;/style&gt;
+                    &lt;/head&gt;
+                    &lt;body&gt;
+                        &lt;div class="container"&gt;
+                            &lt;div class="row"&gt;
+                                &lt;div class="col-4"&gt;Columna 1&lt;/div&gt;
+                                &lt;div class="col-8"&gt;Columna 2
+                                    &lt;div class="row"&gt;
+                                        &lt;div class="col-12 col-md-6"&gt;Columna 2a&lt;/div&gt;
+                                        &lt;div class="col-12 col-md-6"&gt;Columna 2a&lt;/div&gt;
+                                    &lt;/div&gt;
+                                &lt;/div&gt;
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+                    &lt;/body&gt;
+                    &lt;/html&gt;
+                </code></pre>
+            </div>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="col-6">
+                <div class="container">
+                    <div class="ejemplo row">
+                        <div class="col order-2">Columna 1, pero segunda</div>
+                        <div class="col order-3">Columna 2, pero última</div>
+                        <div class="col order-1">Columna 3, pero primera</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6">
+                <pre><code>
+                    &lt;!DOCTYPE html&gt;
+                    &lt;html&gt;
+                    &lt;head&gt;
+                        &lt;meta charset="utf-8"&gt;
+                        &lt;meta name="viewport" content="width=device-width, initial-scale=1"&gt;
+                        &lt;link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css"&gt;
+                        &lt;script src="../js/bootstrap.bundle.min.js"&gt;&lt;/script&gt;
+                        &lt;title&gt;Ejemplo 13&lt;/title&gt;
+                        &lt;style type="text/css"&gt;
+                            .row&gt;div{background-color: #E2E2E2; border: 1px solid #808080; text-align: center; margin: 5px 0}	
+                        &lt;/style&gt;
+                    &lt;/head&gt;
+                    &lt;body&gt;
+                        &lt;div class="container"&gt;
+                            &lt;div class="row"&gt;
+                                &lt;div class="col order-2"&gt;Columna 1, pero segunda&lt;/div&gt;
+                                &lt;div class="col order-3"&gt;Columna 2, pero última&lt;/div&gt;
+                                &lt;div class="col order-1"&gt;Columna 3, pero primera&lt;/div&gt;
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+                    &lt;/body&gt;
+                    &lt;/html&gt;
+                </code></pre>
+            </div>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="col-6">
+                <div class="container">
+                    <div class="row" style="background: #E8E8E8; height: 150px; margin-top: 20px;">
+                        <div class="col" style="background: #F2F2F2; padding: 10px; text-align: center; border: 1px solid #4D5061">Columna 1</div>
+                        <div class="col" style="background: #F2F2F2; padding: 10px; text-align: center; border: 1px solid #4D5061">Columna 2</div>
+                        <div class="col" style="background: #F2F2F2; padding: 10px; text-align: center; border: 1px solid #4D5061">Columna 3</div>
+                    </div>
+                    <div class="row" style="background: #E8E8E8; height: 150px; margin-top: 20px;">
+                        <div class="col" style="background: #F2F2F2; padding: 10px; text-align: center; border: 1px solid #4D5061">Columna 1</div>
+                        <div class="col" style="background: #F2F2F2; padding: 10px; text-align: center; border: 1px solid #4D5061">Columna 2</div>
+                        <div class="col" style="background: #F2F2F2; padding: 10px; text-align: center; border: 1px solid #4D5061">Columna 3</div>
+                    </div>
+                    <div class="row" style="background: #E8E8E8; height: 150px; margin-top: 20px;">
+                        <div class="col" style="background: #F2F2F2; padding: 10px; text-align: center; border: 1px solid #4D5061">Columna 1</div>
+                        <div class="col" style="background: #F2F2F2; padding: 10px; text-align: center; border: 1px solid #4D5061">Columna 2</div>
+                        <div class="col" style="background: #F2F2F2; padding: 10px; text-align: center; border: 1px solid #4D5061">Columna 3</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6">
+                <pre><code>
+                    &lt;!DOCTYPE html&gt;
+                    &lt;html&gt;
+                    &lt;head&gt;
+                        &lt;meta charset="utf-8"&gt;
+                        &lt;meta name="viewport" content="width=device-width, initial-scale=1"&gt;
+                        &lt;link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css"&gt;
+                        &lt;script src="../js/bootstrap.bundle.min.js"&gt;&lt;/script&gt;
+                        &lt;title&gt;Hola Mundo&lt;/title&gt;
+                        &lt;style type="text/css"&gt;
+                            .row{
+                                background: #E8E8E8;
+                                height: 150px;
+                                margin-top: 20px;
+                            }
+                            .col{
+                                background: #F2F2F2;
+                                padding: 10px;
+                                text-align: center;
+                                border: 1px solid #4D5061;
+                            }
+                        &lt;/style&gt;
+                    &lt;/head&gt;
+                    &lt;body&gt;
+                        &lt;div class="container"&gt;
+                            &lt;div class="row"&gt;
+                                &lt;div class="col"&gt;Columna 1&lt;/div&gt;
+                                &lt;div class="col"&gt;Columna 2&lt;/div&gt;
+                                &lt;div class="col"&gt;Columna 3&lt;/div&gt;
+                            &lt;/div&gt;
+                            &lt;div class="row"&gt;
+                                &lt;div class="col"&gt;Columna 1&lt;/div&gt;
+                                &lt;div class="col"&gt;Columna 2&lt;/div&gt;
+                                &lt;div class="col"&gt;Columna 3&lt;/div&gt;
+                            &lt;/div&gt;
+                            &lt;div class="row"&gt;
+                                &lt;div class="col"&gt;Columna 1&lt;/div&gt;
+                                &lt;div class="col"&gt;Columna 2&lt;/div&gt;
+                                &lt;div class="col"&gt;Columna 3&lt;/div&gt;
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+                    &lt;/body&gt;
+                    &lt;/html&gt;
+                </code></pre>
+            </div>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="col-6">
+                <div class="container">
+                    <div class="row align-items-start" style="background: #E8E8E8; height: 150px; margin-top: 20px;">
+                        <div class="col" style="background: #F2F2F2; padding: 10px; text-align: center; border: 1px solid #4D5061">Columna 1</div>
+                        <div class="col" style="background: #F2F2F2; padding: 10px; text-align: center; border: 1px solid #4D5061">Columna 2</div>
+                        <div class="col" style="background: #F2F2F2; padding: 10px; text-align: center; border: 1px solid #4D5061">Columna 3</div>
+                    </div>
+                    <div class="row align-items-center" style="background: #E8E8E8; height: 150px; margin-top: 20px;">
+                        <div class="col" style="background: #F2F2F2; padding: 10px; text-align: center; border: 1px solid #4D5061">Columna 1</div>
+                        <div class="col" style="background: #F2F2F2; padding: 10px; text-align: center; border: 1px solid #4D5061">Columna 2</div>
+                        <div class="col" style="background: #F2F2F2; padding: 10px; text-align: center; border: 1px solid #4D5061">Columna 3</div>
+                    </div>
+                    <div class="row align-items-end" style="background: #E8E8E8; height: 150px; margin-top: 20px;">
+                        <div class="col" style="background: #F2F2F2; padding: 10px; text-align: center; border: 1px solid #4D5061">Columna 1</div>
+                        <div class="col" style="background: #F2F2F2; padding: 10px; text-align: center; border: 1px solid #4D5061">Columna 2</div>
+                        <div class="col" style="background: #F2F2F2; padding: 10px; text-align: center; border: 1px solid #4D5061">Columna 3</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6">
+                <pre><code>
+                    &lt;!DOCTYPE html&gt;
+                    &lt;html&gt;
+                    &lt;head&gt;
+                        &lt;meta charset="utf-8"&gt;
+                        &lt;meta name="viewport" content="width=device-width, initial-scale=1"&gt;
+                        &lt;link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css"&gt;
+                        &lt;script src="../js/bootstrap.bundle.min.js"&gt;&lt;/script&gt;
+                        &lt;title&gt;Hola Mundo&lt;/title&gt;
+                        &lt;style type="text/css"&gt;
+                            .row{
+                                background: #E8E8E8;
+                                height: 150px;
+                                margin-top: 20px;
+                            }
+                            .col{
+                                background: #F2F2F2;
+                                padding: 10px;
+                                text-align: center;
+                                border: 1px solid #4D5061;
+                            }
+                        &lt;/style&gt;
+                    &lt;/head&gt;
+                    &lt;body&gt;
+                        &lt;div class="container"&gt;
+                            &lt;div class="row align-items-start"&gt;
+                                &lt;div class="col"&gt;Columna 1&lt;/div&gt;
+                                &lt;div class="col"&gt;Columna 2&lt;/div&gt;
+                                &lt;div class="col"&gt;Columna 3&lt;/div&gt;
+                            &lt;/div&gt;
+                            &lt;div class="row align-items-center"&gt;
+                                &lt;div class="col"&gt;Columna 1&lt;/div&gt;
+                                &lt;div class="col"&gt;Columna 2&lt;/div&gt;
+                                &lt;div class="col"&gt;Columna 3&lt;/div&gt;
+                            &lt;/div&gt;
+                            &lt;div class="row align-items-end"&gt;
+                                &lt;div class="col"&gt;Columna 1&lt;/div&gt;
+                                &lt;div class="col"&gt;Columna 2&lt;/div&gt;
+                                &lt;div class="col"&gt;Columna 3&lt;/div&gt;
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+                    &lt;/body&gt;
+                    &lt;/html&gt;
+                </code></pre>
+            </div>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="col-6">
+                <div class="container">
+                    <div class="row" style="background: #E8E8E8; height: 150px; margin-top: 20px;">
+                        <div class="col align-self-start" style="background: #F2F2F2; padding: 10px; text-align: center; border: 1px solid #4D5061">Columna 1</div>
+                        <div class="col align-self-center" style="background: #F2F2F2; padding: 10px; text-align: center; border: 1px solid #4D5061">Columna 2</div>
+                        <div class="col align-self-end" style="background: #F2F2F2; padding: 10px; text-align: center; border: 1px solid #4D5061">Columna 3</div>
+                    </div>
+                    <div class="row align-items-center" style="background: #E8E8E8; height: 150px; margin-top: 20px;">
+                        <div class="col" style="background: #F2F2F2; padding: 10px; text-align: center; border: 1px solid #4D5061">Columna 1</div>
+                        <div class="col" style="background: #F2F2F2; padding: 10px; text-align: center; border: 1px solid #4D5061">Columna 2</div>
+                        <div class="col" style="background: #F2F2F2; padding: 10px; text-align: center; border: 1px solid #4D5061">Columna 3</div>
+                    </div>
+                    <div class="row align-items-end" style="background: #E8E8E8; height: 150px; margin-top: 20px;">
+                        <div class="col" style="background: #F2F2F2; padding: 10px; text-align: center; border: 1px solid #4D5061">Columna 1</div>
+                        <div class="col" style="background: #F2F2F2; padding: 10px; text-align: center; border: 1px solid #4D5061">Columna 2</div>
+                        <div class="col" style="background: #F2F2F2; padding: 10px; text-align: center; border: 1px solid #4D5061">Columna 3</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6">
+                <pre><code>
+                    &lt;!DOCTYPE html&gt;
+                    &lt;html&gt;
+                    &lt;head&gt;
+                        &lt;meta charset="utf-8"&gt;
+                        &lt;meta name="viewport" content="width=device-width, initial-scale=1"&gt;
+                        &lt;link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css"&gt;
+                        &lt;script src="../js/bootstrap.bundle.min.js"&gt;&lt;/script&gt;
+                        &lt;title&gt;Hola Mundo&lt;/title&gt;
+                        &lt;style type="text/css"&gt;
+                            .row{
+                                background: #E8E8E8;
+                                height: 150px;
+                                margin-top: 20px;
+                            }
+                            .col{
+                                background: #F2F2F2;
+                                padding: 10px;
+                                text-align: center;
+                                border: 1px solid #4D5061;
+                            }
+                        &lt;/style&gt;
+                    &lt;/head&gt;
+                    &lt;body&gt;
+                        &lt;div class="container"&gt;
+                            &lt;div class="row"&gt;
+                                &lt;div class="col align-self-start"&gt;Columna 1&lt;/div&gt;
+                                &lt;div class="col align-self-center"&gt;Columna 2&lt;/div&gt;
+                                &lt;div class="col align-self-end"&gt;Columna 3&lt;/div&gt;
+                            &lt;/div&gt;
+                            &lt;div class="row align-items-center"&gt;
+                                &lt;div class="col"&gt;Columna 1&lt;/div&gt;
+                                &lt;div class="col"&gt;Columna 2&lt;/div&gt;
+                                &lt;div class="col"&gt;Columna 3&lt;/div&gt;
+                            &lt;/div&gt;
+                            &lt;div class="row align-items-end"&gt;
+                                &lt;div class="col"&gt;Columna 1&lt;/div&gt;
+                                &lt;div class="col"&gt;Columna 2&lt;/div&gt;
+                                &lt;div class="col"&gt;Columna 3&lt;/div&gt;
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+                    &lt;/body&gt;
+                    &lt;/html&gt;
+                </code></pre>
+            </div>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="col-6">
+                <div class="container">
+                    <div class="row justify-content-start" style="background: #E8E8E8; margin-top: 40px">
+                        <div class="col-4" style="background: #F2F2F2; padding: 10px; text-align: center; border: 1px solid #4D5061;">Columna 1 de 2</div>
+                        <div class="col-4" style="background: #F2F2F2; padding: 10px; text-align: center; border: 1px solid #4D5061;">Columna 2 de 2</div>
+                    </div>
+                    <div class="row justify-content-center" style="background: #E8E8E8; margin-top: 40px">
+                        <div class="col-4" style="background: #F2F2F2; padding: 10px; text-align: center; border: 1px solid #4D5061;">Columna 1 de 2</div>
+                        <div class="col-4" style="background: #F2F2F2; padding: 10px; text-align: center; border: 1px solid #4D5061;">Columna 2 de 2</div>
+                    </div>
+                    <div class="row justify-content-end" style="background: #E8E8E8; margin-top: 40px">
+                        <div class="col-4" style="background: #F2F2F2; padding: 10px; text-align: center; border: 1px solid #4D5061;">Columna 1 de 2</div>
+                        <div class="col-4" style="background: #F2F2F2; padding: 10px; text-align: center; border: 1px solid #4D5061;">Columna 2 de 2</div>
+                    </div>
+                    <div class="row justify-content-around" style="background: #E8E8E8; margin-top: 40px">
+                        <div class="col-4" style="background: #F2F2F2; padding: 10px; text-align: center; border: 1px solid #4D5061;">Columna 1 de 2</div>
+                        <div class="col-4" style="background: #F2F2F2; padding: 10px; text-align: center; border: 1px solid #4D5061;">Columna 2 de 2</div>
+                    </div>
+                    <div class="row justify-content-between" style="background: #E8E8E8; margin-top: 40px">
+                        <div class="col-4" style="background: #F2F2F2; padding: 10px; text-align: center; border: 1px solid #4D5061;">Columna 1 de 2</div>
+                        <div class="col-4" style="background: #F2F2F2; padding: 10px; text-align: center; border: 1px solid #4D5061;">Columna 2 de 2</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6">
+                <pre><code>
+                    &lt;!DOCTYPE html&gt;
+                    &lt;html&gt;
+                    &lt;head&gt;
+                        &lt;meta charset="utf-8"&gt;
+                        &lt;meta name="viewport" content="width=device-width, initial-scale=1"&gt;
+                        &lt;link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css"&gt;
+                        &lt;script src="../js/bootstrap.bundle.min.js"&gt;&lt;/script&gt;
+                        &lt;title&gt;Hola Mundo&lt;/title&gt;
+                        &lt;style type="text/css"&gt;
+                            .row{
+                                background: #E8E8E8;
+                                margin-top: 40px;
+                            }
+                            .columna{
+                                background: #F2F2F2;
+                                padding: 10px;
+                                text-align: center;
+                                border: 1px solid #4D5061;
+                            }
+                        &lt;/style&gt;
+                    &lt;/head&gt;
+                    &lt;body&gt;
+                        &lt;div class="container"&gt;
+                            &lt;div class="row justify-content-start"&gt;
+                                &lt;div class="columna col-4"&gt;Columna 1 de 2&lt;/div&gt;
+                                &lt;div class="columna col-4"&gt;Columna 2 de 2&lt;/div&gt;
+                            &lt;/div&gt;
+                            &lt;div class="row justify-content-center"&gt;
+                                &lt;div class="columna col-4"&gt;Columna 1 de 2&lt;/div&gt;
+                                &lt;div class="columna col-4"&gt;Columna 2 de 2&lt;/div&gt;
+                            &lt;/div&gt;
+                            &lt;div class="row justify-content-end"&gt;
+                                &lt;div class="columna col-4"&gt;Columna 1 de 2&lt;/div&gt;
+                                &lt;div class="columna col-4"&gt;Columna 2 de 2&lt;/div&gt;
+                            &lt;/div&gt;
+                            &lt;div class="row justify-content-around"&gt;
+                                &lt;div class="columna col-4"&gt;Columna 1 de 2&lt;/div&gt;
+                                &lt;div class="columna col-4"&gt;Columna 2 de 2&lt;/div&gt;
+                            &lt;/div&gt;
+                            &lt;div class="row justify-content-between"&gt;
+                                &lt;div class="columna col-4"&gt;Columna 1 de 2&lt;/div&gt;
+                                &lt;div class="columna col-4"&gt;Columna 2 de 2&lt;/div&gt;
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+                    &lt;/body&gt;
+                    &lt;/html&gt;
+                </code></pre>
+            </div>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="col-6">
+                <div class="container">
+                    <div class="row justify-content-center" style="background: #E8E8E8; margin-top: 40px">
+                        <div class="col-3" style="background: #F2F2F2; padding: 10px; text-align: center; border: 1px solid #4D5061;">Columna 1 de 3</div>
+                        <div class="col-3" style="background: #F2F2F2; padding: 10px; text-align: center; border: 1px solid #4D5061;">Columna 2 de 3</div>
+                        <div class="col-3" style="background: #F2F2F2; padding: 10px; text-align: center; border: 1px solid #4D5061;">Columna 3 de 3</div>
+                    </div>
+                    <div class="row justify-content-start" style="background: #E8E8E8; margin-top: 40px">
+                        <div class="col-3" style="background: #F2F2F2; padding: 10px; text-align: center; border: 1px solid #4D5061;">Columna 1 de 3</div>
+                        <div class="col-3" style="background: #F2F2F2; padding: 10px; text-align: center; border: 1px solid #4D5061;">Columna 2 de 3</div>
+                        <div class="col-3" style="background: #F2F2F2; padding: 10px; text-align: center; border: 1px solid #4D5061;">Columna 3 de 3</div>
+                    </div>
+                    <div class="row justify-content-end" style="background: #E8E8E8; margin-top: 40px">
+                        <div class="col-3" style="background: #F2F2F2; padding: 10px; text-align: center; border: 1px solid #4D5061;">Columna 1 de 3</div>
+                        <div class="col-3" style="background: #F2F2F2; padding: 10px; text-align: center; border: 1px solid #4D5061;">Columna 2 de 3</div>
+                        <div class="col-3" style="background: #F2F2F2; padding: 10px; text-align: center; border: 1px solid #4D5061;">Columna 3 de 3</div>
+                    </div>
+                    <div class="row justify-content-between" style="background: #E8E8E8; margin-top: 40px">
+                        <div class="col-3" style="background: #F2F2F2; padding: 10px; text-align: center; border: 1px solid #4D5061;">Columna 1 de 3</div>
+                        <div class="col-3" style="background: #F2F2F2; padding: 10px; text-align: center; border: 1px solid #4D5061;">Columna 2 de 3</div>
+                        <div class="col-3" style="background: #F2F2F2; padding: 10px; text-align: center; border: 1px solid #4D5061;">Columna 3 de 3</div>
+                    </div>
+                    <div class="row justify-content-around" style="background: #E8E8E8; margin-top: 40px">
+                        <div class="col-3" style="background: #F2F2F2; padding: 10px; text-align: center; border: 1px solid #4D5061;">Columna 1 de 3</div>
+                        <div class="col-3" style="background: #F2F2F2; padding: 10px; text-align: center; border: 1px solid #4D5061;">Columna 2 de 3</div>
+                        <div class="col-3" style="background: #F2F2F2; padding: 10px; text-align: center; border: 1px solid #4D5061;">Columna 3 de 3</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6">
+                <pre><code>
+                    &lt;!DOCTYPE html&gt;
+                    &lt;html&gt;
+                    &lt;head&gt;
+                        &lt;meta charset="utf-8"&gt;
+                        &lt;meta name="viewport" content="width=device-width, initial-scale=1"&gt;
+                        &lt;link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css"&gt;
+                        &lt;script src="../js/bootstrap.bundle.min.js"&gt;&lt;/script&gt;
+                        &lt;title&gt;Hola Mundo&lt;/title&gt;
+                        &lt;style type="text/css"&gt;
+                            .row{
+                                background: #E8E8E8;
+                                margin-top: 40px;
+                            }
+                            .columna{
+                                background: #F2F2F2;
+                                padding: 10px;
+                                text-align: center;
+                                border: 1px solid #4D5061;
+                            }
+                        &lt;/style&gt;
+                    &lt;/head&gt;
+                    &lt;body&gt;
+                        &lt;div class="container"&gt;
+                            &lt;div class="row justify-content-center"&gt;
+                                &lt;div class="columna col-3"&gt;Columna 1 de 3&lt;/div&gt;
+                                &lt;div class="columna col-3"&gt;Columna 2 de 3&lt;/div&gt;
+                                &lt;div class="columna col-3"&gt;Columna 3 de 3&lt;/div&gt;
+                            &lt;/div&gt;
+                            &lt;div class="row justify-content-start"&gt;
+                                &lt;div class="columna col-3"&gt;Columna 1 de 3&lt;/div&gt;
+                                &lt;div class="columna col-3"&gt;Columna 2 de 3&lt;/div&gt;
+                                &lt;div class="columna col-3"&gt;Columna 3 de 3&lt;/div&gt;
+                            &lt;/div&gt;
+                            &lt;div class="row justify-content-end"&gt;
+                                &lt;div class="columna col-3"&gt;Columna 1 de 3&lt;/div&gt;
+                                &lt;div class="columna col-3"&gt;Columna 2 de 3&lt;/div&gt;
+                                &lt;div class="columna col-3"&gt;Columna 3 de 3&lt;/div&gt;
+                            &lt;/div&gt;
+                            &lt;div class="row justify-content-between"&gt;
+                                &lt;div class="columna col-3"&gt;Columna 1 de 3&lt;/div&gt;
+                                &lt;div class="columna col-3"&gt;Columna 2 de 3&lt;/div&gt;
+                                &lt;div class="columna col-3"&gt;Columna 3 de 3&lt;/div&gt;
+                            &lt;/div&gt;
+                            &lt;div class="row justify-content-around"&gt;
+                                &lt;div class="columna col-3"&gt;Columna 1 de 3&lt;/div&gt;
+                                &lt;div class="columna col-3"&gt;Columna 2 de 3&lt;/div&gt;
+                                &lt;div class="columna col-3"&gt;Columna 3 de 3&lt;/div&gt;
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+                    &lt;/body&gt;
+                    &lt;/html&gt;
+                </code></pre>
+            </div>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="col-6">
+                <div class="container">
+                    <div class="row" style="background: #E8E8E8; margin-top: 40px; margin-bottom: 40px;">
+                        <div class="col-2" style="background: #F2F2F2; padding: 10px; text-align: center; border: 1px solid #4D5061;">Columna</div>
+                    </div>
+                    <div class="row" style="background: #E8E8E8; margin-top: 40px; margin-bottom: 40px;">
+                        <div class="col-2 offset-2" style="background: #F2F2F2; padding: 10px; text-align: center; border: 1px solid #4D5061;">Columna</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6">
+                <pre><code>
+                    &lt;!DOCTYPE html&gt;
+                    &lt;html&gt;
+                    &lt;head&gt;
+                        &lt;meta charset="utf-8"&gt;
+                        &lt;meta name="viewport" content="width=device-width, initial-scale=1"&gt;
+                        &lt;link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css"&gt;
+                        &lt;script src="../js/bootstrap.bundle.min.js"&gt;&lt;/script&gt;
+                        &lt;title&gt;Hola Mundo&lt;/title&gt;
+                        &lt;style type="text/css"&gt;
+                            .row{
+                                background: #E8E8E8;
+                                margin-top: 40px;
+                                margin-bottom: 40px;
+                            }
+                            .columna{
+                                background: #F2F2F2;
+                                padding: 10px;
+                                text-align: center;
+                                border: 1px solid #4D5061;
+                            }
+                        &lt;/style&gt;
+                    &lt;/head&gt;
+                    &lt;body&gt;
+                        &lt;div class="container"&gt;
+                            &lt;div class="row"&gt;
+                                &lt;div class="columna col-2"&gt;Columna&lt;/div&gt;
+                            &lt;/div&gt;
+                            &lt;div class="row"&gt;
+                                &lt;div class="columna col-2 offset-2"&gt;Columna&lt;/div&gt;
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+                    &lt;/body&gt;
+                    &lt;/html&gt;
+                </code></pre>
+            </div>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="col-6">
+                <div class="container">
+                    <div class="row" style="background: #E8E8E8; margin-top: 40px; margin-bottom: 40px;">
+                        <div class="col-2 offset-10" style="background: #F2F2F2; padding: 10px; text-align: center; border: 1px solid #4D5061;">Columna</div>
+                    </div>
+                    <div class="row" style="background: #E8E8E8; margin-top: 40px; margin-bottom: 40px;">
+                        <div class="col-4 offset-4" style="background: #F2F2F2; padding: 10px; text-align: center; border: 1px solid #4D5061;">Columna</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6">
+                <pre><code>
+                    &lt;!DOCTYPE html&gt;
+                    &lt;html&gt;
+                    &lt;head&gt;
+                        &lt;meta charset="utf-8"&gt;
+                        &lt;meta name="viewport" content="width=device-width, initial-scale=1"&gt;
+                        &lt;link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css"&gt;
+                        &lt;script src="../js/bootstrap.bundle.min.js"&gt;&lt;/script&gt;
+                        &lt;title&gt;Hola Mundo&lt;/title&gt;
+                        &lt;style type="text/css"&gt;
+                            .row{
+                                background: #E8E8E8;
+                                margin-top: 40px;
+                                margin-bottom: 40px;
+                            }
+                            .columna{
+                                background: #F2F2F2;
+                                padding: 10px;
+                                text-align: center;
+                                border: 1px solid #4D5061;
+                            }
+                        &lt;/style&gt;
+                    &lt;/head&gt;
+                    &lt;body&gt;
+                        &lt;div class="container"&gt;
+                            &lt;div class="row"&gt;
+                                &lt;div class="columna col-2 offset-10"&gt;Columna&lt;/div&gt;
+                            &lt;/div&gt;
+                            &lt;div class="row"&gt;
+                                &lt;div class="columna col-4 offset-4"&gt;Columna&lt;/div&gt;
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+                    &lt;/body&gt;
+                    &lt;/html&gt;
+                </code></pre>
+            </div>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="col-6">
+                <div class="container">
+                    <div class="row" style="background: #E8E8E8; margin-top: 40px; margin-bottom: 40px;">
+                        <div class="col-2 offset-1" style="background: #F2F2F2; padding: 10px; text-align: center; border: 1px solid #4D5061;">Columna</div>
+                        <div class="col-2 offset-md-2" style="background: #F2F2F2; padding: 10px; text-align: center; border: 1px solid #4D5061;">Columna</div>
+                        <div class="col-2 offset-md-2" style="background: #F2F2F2; padding: 10px; text-align: center; border: 1px solid #4D5061;">Columna</div>
+                    </div>
+                    <div class="row" style="background: #E8E8E8; margin-top: 40px; margin-bottom: 40px;">
+                        <div class="col-4 offset-1" style="background: #F2F2F2; padding: 10px; text-align: center; border: 1px solid #4D5061;">Columna</div>
+                        <div class="col-2 offset-md-3" style="background: #F2F2F2; padding: 10px; text-align: center; border: 1px solid #4D5061;">Columna</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6">
+                <pre><code>
+                    &lt;!DOCTYPE html&gt;
+                    &lt;html&gt;
+                    &lt;head&gt;
+                        &lt;meta charset="utf-8"&gt;
+                        &lt;meta name="viewport" content="width=device-width, initial-scale=1"&gt;
+                        &lt;link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css"&gt;
+                        &lt;script src="../js/bootstrap.bundle.min.js"&gt;&lt;/script&gt;
+                        &lt;title&gt;Hola Mundo&lt;/title&gt;
+                        &lt;style type="text/css"&gt;
+                            .row{
+                                background: #E8E8E8;
+                                margin-top: 40px;
+                                margin-bottom: 40px;
+                            }
+                            .columna{
+                                background: #F2F2F2;
+                                padding: 10px;
+                                text-align: center;
+                                border: 1px solid #4D5061;
+                            }
+                        &lt;/style&gt;
+                    &lt;/head&gt;
+                    &lt;body&gt;
+                        &lt;div class="container"&gt;
+                            &lt;div class="row"&gt;
+                                &lt;div class="columna col-2 offset-1"&gt;Columna&lt;/div&gt;
+                                &lt;div class="columna col-2 offset-md-2"&gt;Columna&lt;/div&gt;
+                                &lt;div class="columna col-2 offset-md-2"&gt;Columna&lt;/div&gt;
+                            &lt;/div&gt;
+                            &lt;div class="row"&gt;
+                                &lt;div class="columna col-4 offset-1"&gt;Columna&lt;/div&gt;
+                                &lt;div class="columna col-4 offset-md-3"&gt;Columna&lt;/div&gt;
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+                    &lt;/body&gt;
+                    &lt;/html&gt;
+                </code></pre>
+            </div>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="col-6">
+                <div class="container">
+                    <div class="row" style="background: #E8E8E8; margin-top: 40px; margin-bottom: 40px;">
+                        <div class="col-md-4 offset-md-1 col-sm-4 offset-sm-0" style="background: #F2F2F2; padding: 10px; text-align: center; border: 1px solid #4D5061;">Columna</div>
+                        <div class="col-md-4 offset-md-2 col-sm-4 offset-sm-1" style="background: #F2F2F2; padding: 10px; text-align: center; border: 1px solid #4D5061;">Columna</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6">
+                <pre><code>
+                    &lt;!DOCTYPE html&gt;
+                    &lt;html&gt;
+                    &lt;head&gt;
+                        &lt;meta charset="utf-8"&gt;
+                        &lt;meta name="viewport" content="width=device-width, initial-scale=1"&gt;
+                        &lt;link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css"&gt;
+                        &lt;script src="../js/bootstrap.bundle.min.js"&gt;&lt;/script&gt;
+                        &lt;title&gt;Hola Mundo&lt;/title&gt;
+                        &lt;style type="text/css"&gt;
+                            .row{
+                                background: #E8E8E8;
+                                margin-top: 40px;
+                                margin-bottom: 40px;
+                            }
+                            .columna{
+                                background: #F2F2F2;
+                                padding: 10px;
+                                text-align: center;
+                                border: 1px solid #4D5061;
+                            }
+                        &lt;/style&gt;
+                    &lt;/head&gt;
+                    &lt;body&gt;
+                        &lt;div class="container"&gt;
+                            &lt;div class="row"&gt;
+                                &lt;div class="columna col-md-4 offset-md-1 col-sm-4 offset-sm-0"&gt;Columna&lt;/div&gt;
+                                &lt;div class="columna col-md-4 offset-md-2 col-sm-4 offset-sm-1"&gt;Columna&lt;/div&gt;
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+                    &lt;/body&gt;
+                    &lt;/html&gt;
+                </code></pre>
+            </div>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="col-6">
+                <div class="container">
+                    <div class="row" style="background: #E8E8E8; margin-top: 40px; margin-bottom: 40px;">
+                        <div class="col-md-4 mx-auto" style="background: #F2F2F2; padding: 10px; text-align: center; border: 1px solid #4D5061;">Columna 1</div>
+                    </div>
+                    <div class="row" style="background: #E8E8E8; margin-top: 40px; margin-bottom: 40px;">
+                        <div class="col-md-3 m-md-auto" style="background: #F2F2F2; padding: 10px; text-align: center; border: 1px solid #4D5061;">Columna 1</div>
+                        <div class="col-md-3 m-md-auto" style="background: #F2F2F2; padding: 10px; text-align: center; border: 1px solid #4D5061;">Columna 2</div>
+                    </div>
+                    <div class="row" style="background: #E8E8E8; margin-top: 40px; margin-bottom: 40px;">
+                        <div class="col-auto ms-auto" style="background: #F2F2F2; padding: 10px; text-align: center; border: 1px solid #4D5061;">Columna 1</div>
+                    </div>
+                    <div class="row" style="background: #E8E8E8; margin-top: 40px; margin-bottom: 40px;">
+                        <div class="col-auto ms-auto" style="background: #F2F2F2; padding: 10px; text-align: center; border: 1px solid #4D5061;">Columna 1</div>
+                        <div class="col-auto me-auto" style="background: #F2F2F2; padding: 10px; text-align: center; border: 1px solid #4D5061;">Columna 2</div>
+                    </div>
+                    <div class="row" style="background: #E8E8E8; margin-top: 40px; margin-bottom: 40px;">
+                        <div class="col-auto me-auto" style="background: #F2F2F2; padding: 10px; text-align: center; border: 1px solid #4D5061;">Columna 1</div>
+                        <div class="col-auto ms-auto" style="background: #F2F2F2; padding: 10px; text-align: center; border: 1px solid #4D5061;">Columna 2</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6">
+                <pre><code>
+                    &lt;!DOCTYPE html&gt;
+                    &lt;html&gt;
+                    &lt;head&gt;
+                        &lt;meta charset="utf-8"&gt;
+                        &lt;meta name="viewport" content="width=device-width, initial-scale=1"&gt;
+                        &lt;link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css"&gt;
+                        &lt;script src="../js/bootstrap.bundle.min.js"&gt;&lt;/script&gt;
+                        &lt;title&gt;Hola Mundo&lt;/title&gt;
+                        &lt;style type="text/css"&gt;
+                            .row{
+                                background: #E8E8E8;
+                                margin-top: 40px;
+                                margin-bottom: 40px;
+                            }
+                            .columna{
+                                background: #F2F2F2;
+                                padding: 10px;
+                                text-align: center;
+                                border: 1px solid #4D5061;
+                            }
+                        &lt;/style&gt;
+                    &lt;/head&gt;
+                    &lt;body&gt;
+                        &lt;div class="container"&gt;
+                            &lt;div class="row"&gt;
+                                &lt;div class="columna col-md-4 mx-auto"&gt;Columna 1&lt;/div&gt;
+                            &lt;/div&gt;
+                            &lt;div class="row"&gt;
+                                &lt;div class="columna col-md-3 m-md-auto"&gt;Columna 1&lt;/div&gt;
+                                &lt;div class="columna col-md-3 m-md-auto"&gt;Columna 2&lt;/div&gt;
+                            &lt;/div&gt;
+                            &lt;div class="row"&gt;
+                                &lt;div class="columna col-auto ms-auto"&gt;Columna 1&lt;/div&gt;
+                            &lt;/div&gt;
+                            &lt;div class="row"&gt;
+                                &lt;div class="columna col-auto ms-auto"&gt;Columna 1&lt;/div&gt;
+                                &lt;div class="columna col-auto me-auto"&gt;Columna 2&lt;/div&gt;
+                            &lt;/div&gt;
+                            &lt;div class="row"&gt;
+                                &lt;div class="columna col-auto me-auto"&gt;Columna 1&lt;/div&gt;
+                                &lt;div class="columna col-auto ms-auto"&gt;Columna 2&lt;/div&gt;
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+                    &lt;/body&gt;
+                    &lt;/html&gt;
+                </code></pre>
+            </div>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="col-6">
+                <div class="container-fluid">
+                    <div class="ejemplo row">
+                        <div class="col d-block d-sm-none">Pantalla de tamaño extra pequeño (xs)</div>
+                        <div class="col d-none d-sm-block d-md-none">Pantalla de tamaño pequeño (sm)</div>
+                        <div class="col d-none d-md-block d-lg-none">Pantalla de tamaño mediano (md)</div>
+                        <div class="col d-none d-lg-block d-xl-none">Pantalla de tamaño grande (lg)</div>
+                        <div class="col d-none d-xl-block d-xxl-none">Pantalla de tamaño extra grande (xl)</div>
+                        <div class="col d-none d-xxl-block">Pantalla de tamaño extra extra grande (xxl)</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6">
+                <pre><code>
+                    &lt;!DOCTYPE html&gt;
+                    &lt;html&gt;
+                    &lt;head&gt;
+                        &lt;meta charset="utf-8"&gt;
+                        &lt;meta name="viewport" content="width=device-width, initial-scale=1"&gt;
+                        &lt;link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css"&gt;
+                        &lt;script src="../js/bootstrap.bundle.min.js"&gt;&lt;/script&gt;
+                        &lt;title&gt;Tamaño pantallas responsive&lt;/title&gt;
+                        &lt;style type="text/css"&gt;
+                            .row&gt;div{
+                                background: #E8E8E8;
+                                border: 1px solid #808080;
+                                margin: 5px 0px;
+                                text-align: center;
+                            }
+                        &lt;/style&gt;
+                    &lt;/head&gt;
+                    &lt;body&gt;
+                        &lt;div class="container-fluid"&gt;
+                            &lt;div class="row"&gt;
+                                &lt;div class="col d-block d-sm-none"&gt;Pantalla de tamaño extra pequeño (xs)&lt;/div&gt;
+                                &lt;div class="col d-none d-sm-block d-md-none"&gt;Pantalla de tamaño pequeño (sm)&lt;/div&gt;
+                                &lt;div class="col d-none d-md-block d-lg-none"&gt;Pantalla de tamaño mediano (md)&lt;/div&gt;
+                                &lt;div class="col d-none d-lg-block d-xl-none"&gt;Pantalla de tamaño grande (lg)&lt;/div&gt;
+                                &lt;div class="col d-none d-xl-block d-xxl-none"&gt;Pantalla de tamaño extra grande (xl)&lt;/div&gt;
+                                &lt;div class="col d-none d-xxl-block"&gt;Pantalla de tamaño extra extra grande (xxl)&lt;/div&gt;
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+                    &lt;/body&gt;
+                    &lt;/html&gt;
+                </code></pre>
+            </div>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="col-6">
+                <div class="container">
+                    <div class="ejemplo row">
+                        <div class="col-6 col-sm-3">Columna 1</div>
+                        <div class="col-6 col-sm-3">Columna 2</div>
+            
+                        <div class="w-100 d-none d-md-block"></div>
+                        
+                        <div class="col-6 col-sm-3">Columna 3</div>
+                        <div class="col-6 col-sm-3">Columna 4</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6">
+                <pre><code>
+                    &lt;!DOCTYPE html&gt;
+                    &lt;html&gt;
+                    &lt;head&gt;
+                        &lt;meta charset="utf-8"&gt;
+                        &lt;meta name="viewport" content="width=device-width, initial-scale=1"&gt;
+                        &lt;link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css"&gt;
+                        &lt;script src="../js/bootstrap.bundle.min.js"&gt;&lt;/script&gt;
+                        &lt;title&gt;Tamaño pantallas responsive&lt;/title&gt;
+                        &lt;style type="text/css"&gt;
+                            .row&gt;div{
+                                background: #E8E8E8;
+                                border: 1px solid #808080;
+                                margin: 5px 0px;
+                                text-align: center;
+                            }
+                        &lt;/style&gt;
+                    &lt;/head&gt;
+                    &lt;body&gt;
+                        &lt;div class="container"&gt;
+                            &lt;div class="row"&gt;
+                                &lt;div class="col-6 col-sm-3"&gt;Columna 1&lt;/div&gt;
+                                &lt;div class="col-6 col-sm-3"&gt;Columna 2&lt;/div&gt;
+
+                                &lt;div class="w-100 d-none d-md-block"&gt;&lt;/div&gt;
+                                
+                                &lt;div class="col-6 col-sm-3"&gt;Columna 3&lt;/div&gt;
+                                &lt;div class="col-6 col-sm-3"&gt;Columna 4&lt;/div&gt;
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+                    &lt;/body&gt;
+                    &lt;/html&gt;
+                </code></pre>
+            </div>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="col-6">
+                <div class="container">
+                    <header class="row" style="background-color: black; color: white; text-align: center;">
+                        <div class="col">Cabecera</div>
+                    </header>
+                    <section class="row">
+                        <main class="col order-2" style="margin: 1px 0px 2px 1px;">
+                            <div class="row">
+                                <div class="bloque4 col-12">A</div>
+                                <div class="bloque5 col-12 col-md-6">B</div>
+                                <div class="bloque5 col-12 col-md">C</div>
+                                <div class="w-100"></div>
+                                <div class="bloque6 col-6 col-sm-4 col-md-2">D</div>
+                                <div class="bloque6 col col-sm-4 col-md-2">E</div>
+                                <div class="bloque6 col-6 col-sm col-md">F</div>
+                                <div class="bloque6 col col-sm-4 col-md-2">G</div>
+                                <div class="bloque6 col-6 col-sm-4 col-md-2">H</div>
+                                <div class="w-100 d-none d-md-block"></div>
+                                <div class="bloque6 col col-sm col-md-2">I</div>
+                                <div class="bloque6 col-6 col-sm-4 col-md-2">J</div>
+                                <div class="bloque6 col col-sm-4 col-md">K</div>
+                                <div class="bloque6 col-6 col-sm col-md-2">L</div>
+                                <div class="bloque6 col col-sm-4 col-md-2">M</div>
+                            </div>
+                        </main>
+                        <aside class="col-12 col-sm-3 order-1" style="background-color: #FFCCCC; text-align: center; margin: 2px 1px 2px 0px;">Barra lateral</aside>
+                    </section>
+                    <footer class="row"  style="background-color: black; color: white; text-align: center;">
+                        <div class="col-12">Pie</div>
+                    </footer>
+                </div>
+            </div>
+            <div class="col-6">
+                <pre><code>
+                    &lt;!DOCTYPE html&gt;
+                    &lt;html&gt;
+                        &lt;head&gt;
+                            &lt;meta charset="utf-8"&gt;
+                            &lt;meta name="viewport" content="width=device-width, initial-scale=1"&gt;
+                            &lt;link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css"&gt;
+                            &lt;script src="../js/bootstrap.bundle.min.js"&gt;&lt;/script&gt;
+                            &lt;title&gt;Ejemplo Final&lt;/title&gt;
+                            &lt;style type="text/css"&gt;
+                                header, footer{
+                                    background-color: black;
+                                    color: white;
+                                    text-align: center;
+                                }
+                                aside{
+                                    background-color: #FFCCCC;
+                                    text-align: center;
+                                    margin: 2px 1px 2px 0px;
+                                }
+                                main{
+                                    margin: 1px 0px 2px 1px;
+                                }
+                                .bloque4{
+                                    background-color: #00CC99;
+                                    text-align: center;
+                                    border: 1px solid white;
+                                }
+                                .bloque5{
+                                    background-color: #669999;
+                                    text-align: center;
+                                    border: 1px solid white;
+                                    height: 75px;
+                                }
+                                .bloque6{
+                                    background-color: #99CCFF;
+                                    text-align: center;
+                                    border: 1px solid white;
+                                    height: 50px;
+                                }
+                            &lt;/style&gt;
+                        &lt;/head&gt;
+                        &lt;body&gt;
+                            &lt;div class="container"&gt;
+                                &lt;header class="row"&gt;
+                                    &lt;div class="col"&gt;Cabecera&lt;/div&gt;
+                                &lt;/header&gt;
+                                &lt;section class="row"&gt;
+                                    &lt;main class="col order-2"&gt;
+                                        &lt;div class="row"&gt;
+                                            &lt;div class="bloque4 col-12"&gt;A&lt;/div&gt;
+                                            &lt;div class="bloque5 col-12 col-md-6"&gt;B&lt;/div&gt;
+                                            &lt;div class="bloque5 col-12 col-md"&gt;C&lt;/div&gt;
+                                            &lt;div class="w-100"&gt;&lt;/div&gt;
+                                            &lt;div class="bloque6 col-6 col-sm-4 col-md-2"&gt;D&lt;/div&gt;
+                                            &lt;div class="bloque6 col col-sm-4 col-md-2"&gt;E&lt;/div&gt;
+                                            &lt;div class="bloque6 col-6 col-sm col-md"&gt;F&lt;/div&gt;
+                                            &lt;div class="bloque6 col col-sm-4 col-md-2"&gt;G&lt;/div&gt;
+                                            &lt;div class="bloque6 col-6 col-sm-4 col-md-2"&gt;H&lt;/div&gt;
+                                            &lt;div class="w-100 d-none d-md-block"&gt;&lt;/div&gt;
+                                            &lt;div class="bloque6 col col-sm col-md-2"&gt;I&lt;/div&gt;
+                                            &lt;div class="bloque6 col-6 col-sm-4 col-md-2"&gt;J&lt;/div&gt;
+                                            &lt;div class="bloque6 col col-sm-4 col-md"&gt;K&lt;/div&gt;
+                                            &lt;div class="bloque6 col-6 col-sm col-md-2"&gt;L&lt;/div&gt;
+                                            &lt;div class="bloque6 col col-sm-4 col-md-2"&gt;M&lt;/div&gt;
+                                        &lt;/div&gt;
+                                    &lt;/main&gt;
+                                    &lt;aside class="col-12 col-sm-3 order-1"&gt;Barra lateral&lt;/aside&gt;
+                                &lt;/section&gt;
+                                &lt;footer class="row"&gt;
+                                    &lt;div class="col-12"&gt;Pie&lt;/div&gt;
+                                &lt;/footer&gt;
+                            &lt;/div&gt;
+                        &lt;/body&gt;
+                    &lt;/html&gt;
+                </code></pre>
+            </div>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="col-6">
+                <div class="container">
+                    <header class="row">
+                        <div class="col">Cabecera</div>
+                    </header>
+                    <section class="row">
+                        <div class="col-12">
+                            <div class="row">
+                                <div class="bloque1 col-6 col-sm-3 col-md-4 order-md-1">1</div>
+                                <div class="bloque1 col-6 col-sm-3 col-md-4 order-md-3">2</div>
+                                <div class="bloque1 col-6 col-sm-3 col-md-4 order-md-2 offset-md-4">3</div>
+                                <div class="bloque1 col-6 col-sm-3 col-md-4 order-md-4 offset-md-4">4</div>
+                            </div>
+                        </div>
+                        <div class="pantalla col-12 d-none d-sm-block d-md-none">Tablet</div>
+                        <div class="col-12">
+                            <div class="row">
+                                <div class="bloque2 col-6 col-sm-3 order-md-4">A</div>
+                                <div class="bloque2 col-6 col-sm-3 order-md-3">B</div>
+                                <div class="bloque2 col-6 col-sm-3 order-md-2">C</div>
+                                <div class="bloque2 col-6 col-sm-3 order-md-1">D</div>
+                            </div>
+                        </div>
+                        <div class="pantalla col-12 d-none d-md-block">Desktop</div>
+                        <div class="pantalla col-12 d-block d-sm-none">Smartphone</div>
+                        <div class="col-12">
+                            <div class="row justify-content-center">
+                                <div class="bloque3 col-12 col-sm-6 col-md-4 order-md-2">:D</div>
+                                <div class="bloque3 col-sm-6 d-none d-sm-block col-md-4 order-md-1">:(</div>
+                            </div>
+                        </div>
+                    </section>
+                    <footer class="row">
+                        <div class="col-12 d-none d-sm-block">Pie</div>
+                    </footer>
+                </div>
+            </div>
+            <div class="col-6">
+                <pre><code>
+                    &lt;!DOCTYPE html&gt;
+                    &lt;html&gt;
+                        &lt;head&gt;
+                            &lt;meta charset="utf-8"&gt;
+                            &lt;meta name="viewport" content="width=device-width, initial-scale=1"&gt;
+                            &lt;link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css"&gt;
+                            &lt;script src="../js/bootstrap.bundle.min.js"&gt;&lt;/script&gt;
+                            &lt;title&gt;Ejemplo Final&lt;/title&gt;
+                            &lt;style type="text/css"&gt;
+                                header, footer{
+                                    background-color: black;
+                                    color: white;
+                                    text-align: center;
+                                    margin: 2px 0px;
+                                }
+                                .pantalla{
+                                    background-color: #66FFFF;
+                                    border: 1px solid white;
+                                    text-align: center;
+                                }
+                                .bloque1{
+                                    background-color: #99CCFF;
+                                    text-align: center;
+                                    border: 1px solid white;
+                                    height: 50px;
+                                }
+                                .bloque2{
+                                    background-color: #669999;
+                                    text-align: center;
+                                    border: 1px solid white;
+                                    height: 50px;
+                                }
+                                .bloque3{
+                                    background-color: #FFCC99;
+                                    text-align: center;
+                                    border: 1px solid white;
+                                    height: 50px;
+                                }
+                            &lt;/style&gt;
+                        &lt;/head&gt;
+                        &lt;body&gt;
+                            &lt;div class="container"&gt;
+                                &lt;header class="row"&gt;
+                                    &lt;div class="col"&gt;Cabecera&lt;/div&gt;
+                                &lt;/header&gt;
+                                &lt;section class="row"&gt;
+                                    &lt;div class="col-12"&gt;
+                                        &lt;div class="row"&gt;
+                                            &lt;div class="bloque1 col-6 col-sm-3 col-md-4 order-md-1"&gt;1&lt;/div&gt;
+                                            &lt;div class="bloque1 col-6 col-sm-3 col-md-4 order-md-3"&gt;2&lt;/div&gt;
+                                            &lt;div class="bloque1 col-6 col-sm-3 col-md-4 order-md-2 offset-md-4"&gt;3&lt;/div&gt;
+                                            &lt;div class="bloque1 col-6 col-sm-3 col-md-4 order-md-4 offset-md-4"&gt;4&lt;/div&gt;
+                                        &lt;/div&gt;
+                                    &lt;/div&gt;
+                                    &lt;div class="pantalla col-12 d-none d-sm-block d-md-none"&gt;Tablet&lt;/div&gt;
+                                    &lt;div class="col-12"&gt;
+                                        &lt;div class="row"&gt;
+                                            &lt;div class="bloque2 col-6 col-sm-3 order-md-4"&gt;A&lt;/div&gt;
+                                            &lt;div class="bloque2 col-6 col-sm-3 order-md-3"&gt;B&lt;/div&gt;
+                                            &lt;div class="bloque2 col-6 col-sm-3 order-md-2"&gt;C&lt;/div&gt;
+                                            &lt;div class="bloque2 col-6 col-sm-3 order-md-1"&gt;D&lt;/div&gt;
+                                        &lt;/div&gt;
+                                    &lt;/div&gt;
+                                    &lt;div class="pantalla col-12 d-none d-md-block"&gt;Desktop&lt;/div&gt;
+                                    &lt;div class="pantalla col-12 d-block d-sm-none"&gt;Smartphone&lt;/div&gt;
+                                    &lt;div class="col-12"&gt;
+                                        &lt;div class="row justify-content-center"&gt;
+                                            &lt;div class="bloque3 col-12 col-sm-6 col-md-4 order-md-2"&gt;:D&lt;/div&gt;
+                                            &lt;div class="bloque3 col-sm-6 d-none d-sm-block col-md-4 order-md-1"&gt;:(&lt;/div&gt;
+                                        &lt;/div&gt;
+                                    &lt;/div&gt;
+                                &lt;/section&gt;
+                                &lt;footer class="row"&gt;
+                                    &lt;div class="col-12 d-none d-sm-block"&gt;Pie&lt;/div&gt;
+                                &lt;/footer&gt;
+                            &lt;/div&gt;
+                        &lt;/body&gt;
+                    &lt;/html&gt;
+                </code></pre>
+            </div>
+        </div>
     </div>
 </body>
 </html>

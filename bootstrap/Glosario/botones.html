@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.1/font/bootstrap-icons.css">
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <title>Bootstrap 5</title>
+    <link rel="icon" href="images/logo.png" type="image/png">
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-6">
+                <h2>Estilos para botones</h2>
+                <button type="button" class="btn">Basic</button>
+                <button type="button" class="btn btn-primary">Primary</button>
+                <button type="button" class="btn btn-secondary">Secondary</button>
+                <button type="button" class="btn btn-success">Success</button>
+                <button type="button" class="btn btn-info">Info</button>
+                <button type="button" class="btn btn-warning">Warning</button>
+                <button type="button" class="btn btn-danger">Danger</button>
+                <button type="button" class="btn btn-link">Link</button>
+                <button type="button" class="btn btn-dark">Dark</button>
+                <button type="button" class="btn btn-light">Light</button>
+            </div>
+            <div class="col-6">
+                <pre><code>
+                    &lt;h2&gt;Estilos para botones&lt;/h2&gt;
+                    &lt;button type="button" class="btn"&gt;Basic&lt;/button&gt;
+                    &lt;button type="button" class="btn btn-primary"&gt;Primary&lt;/button&gt;
+                    &lt;button type="button" class="btn btn-secondary"&gt;Secondary&lt;/button&gt;
+                    &lt;button type="button" class="btn btn-success"&gt;Success&lt;/button&gt;
+                    &lt;button type="button" class="btn btn-info"&gt;Info&lt;/button&gt;
+                    &lt;button type="button" class="btn btn-warning"&gt;Warning&lt;/button&gt;
+                    &lt;button type="button" class="btn btn-danger"&gt;Danger&lt;/button&gt;
+                    &lt;button type="button" class="btn btn-link"&gt;Link&lt;/button&gt;
+                    &lt;button type="button" class="btn btn-dark"&gt;Dark&lt;/button&gt;
+                    &lt;button type="button" class="btn btn-light"&gt;Light&lt;/button&gt;
+                </code></pre>
+            </div>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="col-6">
+                <h2>Botones outline</h2>
+                <button class="btn btn-primary" type="submit">Button</button>
+                <a class="btn btn-primary" href="#" role="button">Link</a>
+                <input class="btn btn-primary" type="button" value="Input">
+                <input class="btn btn-primary" type="button" value="Submit">
+                <input class="btn btn-primary" type="button" value="Reset">
+                <button type="button" class="btn btn-outline-primary">Primary</button>
+                <button type="button" class="btn btn-outline-secondary">Secondary</button>
+                <button type="button" class="btn btn-outline-success">Success</button>
+                <button type="button" class="btn btn-outline-info">Info</button>
+                <button type="button" class="btn btn-outline-warning">Warning</button>
+                <button type="button" class="btn btn-outline-danger">Danger</button>
+                <button type="button" class="btn btn-outline-link">Link</button>
+                <button type="button" class="btn btn-outline-dark">Dark</button>
+                <button type="button" class="btn btn-outline-light text-dark">Light</button>
+            </div>
+            <div class="col-6">
+                <pre><code>
+                    &lt;h2&gt;Botones outline&lt;/h2&gt;
+                    &lt;button class="btn btn-primary" type="submit"&gt;Button&lt;/button&gt;
+                    &lt;a class="btn btn-primary" href="#" role="button"&gt;Link&lt;/a&gt;
+                    &lt;input class="btn btn-primary" type="button" value="Input"&gt;
+                    &lt;input class="btn btn-primary" type="button" value="Submit"&gt;
+                    &lt;input class="btn btn-primary" type="button" value="Reset"&gt;
+                    &lt;button type="button" class="btn btn-outline-primary"&gt;Primary&lt;/button&gt;
+                    &lt;button type="button" class="btn btn-outline-secondary"&gt;Secondary&lt;/button&gt;
+                    &lt;button type="button" class="btn btn-outline-success"&gt;Success&lt;/button&gt;
+                    &lt;button type="button" class="btn btn-outline-info"&gt;Info&lt;/button&gt;
+                    &lt;button type="button" class="btn btn-outline-warning"&gt;Warning&lt;/button&gt;
+                    &lt;button type="button" class="btn btn-outline-danger"&gt;Danger&lt;/button&gt;
+                    &lt;button type="button" class="btn btn-outline-link"&gt;Link&lt;/button&gt;
+                    &lt;button type="button" class="btn btn-outline-dark"&gt;Dark&lt;/button&gt;
+                    &lt;button type="button" class="btn btn-outline-light text-dark"&gt;Light&lt;/button&gt;
+                </code></pre>
+            </div>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="col-6">
+                <h2>Tamaño de los botones</h2>
+                <button type="button" class="btn btn-primary btn-sm">Small button</button>
+                <button type="button" class="btn btn-primary">Default button</button>
+                <button type="button" class="btn btn-primary btn-lg">Large button</button>
+            </div>
+            <div class="col-6">
+                <pre><code>
+                    &lt;h2&gt;Tamaño de los botones&lt;/h2&gt;
+                    &lt;button type="button" class="btn btn-primary btn-sm"&gt;Small button&lt;/button&gt;
+                    &lt;button type="button" class="btn btn-primary"&gt;Default button&lt;/button&gt;
+                    &lt;button type="button" class="btn btn-primary btn-lg"&gt;Large button&lt;/button&gt;
+                </code></pre>
+            </div>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="col-12">
+                <!-- Botón de tipo bloque de ancho completo -->
+                <div class="d-grid">
+                    <button type="button" class="btn btn-primary">Block button</button>
+                </div>
+                <br>
+                <!-- Botón de tipo bloque de mitad de ancho -->
+                <div class="d-grid col-6 mx-auto">
+                    <button type="button" class="btn btn-primary">Block button</button>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <pre><code>
+                    &lt;!-- Botón de tipo bloque de ancho completo --&gt;
+                    &lt;div class="d-grid"&gt;
+                        &lt;button type="button" class="btn btn-primary"&gt;Block button&lt;/button&gt;
+                    &lt;/div&gt;
+                    &lt;br&gt;
+                    &lt;!-- Botón de tipo bloque de mitad de ancho --&gt;
+                    &lt;div class="d-grid col-6 mx-auto"&gt;
+                        &lt;button type="button" class="btn btn-primary"&gt;Block button&lt;/button&gt;
+                    &lt;/div&gt;
+                </code></pre>
+            </div>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="col-6">
+                <h2>Botones disabled</h2>
+                <button type="button" class="btn btn-primary active">Botón Primario Activo</button>
+                <button type="button" class="btn btn-primary">Botón Primario Activo</button>
+                <button type="button" class="btn btn-primary" disabled>Botón Primario Desactivado</button>
+                <a href="#" class="btn btn-primary">Link activo</a>
+                <a href="#" class="btn btn-primary disabled">Link desactivado</a>
+                </div>
+            <div class="col-6">
+                <pre><code>
+                    &lt;h2&gt;Botones disabled&lt;/h2&gt;
+                    &lt;button type="button" class="btn btn-primary active"&gt;Botón Primario Activo&lt;/button&gt;
+                    &lt;button type="button" class="btn btn-primary"&gt;Botón Primario Activo&lt;/button&gt;
+                    &lt;button type="button" class="btn btn-primary" disabled&gt;Botón Primario Desactivado&lt;/button&gt;
+                    &lt;a href="#" class="btn btn-primary"&gt;Link activo&lt;/a&gt;
+                    &lt;a href="#" class="btn btn-primary disabled"&gt;Link desactivado&lt;/a&gt;
+                </code></pre>
+            </div>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="col-6">
+                <h2>Botones Dropdown</h2>
+                <div class="dropdown">
+                    <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">Botón DROPDOWN</button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Opción 1</a></li>
+                        <li><a class="dropdown-item" href="#">Opción 2</a></li>
+                        <li><a class="dropdown-item" href="#">Opción 3</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-6">
+                <pre><code>
+                    &lt;h2&gt;Botones Dropdown&lt;/h2&gt;
+                    &lt;div class="dropdown"&gt;
+                        &lt;button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown"&gt;Botón DROPDOWN&lt;/button&gt;
+                        &lt;ul class="dropdown-menu"&gt;
+                            &lt;li&gt;&lt;a class="dropdown-item" href="#"&gt;Opción 1&lt;/a&gt;&lt;/li&gt;
+                            &lt;li&gt;&lt;a class="dropdown-item" href="#"&gt;Opción 2&lt;/a&gt;&lt;/li&gt;
+                            &lt;li&gt;&lt;a class="dropdown-item" href="#"&gt;Opción 3&lt;/a&gt;&lt;/li&gt;
+                        &lt;/ul&gt;
+                    &lt;/div&gt;
+                </code></pre>
+            </div>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="col-6">
+                <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">Botón DROPDOWN</button>
+                <ul class="dropdown-menu">
+                    <li><h6 class="dropdown-header">Cabecera Dropdown</h6></li>
+                    <li><a class="dropdown-item" href="#">Opción 1</a></li>
+                    <li><a class="dropdown-item" href="#">Opción 2</a></li>
+                    <li><a class="dropdown-item" href="#">Opción 3</a></li>
+                </ul>
+            </div>
+            <div class="col-6">
+                <pre><code>
+                    &lt;button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown"&gt;Botón DROPDOWN&lt;/button&gt;
+                    &lt;ul class="dropdown-menu"&gt;
+                        &lt;li&gt;&lt;h6 class="dropdown-header"&gt;Cabecera Dropdown&lt;/h6&gt;&lt;/li&gt;
+                        &lt;li&gt;&lt;a class="dropdown-item" href="#"&gt;Opción 1&lt;/a&gt;&lt;/li&gt;
+                        &lt;li&gt;&lt;a class="dropdown-item" href="#"&gt;Opción 2&lt;/a&gt;&lt;/li&gt;
+                        &lt;li&gt;&lt;a class="dropdown-item" href="#"&gt;Opción 3&lt;/a&gt;&lt;/li&gt;
+                    &lt;/ul&gt;                    
+                </code></pre>
+            </div>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="col-6">
+                <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">Botón DROPDOWN</button>
+                <ul class="dropdown-menu">
+                    <li><h6 class="dropdown-header">Cabecera Dropdown</h6></li>
+                    <li><a class="dropdown-item" href="#">Opción 1</a></li>
+                    <li><a class="dropdown-item" href="#">Opción 2</a></li>
+                    <li><a class="dropdown-item" href="#">Opción 3</a></li>
+                    <li></li>
+                </ul>
+            </div>
+            <div class="col-6">
+                <pre><code>
+                    &lt;button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown"&gt;Botón DROPDOWN&lt;/button&gt;
+                    &lt;ul class="dropdown-menu"&gt;
+                        &lt;li&gt;&lt;h6 class="dropdown-header"&gt;Cabecera Dropdown&lt;/h6&gt;&lt;/li&gt;
+                        &lt;li&gt;&lt;a class="dropdown-item" href="#"&gt;Opción 1&lt;/a&gt;&lt;/li&gt;
+                        &lt;li&gt;&lt;a class="dropdown-item" href="#"&gt;Opción 2&lt;/a&gt;&lt;/li&gt;
+                        &lt;li&gt;&lt;a class="dropdown-item" href="#"&gt;Opción 3&lt;/a&gt;&lt;/li&gt;
+                        &lt;li&gt;&lt;/li&gt;
+                    &lt;/ul&gt;                    
+                </code></pre>
+            </div>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="col-6">
+                <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">Botón DROPDOWN</button>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Opción 1</a></li>
+                    <li><a class="dropdown-item" href="#">Opción 2</a></li>
+                    <li><a class="dropdown-item" href="#">Opción 3</a></li>
+                    <li><h6 class="dropdown-divider"></h6></li>
+                    <li><a class="dropdown-item" href="#">Opción 4</a></li>
+                </ul>
+            </div>
+            <div class="col-6">
+                <pre><code>
+                    &lt;button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown"&gt;Botón DROPDOWN&lt;/button&gt;
+                    &lt;ul class="dropdown-menu"&gt;
+                        &lt;li&gt;&lt;a class="dropdown-item" href="#"&gt;Opción 1&lt;/a&gt;&lt;/li&gt;
+                        &lt;li&gt;&lt;a class="dropdown-item" href="#"&gt;Opción 2&lt;/a&gt;&lt;/li&gt;
+                        &lt;li&gt;&lt;a class="dropdown-item" href="#"&gt;Opción 3&lt;/a&gt;&lt;/li&gt;
+                        &lt;li&gt;&lt;h6 class="dropdown-divider"&gt;&lt;/h6&gt;&lt;/li&gt;
+                        &lt;li&gt;&lt;a class="dropdown-item" href="#"&gt;Opción 4&lt;/a&gt;&lt;/li&gt;
+                    &lt;/ul&gt;                    
+                </code></pre>
+            </div>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="col-6">
+                <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">Botón DROPDOWN con menú desplegado a la derecha</button>
+                <ul class="dropdown-menu dropdown-menu-end">
+                    <li><a class="dropdown-item" href="#">Opción 1</a></li>
+                    <li><a class="dropdown-item" href="#">Opción 2</a></li>
+                    <li><a class="dropdown-item" href="#">Opción 3</a></li>
+                </ul>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+            </div>
+            <div class="col-6">
+                <pre><code>
+                    &lt;button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown"&gt;Botón DROPDOWN con menú desplegado a la derecha&lt;/button&gt;
+                    &lt;ul class="dropdown-menu dropdown-menu-end"&gt;
+                        &lt;li&gt;&lt;a class="dropdown-item" href="#"&gt;Opción 1&lt;/a&gt;&lt;/li&gt;
+                        &lt;li&gt;&lt;a class="dropdown-item" href="#"&gt;Opción 2&lt;/a&gt;&lt;/li&gt;
+                        &lt;li&gt;&lt;a class="dropdown-item" href="#"&gt;Opción 3&lt;/a&gt;&lt;/li&gt;
+                    &lt;/ul&gt;
+                    &lt;br&gt;
+                    &lt;br&gt;
+                    &lt;br&gt;
+                    &lt;br&gt;
+                    &lt;br&gt;
+                    &lt;br&gt;                    
+                </code></pre>
+            </div>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="col-6">
+                <div class="dropup">
+                    <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">Botón DROPUP</button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Opción 1</a></li>
+                        <li><a class="dropdown-item" href="#">Opción 2</a></li>
+                        <li><a class="dropdown-item" href="#">Opción 3</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-6">
+                <pre><code>
+                    &lt;div class="dropup"&gt;
+                        &lt;button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown"&gt;Botón DROPUP&lt;/button&gt;
+                        &lt;ul class="dropdown-menu"&gt;
+                            &lt;li&gt;&lt;a class="dropdown-item" href="#"&gt;Opción 1&lt;/a&gt;&lt;/li&gt;
+                            &lt;li&gt;&lt;a class="dropdown-item" href="#"&gt;Opción 2&lt;/a&gt;&lt;/li&gt;
+                            &lt;li&gt;&lt;a class="dropdown-item" href="#"&gt;Opción 3&lt;/a&gt;&lt;/li&gt;
+                        &lt;/ul&gt;
+                    &lt;/div&gt;                
+                </code></pre>
+            </div>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="col-6">
+                <div class="dropdown dropend">
+                    <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">Botón DROPEND</button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Opción 1</a></li>
+                        <li><a class="dropdown-item" href="#">Opción 2</a></li>
+                        <li><a class="dropdown-item" href="#">Opción 3</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-6">
+                <pre><code>
+                    &lt;div class="dropdown dropend"&gt;
+                        &lt;button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown"&gt;Botón DROPEND&lt;/button&gt;
+                        &lt;ul class="dropdown-menu"&gt;
+                            &lt;li&gt;&lt;a class="dropdown-item" href="#"&gt;Opción 1&lt;/a&gt;&lt;/li&gt;
+                            &lt;li&gt;&lt;a class="dropdown-item" href="#"&gt;Opción 2&lt;/a&gt;&lt;/li&gt;
+                            &lt;li&gt;&lt;a class="dropdown-item" href="#"&gt;Opción 3&lt;/a&gt;&lt;/li&gt;
+                        &lt;/ul&gt;
+                    &lt;/div&gt;                
+                </code></pre>
+            </div>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="col-6">
+                <div class="dropdown dropstart">
+                    <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">Botón DROPSTART</button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Opción 1</a></li>
+                        <li><a class="dropdown-item" href="#">Opción 2</a></li>
+                        <li><a class="dropdown-item" href="#">Opción 3</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-6">
+                <pre><code>
+                    &lt;div class="dropdown dropstart"&gt;
+                        &lt;button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown"&gt;Botón DROPSTART&lt;/button&gt;
+                        &lt;ul class="dropdown-menu"&gt;
+                            &lt;li&gt;&lt;a class="dropdown-item" href="#"&gt;Opción 1&lt;/a&gt;&lt;/li&gt;
+                            &lt;li&gt;&lt;a class="dropdown-item" href="#"&gt;Opción 2&lt;/a&gt;&lt;/li&gt;
+                            &lt;li&gt;&lt;a class="dropdown-item" href="#"&gt;Opción 3&lt;/a&gt;&lt;/li&gt;
+                        &lt;/ul&gt;
+                    &lt;/div&gt;                
+                </code></pre>
+            </div>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="col-6">
+                <div class="dropdown">
+                    <button class="btn btn-success dropdown-toggle" id="ejemplo desplegable" data-bs-toggle="dropdown">Diseño WEB</button>
+                    <ul class="dropdown-menu" aria-labelledby="ejemplo-desplegable">
+                        <li><h6 class="dropdown-header">Elige una opción: </h6></li>
+                        <li><a class="dropdown-item" href="#">HTML</a></li>
+                        <li><a class="dropdown-item" href="#">CSS</a></li>
+                        <li><a class="dropdown-item" href="#">JS</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="#">Bootstrap</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-6">
+                <pre><code>
+                    &lt;div class="dropdown"&gt;
+                        &lt;button class="btn btn-success dropdown-toggle" id="ejemplo-desplegable" data-bs-toggle="dropdown"&gt;Diseño WEB&lt;/button&gt;
+                        &lt;ul class="dropdown-menu" aria-labelledby="ejemplo-desplegable"&gt;
+                            &lt;li&gt;&lt;h6 class="dropdown-header"&gt;Elige una opción: &lt;/h6&gt;&lt;/li&gt;
+                            &lt;li&gt;&lt;a class="dropdown-item" href="#"&gt;HTML&lt;/a&gt;&lt;/li&gt;
+                            &lt;li&gt;&lt;a class="dropdown-item" href="#"&gt;CSS&lt;/a&gt;&lt;/li&gt;
+                            &lt;li&gt;&lt;a class="dropdown-item" href="#"&gt;JS&lt;/a&gt;&lt;/li&gt;
+                            &lt;li&gt;&lt;hr class="dropdown-divider"&gt;&lt;/li&gt;
+                            &lt;li&gt;&lt;a class="dropdown-item" href="#"&gt;Bootstrap&lt;/a&gt;&lt;/li&gt;
+                        &lt;/ul&gt;
+                    &lt;/div&gt;                
+                </code></pre>
+            </div>
+        </div>
+        <hr>
+        <div class="row justify-content-center">
+            <div class="col-auto text-center">
+                <h1>Grupos de botones</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-6">
+                <button type="button" class="btn btn-secondary">1</button>
+				<button type="button" class="btn btn-secondary">2</button>
+				<button type="button" class="btn btn-secondary">3</button>
+				<button type="button" class="btn btn-secondary">4</button>
+            </div>
+            <div class="col-6">
+                <pre><code>
+                    &lt;button type="button" class="btn btn-secondary"&gt;1&lt;/button&gt;
+                    &lt;button type="button" class="btn btn-secondary"&gt;2&lt;/button&gt;
+                    &lt;button type="button" class="btn btn-secondary"&gt;3&lt;/button&gt;
+                    &lt;button type="button" class="btn btn-secondary"&gt;4&lt;/button&gt;                    
+                </code></pre>
+            </div>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="col-6">
+                <div class="btn-group">
+					<button type="button" class="btn btn-secondary">1</button>
+					<button type="button" class="btn btn-secondary">2</button>
+					<button type="button" class="btn btn-secondary">3</button>
+					<button type="button" class="btn btn-secondary">4</button>
+				</div>
+            </div>
+            <div class="col-6">
+                <pre><code>
+                    &lt;div class="btn-group"&gt;
+                        &lt;button type="button" class="btn btn-secondary"&gt;1&lt;/button&gt;
+                        &lt;button type="button" class="btn btn-secondary"&gt;2&lt;/button&gt;
+                        &lt;button type="button" class="btn btn-secondary"&gt;3&lt;/button&gt;
+                        &lt;button type="button" class="btn btn-secondary"&gt;4&lt;/button&gt;
+                    &lt;/div&gt;                                                   
+                </code></pre>
+            </div>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="col-6">
+                <div class="btn-toolbar">
+					<div class="btn-group me-3">
+						<button type="button" class="btn btn-primary">1</button>
+						<button type="button" class="btn btn-primary">2</button>
+						<button type="button" class="btn btn-primary">3</button>
+						<button type="button" class="btn btn-primary">4</button>
+					</div>
+					<div class="btn-group me-3">
+						<button type="button" class="btn btn-outline-primary">5</button>
+						<button type="button" class="btn btn-outline-primary">6</button>
+						<button type="button" class="btn btn-outline-primary">7</button>
+						<button type="button" class="btn btn-outline-primary">8</button>
+					</div>
+					<div class="btn-group">
+						<button type="button" class="btn btn-info">9</button>
+						<button type="button" class="btn btn-info">10</button>
+					</div>
+				</div>
+            </div>
+            <div class="col-6">
+                <pre><code>
+                    &lt;div class="btn-toolbar"&gt;
+                        &lt;div class="btn-group me-3"&gt;
+                            &lt;button type="button" class="btn btn-primary"&gt;1&lt;/button&gt;
+                            &lt;button type="button" class="btn btn-primary"&gt;2&lt;/button&gt;
+                            &lt;button type="button" class="btn btn-primary"&gt;3&lt;/button&gt;
+                            &lt;button type="button" class="btn btn-primary"&gt;4&lt;/button&gt;
+                        &lt;/div&gt;
+                        &lt;div class="btn-group me-3"&gt;
+                            &lt;button type="button" class="btn btn-outline-primary"&gt;5&lt;/button&gt;
+                            &lt;button type="button" class="btn btn-outline-primary"&gt;6&lt;/button&gt;
+                            &lt;button type="button" class="btn btn-outline-primary"&gt;7&lt;/button&gt;
+                            &lt;button type="button" class="btn btn-outline-primary"&gt;8&lt;/button&gt;
+                        &lt;/div&gt;
+                        &lt;div class="btn-group"&gt;
+                            &lt;button type="button" class="btn btn-info"&gt;9&lt;/button&gt;
+                            &lt;button type="button" class="btn btn-info"&gt;10&lt;/button&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;                                                   
+                </code></pre>
+            </div>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="col-8">
+                <!-- Tamaño pequeño -->
+				<div class="btn-group btn-group-sm">
+					<button type="button" class="btn btn-secondary">Izquierda</button>
+					<button type="button" class="btn btn-secondary">Central</button>
+					<button type="button" class="btn btn-secondary">Derecha</button>
+				</div>
+				<!-- Tamaño normal -->
+				<div class="btn-group">
+					<button type="button" class="btn btn-primary">Izquierda</button>
+					<button type="button" class="btn btn-primary">Central</button>
+					<button type="button" class="btn btn-primary">Derecha</button>
+				</div>
+				<!-- Tamaño grande -->
+				<div class="btn-group btn-group-lg">
+					<button type="button" class="btn btn-info">Izquierda</button>
+					<button type="button" class="btn btn-info">Central</button>
+					<button type="button" class="btn btn-info">Derecha</button>
+				</div>
+            </div>
+            <div class="col-4">
+                <pre><code>
+                    &lt;!-- Tamaño pequeño --&gt;
+                    &lt;div class="btn-group btn-group-sm"&gt;
+                        &lt;button type="button" class="btn btn-secondary"&gt;Izquierda&lt;/button&gt;
+                        &lt;button type="button" class="btn btn-secondary"&gt;Central&lt;/button&gt;
+                        &lt;button type="button" class="btn btn-secondary"&gt;Derecha&lt;/button&gt;
+                    &lt;/div&gt;
+                    
+                    &lt;!-- Tamaño normal --&gt;
+                    &lt;div class="btn-group"&gt;
+                        &lt;button type="button" class="btn btn-primary"&gt;Izquierda&lt;/button&gt;
+                        &lt;button type="button" class="btn btn-primary"&gt;Central&lt;/button&gt;
+                        &lt;button type="button" class="btn btn-primary"&gt;Derecha&lt;/button&gt;
+                    &lt;/div&gt;
+                    
+                    &lt;!-- Tamaño grande --&gt;
+                    &lt;div class="btn-group btn-group-lg"&gt;
+                        &lt;button type="button" class="btn btn-info"&gt;Izquierda&lt;/button&gt;
+                        &lt;button type="button" class="btn btn-info"&gt;Central&lt;/button&gt;
+                        &lt;button type="button" class="btn btn-info"&gt;Derecha&lt;/button&gt;
+                    &lt;/div&gt;                               
+                </code></pre>
+            </div>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="col-6">
+                <div class="btn-group-vertical">
+					<button type="button" class="btn btn-secondary">1</button>
+					<button type="button" class="btn btn-secondary">2</button>
+					<button type="button" class="btn btn-secondary">3</button>
+					<button type="button" class="btn btn-secondary">4</button>
+				</div>
+            </div>
+            <div class="col-6">
+                <pre><code>
+                    &lt;div class="btn-group-vertical"&gt;
+                        &lt;button type="button" class="btn btn-secondary"&gt;1&lt;/button&gt;
+                        &lt;button type="button" class="btn btn-secondary"&gt;2&lt;/button&gt;
+                        &lt;button type="button" class="btn btn-secondary"&gt;3&lt;/button&gt;
+                        &lt;button type="button" class="btn btn-secondary"&gt;4&lt;/button&gt;
+                    &lt;/div&gt;                                                   
+                </code></pre>
+            </div>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="col-6">
+                <div class="btn-group">
+					<button type="button" class="btn btn-info">1</button>
+					<button type="button" class="btn btn-info">2</button>
+					<div class="btn-group">
+						<button class="btn btn-info dropdown-toggle" data-bs-toggle="dropdown">Dropdown</button>
+						<ul class="dropdown-menu">
+							<li><a class="dropdown-item" href="#">Link 1</a></li>
+							<li><a class="dropdown-item" href="#">Link 2</a></li>
+						</ul>
+					</div>
+				</div>
+            </div>
+            <div class="col-6">
+                <pre><code>
+                    &lt;div class="btn-group"&gt;
+                        &lt;button type="button" class="btn btn-info"&gt;1&lt;/button&gt;
+                        &lt;button type="button" class="btn btn-info"&gt;2&lt;/button&gt;
+                        &lt;div class="btn-group"&gt;
+                            &lt;button class="btn btn-info dropdown-toggle" data-bs-toggle="dropdown"&gt;Dropdown&lt;/button&gt;
+                            &lt;ul class="dropdown-menu"&gt;
+                                &lt;li&gt;&lt;a class="dropdown-item" href="#"&gt;Link 1&lt;/a&gt;&lt;/li&gt;
+                                &lt;li&gt;&lt;a class="dropdown-item" href="#"&gt;Link 2&lt;/a&gt;&lt;/li&gt;
+                            &lt;/ul&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;                                                                                          
+                </code></pre>
+            </div>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="col-6">
+                <h5>Deseo recibir información acerca de: </h5>
+				<div class="btn-group">
+					<input type="checkbox" class="btn-check" id="cine" checked>
+					<label class="btn btn-outline-primary" for="cine">Cine</label>
+
+					<input type="checkbox" class="btn-check" id="music">
+					<label class="btn btn-outline-primary" for="music">Música</label>
+
+					<input type="checkbox" class="btn-check" id="sports">
+					<label class="btn btn-outline-primary" for="sports">Deportes</label>
+				</div> 
+            </div>
+            <div class="col-6">
+                <pre><code>
+                    &lt;h5&gt;Deseo recibir información acerca de: &lt;/h5&gt;
+                    &lt;div class="btn-group"&gt;
+                        &lt;input type="checkbox" class="btn-check" id="cine" checked&gt;
+                        &lt;label class="btn btn-outline-primary" for="cine"&gt;Cine&lt;/label&gt;
+                    
+                        &lt;input type="checkbox" class="btn-check" id="music"&gt;
+                        &lt;label class="btn btn-outline-primary" for="music"&gt;Música&lt;/label&gt;
+                    
+                        &lt;input type="checkbox" class="btn-check" id="sports"&gt;
+                        &lt;label class="btn btn-outline-primary" for="sports"&gt;Deportes&lt;/label&gt;
+                    &lt;/div&gt;                                     
+                </code></pre>
+            </div>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="col-6">
+                <h5>Estado civil: </h5>
+				<div class="btn-group">
+					<input type="radio" class="btn-check" name="ecivil" id="soltero">
+					<label class="btn btn-outline-primary" for="soltero">Soltero/a</label>
+
+					<input type="radio" class="btn-check" name="ecivil" id="casado">
+					<label class="btn btn-outline-primary" for="casado">Casado/a</label>
+
+					<input type="radio" class="btn-check" name="ecivil" id="otro" checked>
+					<label class="btn btn-outline-primary" for="otro">Otro</label>
+				</div>
+            </div>
+            <div class="col-6">
+                <pre><code>
+                    &lt;h5&gt;Estado civil: &lt;/h5&gt;
+                    &lt;div class="btn-group"&gt;
+                        &lt;input type="radio" class="btn-check" name="ecivil" id="soltero"&gt;
+                        &lt;label class="btn btn-outline-primary" for="soltero"&gt;Soltero/a&lt;/label&gt;
+                    
+                        &lt;input type="radio" class="btn-check" name="ecivil" id="casado"&gt;
+                        &lt;label class="btn btn-outline-primary" for="casado"&gt;Casado/a&lt;/label&gt;
+                    
+                        &lt;input type="radio" class="btn-check" name="ecivil" id="otro" checked&gt;
+                        &lt;label class="btn btn-outline-primary" for="otro"&gt;Otro&lt;/label&gt;
+                    &lt;/div&gt;                               
+                </code></pre>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
