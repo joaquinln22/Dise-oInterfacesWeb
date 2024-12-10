@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.1/font/bootstrap-icons.css">
+	<script src="../js/bootstrap.bundle.min.js"></script>
+	<title>Centro - C.E.S. Vega Media</title>
+	<link rel="icon" href="images/grifo.png" type="image/png">
+	<style>
+		nav{
+			background-color: #2d2e2c;
+		}
+		.nav-link{
+			color: #6EAC23;
+		}
+		.nav-link:hover{
+			color: #aff55f;
+		}
+		.navbar-toggler{
+			background-color: #6EAC23;
+		}
+		i{
+			font-style: normal;
+		}
+		.alert {
+			margin-top: 40px;
+		}
+		body{
+			padding-top: 40px;
+		}
+		.btn1{
+			background-color: #6EAC23;
+			color: white;
+		}
+		.btn1:hover{
+			background-color: #aff55f;
+		}
+		.social-btn {
+			color: #6EAC23;
+			border: 2px solid #6EAC23;
+			transition: background-color 0.3s, color 0.3s; /* Animación suave */
+		}
+
+		.social-btn:hover {
+			background-color: #6EAC23;
+			color: white;
+		}
+		footer{
+			background-color: #2d2e2c;
+			color: #6EAC23;
+		}
+		footer h5{
+			margin-bottom: 5px;
+		}
+		footer p{
+			color: white;
+			margin: 0px;
+		}
+		footer a{
+			color: white;
+			text-decoration: none;
+			font-size: 0.9em;
+		}
+		footer .logo img{
+			filter: invert(57%) sepia(47%) saturate(639%) hue-rotate(45deg) brightness(93%) contrast(95%);
+			width: 30px;
+    		height: 30px;
+    		margin-top: 10px;
+    		margin-right: 10px;
+		}
+	</style>
+</head>
+<body>
+	<!-- Barra de navegación -->
+	<nav class="navbar fixed-top navbar-expand-lg">	<!-- Expand: para poner en horizontal la barra de navegación -->
+		<div class="container-fluid">
+			<!-- Logotipo -->
+       	    <a href="principal.html" class="navbar-brand">
+                <img src="../images/logoVM_verde.jpg" alt="Vega Media" style="width: 60px;">
+                <span class="ms-3" style="color: white;">C.E.S. Vega Media</span>
+            </a>
+
+			<!-- Botón toggler -->
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#burguer">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+
+			<!-- Enlaces -->
+			<div class="collapse navbar-collapse" id="burguer">
+				<ul class="navbar-nav ms-auto">
+					<li class="nav-item">
+						<a href="principal.html" class="nav-link"><i class="bi bi-house-door"> Centro</i></a>
+					</li>
+					<li class="nav-item">
+						<a href="etapas.html" class="nav-link"><i class="bi bi-mortarboard"> Etapas Educativas</i></a>
+					</li>
+					<li class="nav-item">
+						<a href="instalaciones.html" class="nav-link"><i class="bi bi-signpost-split"> Instalaciones</i></a>
+					</li>
+					<li class="nav-item">
+						<a href="servicios.html" class="nav-link"><i class="bi bi-plus-circle"> Servicios</i></a>
+					</li>
+					<li class="nav-item">
+						<a href="contacto.html" class="nav-link"><i class="bi bi-telephone"> Contacto</i></a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	<div class="alert alert-success alert-dismissible fade show">
+		<button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+		Debes rellenar todos los datos para enviar un mensaje.
+	</div>
+	<section class="container mt-4">
+		<form action="" class="row">
+			<div class="col mt-4 d-flex justify-content-center">
+				<div class="card border-success text-center w-75">
+					<div class="card-header text-white" style="background-color: #2d2e2c;">
+						<h2 style="color: #6EAC23;">Contacto</h2>
+					</div>
+					<div class="card-body" style="background-color: #e1ede4;">
+						<div class="row mb-2 d-flex justify-content-center">
+							<div class="col col-4">
+								<input type="text" class="form-control" name="nombre" placeholder="Nombre" style="border: 3px solid #6EAC23;">
+							</div>
+							<div class="col col-4">
+								<input type="text" class="form-control" name="correo" placeholder="Correo" style="border: 3px solid #6EAC23;">
+							</div>
+						</div>
+						<div class="row mb-2 d-flex justify-content-center">
+							<div class="col col-2">
+								<input type="number" class="form-control" name="prefijo" placeholder="+34" style="border: 3px solid #6EAC23;">
+							</div>
+							<div class="col col-4">
+								<input type="text" class="form-control" name="telefono" placeholder="Teléfono" style="border: 3px solid #6EAC23;">
+							</div>
+						</div>
+						<div class="row mb-2 d-flex justify-content-center">
+							<div class="col col-8">
+								<textarea class="form-control w-100" name="mensaje" id="mensaje" rows="3" style="border: 3px solid #6EAC23;">Mensaje...</textarea>
+							</div>
+						</div>
+						<div class="row mb-2 d-flex justify-content-center">
+							<div class="col col-8">
+								<input type="checkbox" class="form-check-input" id="acepto" value="" required>
+                            	<label class="form-check-label" for="acepto">Acepto la Política de privacidad y la Cláusula de protección de datos de este sitio.</label>
+							</div>
+                        </div>
+					</div>
+					<div class="card-footer position-relative" style="background-color: #2d2e2c;">
+						<button class="btn1 btn" type="button" id="toastbtn1">Enviar</button>
+						<div class="toast align-items-center border-0 position-absolute start-50 translate-middle-x" id="toastMessage" role="alert" aria-live="assertive" aria-atomic="true" style="top: 50px; z-index: 1055; background-color: #e1ede4;">
+							<div class="d-flex">
+								<div class="toast-body">
+									¡Gracias por dejarnos tu mensaje!
+								</div>
+								<button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
+							</div>
+						</div>
+					</div>					
+				</div>
+				 <!-- Icon Bar -->
+				 <div class="col-lg-2 d-flex flex-column align-items-center justify-content-start">
+					<div class="btn-group-vertical">
+						<a class="btn mb-2 social-btn" href="https://www.facebook.com/CESVegaMedia" target="_blank">
+							<i class="bi bi-facebook"></i> Facebook
+						</a>
+						<a class="btn mb-2 social-btn" href="https://twitter.com/cesvegamedia" target="_blank">
+							<i class="bi bi-twitter"></i> Twitter
+						</a>
+						<a class="btn mb-2 social-btn" href="https://www.youtube.com/user/CESVEGAMEDIA" target="_blank">
+							<i class="bi bi-youtube"></i> YouTube
+						</a>
+						<a class="btn mb-2 social-btn" href="https://www.instagram.com/cesvegamedia" target="_blank">
+							<i class="bi bi-instagram"></i> Instagram
+						</a>
+					</div>
+				</div>
+			</div>
+		</form>
+	</section>
+	<footer class="d-flex justify-content-around pt-4 pb-4 mt-3">
+		<div class="row">
+			<div class="col-12 mb-3 col-md-6 col-lg-auto text-center text-lg-start">
+				<h5>Información</h5>
+				<p><a href="https://ces-vegamedia.es/aviso-legal/">Aviso legal</a></p>
+				<p><a href="https://ces-vegamedia.es/privacidad/">Política de privacidad</a></p>
+				<p><a href="https://ces-vegamedia.es/cookies/">Política de cookies</a></p>
+				<p><a href="https://ces-vegamedia.es/condiciones-de-compra/">Condiciones generales de contratación</a></p>
+			</div>
+			<div class="col-12 mb-3 col-md-6 col-lg-auto text-center text-lg-start">
+				<h5>Formación</h5>
+				<p><a href="etapas.html#ancla01">Infantil</a></p>
+				<p><a href="etapas.html#ancla02">Primaria</a></p>
+				<p><a href="etapas.html#ancla03">Secundaria</a></p>
+				<p><a href="etapas.html#ancla04">Ciclos formativos</a></p>
+			</div>
+			<div class="col-12 mb-3 col-md-6 col-lg-auto text-center text-lg-start">
+				<h5>Visítanos</h5>
+				<p>CES VEGA MEDIA, S. COOP.</p>
+				<p>Ctra. De Mula, 37 - Alguazas</p>
+				<p>30560 - Murcia</p>
+				<p><a style="color: #aff55f;" href="https://www.google.es/maps/place/CES+Vega+Media/@38.0515582,-1.2558907,17z/data=!3m1!4b1!4m5!3m4!1s0xd647ed425284579:0xc1fae33ccb32d958!8m2!3d38.0515582!4d-1.253702">Ver mapa</a></p>
+			</div>
+			<div class="col-12 mb-3 col-md-6 col-lg-auto text-center text-lg-start">
+				<h5>Contacto</h5>
+				<p>Tlfn: 968 620 913</p>
+				<p>vegamedia@ces-vegamedia.es</p>
+				<a class="logo" href="https://www.facebook.com/CESVegaMedia" target="_blank"><img src="images/facebook.svg" alt="Facebook"></a>
+				<a class="logo" href="https://twitter.com/cesvegamedia" target="_blank"><img src="images/twitter-x.svg" alt="Twitter"></a>
+				<a class="logo" href="https://www.youtube.com/user/CESVEGAMEDIA" target="_blank"><img src="images/youtube.svg" alt="Youtube"></a>
+				<a class="logo" href="https://www.instagram.com/cesvegamedia" target="_blank"><img src="images/instagram.svg" alt="Instagram"></a>
+			</div>
+			<div class="col-12 col-lg-auto d-flex justify-content-center mt-4">
+				<a href="principal.html" target="_parent"><img src="images/logoVM_blanco.png" alt="C.E.S. Vega Media"></a>
+			</div>
+		</div>
+	</footer>
+	<script>
+		document.getElementById("toastbtn1").onclick = function() {
+			var toastElList = [].slice.call(document.querySelectorAll('.toast'))
+		  	var toastList = toastElList.map(function(toastEl) {
+		    	return new bootstrap.Toast(toastEl)
+			})
+			toastList.forEach(toast => toast.show()) 
+		}
+	</script>
+</body>
+</html>

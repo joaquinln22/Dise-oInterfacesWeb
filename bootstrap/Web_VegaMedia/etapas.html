@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.1/font/bootstrap-icons.css">
+	<script src="../js/bootstrap.bundle.min.js"></script>
+	<title>Centro - C.E.S. Vega Media</title>
+	<link rel="icon" href="images/grifo.png" type="image/png">
+	<style>
+		nav{
+			background-color: #2d2e2c;
+		}
+		.nav-link{
+			color: #6EAC23;
+		}
+		.nav-link:hover{
+			color: #aff55f;
+		}
+		.navbar-toggler{
+			background-color: #6EAC23;
+		}
+		i{
+			font-style: normal;
+		}
+		body{
+			padding-top: 40px;
+		}
+		.card-title{
+			color: #6EAC23;
+		}
+		.btn1{
+			background-color: #6EAC23;
+			margin-top: 20px;
+			color: white;
+		}
+		.btn1:hover{
+			background-color: #aff55f;
+		}
+		.badge{
+			color: white;
+			background-color: #6EAC23;
+			font-weight: 350;
+		}
+		.carousel-caption{
+			color: black;
+		}
+		footer{
+			background-color: #2d2e2c;
+			color: #6EAC23;
+		}
+		footer h5{
+			margin-bottom: 5px;
+		}
+		footer p{
+			color: white;
+			margin: 0px;
+		}
+		footer a{
+			color: white;
+			text-decoration: none;
+			font-size: 0.9em;
+		}
+		footer .logo img{
+			filter: invert(57%) sepia(47%) saturate(639%) hue-rotate(45deg) brightness(93%) contrast(95%);
+			width: 30px;
+    		height: 30px;
+    		margin-top: 10px;
+    		margin-right: 10px;
+		}
+	</style>
+</head>
+<body>
+	<!-- Barra de navegación -->
+	<nav class="navbar fixed-top navbar-expand-lg">	<!-- Expand: para poner en horizontal la barra de navegación -->
+		<div class="container-fluid">
+			<!-- Logotipo -->
+       	    <a href="principal.html" class="navbar-brand">
+                <img src="../images/logoVM_verde.jpg" alt="Vega Media" style="width: 60px;">
+                <span class="ms-3" style="color: white;">C.E.S. Vega Media</span>
+            </a>
+
+			<!-- Botón toggler -->
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#burguer">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+
+			<!-- Enlaces -->
+			<div class="collapse navbar-collapse" id="burguer">
+				<ul class="navbar-nav ms-auto">
+					<li class="nav-item">
+						<a href="principal.html" class="nav-link"><i class="bi bi-house-door"> Centro</i></a>
+					</li>
+					<li class="nav-item">
+						<a href="etapas.html" class="nav-link"><i class="bi bi-mortarboard"> Etapas Educativas</i></a>
+					</li>
+					<li class="nav-item">
+						<a href="instalaciones.html" class="nav-link"><i class="bi bi-signpost-split"> Instalaciones</i></a>
+					</li>
+					<li class="nav-item">
+						<a href="servicios.html" class="nav-link"><i class="bi bi-plus-circle"> Servicios</i></a>
+					</li>
+					<li class="nav-item">
+						<a href="contacto.html" class="nav-link"><i class="bi bi-telephone"> Contacto</i></a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	<section class="container mt-5">
+		<div class="row">
+			<div class="col-12 col-lg-4 d-flex justify-content-center">
+				<div class="card mb-3" style="max-width:300px; border: 3px solid #6EAC23;">
+                    <img class="card-img-top" src="images/infantil.jpg" alt="Educación Infantil" style="width: 100%; height: 250px;">
+                    <div class="card-body text-center">
+                        <h4 class="card-title" name="ancla01">Educación Infantil</h4>
+                        <button type="button" class="btn1 btn" data-bs-toggle="modal" data-bs-target="#myModal1">Saber más</button>  
+                    </div>
+                    <div class="modal fade" id="myModal1">
+	                    <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-md"> 
+                            <div class="modal-content text-justified">
+                                <div class="modal-header">
+                                    <h4 class="modal-title"><span class="badge rounded-pill">Etapa Voluntaria</span></h4>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <p>Esta etapa está dedicada al fomento y el desarrollo integral de personalidad individual de cada uno de nuestros alumnos mediante la promoción de las habilidades sociales, emocionales, cognitivas y motrices básicas.</p>
+                        			<p>Nuestro proyecto propio es adaptable a las características de cada grupo y alumno, siendo el niño el que marca la dinámica según sus necesidades, intereses y capacidades.</p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cerrar</button>
+                                </div>
+                            </div>
+	                    </div>
+                    </div>
+                </div>
+			</div>
+			<div class="col-12 col-lg-4 d-flex justify-content-center">
+				<div class="card mb-3" style="max-width:300px; border: 3px solid #6EAC23;">
+                    <img class="card-img-top" src="images/primaria.jpg" alt="Educación Primaria" style="width: 100%; height: 250px;">
+                    <div class="card-body text-center">
+                        <h4 class="card-title" name="ancla02">Educación Primaria</h4>
+                        <button type="button" class="btn1 btn" data-bs-toggle="modal" data-bs-target="#myModal2">Saber más</button>  
+                    </div>
+                    <div class="modal fade" id="myModal2">
+	                    <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-lg"> 
+                            <div class="modal-content text-justified">
+                                <div class="modal-header">
+                                    <h4 class="modal-title"><span class="badge rounded-pill">Etapa Obligatoria</span></h4>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <p>Esta etapa está dedicada al desarrollo del interés por aprender y al fomento de la cultura general. Los alumnos alcanzarán su capacidad deductiva, inductiva y lógica a través de la propia experimentación. La evaluación del alumnado se realiza de manera continua valorando así en mayor medida el esfuerzo diario en lugar del resultado de una prueba única.</p>
+                        			<p>Nuestro proyecto propio es adaptable a las características de cada grupo y alumno, siendo el niño el que marca la dinámica según sus necesidades, intereses y capacidades. Formación básica e integral de calidad con proyectos únicos de 6 a 12 años.</p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cerrar</button>
+                                </div>
+                            </div>
+	                    </div>
+                    </div>
+                </div>
+			</div>
+			<div class="col-12 col-lg-4 d-flex justify-content-center">
+				<div class="card mb-3" style="max-width:300px; border: 3px solid #6EAC23;">
+                    <img class="card-img-top" src="images/secundaria.jpg" alt="Educación Secundaria" style="width: 100%; height: 250px;">
+                    <div class="card-body text-center">
+                        <h4 class="card-title" name="ancla03">Educación Secundaria</h4>
+                        <button type="button" class="btn1 btn" data-bs-toggle="modal" data-bs-target="#myModal3">Saber más</button>  
+                    </div>
+                    <div class="modal fade" id="myModal3">
+	                    <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-md"> 
+                            <div class="modal-content text-justified">
+                                <div class="modal-header">
+                                    <h4 class="modal-title"><span class="badge rounded-pill">Etapa Obligatoria</span></h4>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <p>La educación secundaria es básica y obligatoria. Comprende cuatro cursos académicos. La finalidad de la educación secundaria obligatoria es proporcionar a todos los chicos y chicas una educación que les permita asegurar un desarrollo personal sólido, adquirir las habilidades y las competencias culturales y sociales relativas a la expresión y comprensión oral, a la escritura, al cálculo, a la resolución de problemas de la vida cotidiana, al rechazo de todo tipo de comportamientos discriminatorios por razón de sexo, a la igualdad de derechos y oportunidades entre mujeres y hombres, a la autonomía personal, a la corresponsabilidad y la interdependencia personal y a la comprensión de los elementos básicos del mundo en los aspectos científico, social y cultural.</p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cerrar</button>
+                                </div>
+                            </div>
+	                    </div>
+                    </div>
+                </div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-12 col-lg-4 d-flex justify-content-center">
+				<div class="card mb-3" style="max-width:300px; border: 3px solid #6EAC23;">
+                    <img class="card-img-top" src="images/basica.jpg" alt="Formación Profesional Básica" style="width: 100%; height: 250px;">
+                    <div class="card-body text-center">
+                        <h4 class="card-title" name="ancla04">Formación Profesional Básica</h4>
+                        <button type="button" class="btn1 btn" data-bs-toggle="modal" data-bs-target="#myModal4">Saber más</button>  
+                    </div>
+                    <div class="modal fade" id="myModal4">
+	                    <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-md"> 
+                            <div class="modal-content text-justified">
+                                <div class="modal-header">
+                                    <h4 class="modal-title"><span class="badge rounded-pill">Etapa Post-Obligatoria</span></h4>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <p>Este ciclo, cofinanciado por la Unión Europea, tiene como objetivos la reducción del abandono escolar temprano, el aprendizaje permanente y convalidación de las competencias adquiridas y el refuerzo de los vínculos con el mercado laboral y calidad de la formación profesional.</p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cerrar</button>
+                                </div>
+                            </div>
+	                    </div>
+                    </div>
+                </div>
+			</div>
+			<div class="col-12 col-lg-4 d-flex justify-content-center">
+				<div class="card mb-3" style="max-width:300px; border: 3px solid #6EAC23;">
+                    <img class="card-img-top" src="images/enfermeria.jpg" alt="Ciclos Formativos de Grado Medio" style="width: 100%; height: 250px;">
+                    <div class="card-body text-center">
+                        <h4 class="card-title">Ciclos Formativos de Grado Medio</h4>
+                        <button type="button" class="btn1 btn" data-bs-toggle="modal" data-bs-target="#myModal5">Saber más</button>  
+                    </div>
+                    <div class="modal fade" id="myModal5">
+	                    <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-lg"> 
+                            <div class="modal-content text-justified">
+                                <div class="modal-header">
+                                    <h4 class="modal-title"><span class="badge rounded-pill">Etapa Post-Obligatoria</span></h4>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                                </div>
+                                <div class="modal-body">
+                                	<div class="carousel slide" data-bs-ride="carousel" id="ejemplo-carousel">
+			                            <div class="carousel-inner">
+											<div class="carousel-item active">
+												<img src="images/electricidad.jpg" class="d-block w-100" style="max-width: 100%; height: 275px;">
+											</div>
+											<div class="carousel-item">
+												<img src="images/enfermeria.jpg" class="d-block w-100" style="max-width: 100%; height: 275px;">
+											</div>
+											<div class="carousel-item">
+												<img src="images/administrativa.jpg" class="d-block w-100" style="max-width: 100%; height: 275px;">
+											</div>
+				                        </div>
+										<button class="carousel-control-prev" type="button" data-bs-slide="prev" data-bs-target="#ejemplo-carousel">
+											<span class="carousel-control-prev-icon"></span>
+										</button>
+										<button class="carousel-control-next" type="button" data-bs-slide="next" data-bs-target="#ejemplo-carousel">
+											<span class="carousel-control-next-icon"></span>
+										</button>
+										<div class="carousel-indicators">
+											<button type="button" data-bs-target="#ejemplo-carousel" data-bs-slide-to="0" class="active"></button>
+											<button type="button" data-bs-target="#ejemplo-carousel" data-bs-slide-to="1"></button>
+											<button type="button" data-bs-target="#ejemplo-carousel" data-bs-slide-to="2"></button>
+										</div>
+				                    </div>
+                                </div>
+								<div class="accordion" id="EjemploAcordeon">
+									<div class="accordion-item">
+										<div class="accordion-header">
+											<button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#plegableUNO">
+												Instalaciones Eléctricas y Automáticas
+											</button>
+										</div>
+										<div id="plegableUNO" class="accodion-collapse collapse" data-bs-parent="#EjemploAcordeon">
+											<div class="accordion-body">
+												2000 horas de formación. Para trabajar en el montaje y el mantenimiento de infraestructuras de telecomunicación en edificios, máquinas eléctricas, sistemas automatizados, instalaciones eléctricas de baja tensión y sistemas domóticos.
+											</div>
+										</div>
+									</div>
+									<div class="accordion-item">
+										<div class="accordion-header">
+											<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#plegableDOS">
+												Cuidados Auxiliares de Enfermería
+											</button>
+										</div>
+										<div id="plegableDOS" class="accodion-collapse collapse" data-bs-parent="#EjemploAcordeon">
+											<div class="accordion-body">
+												1400 horas de formación. Para ejercer una actividad profesional en el sector sanitario, en empresas privadas o creando empresa propia.
+											</div>
+										</div>
+									</div>
+									<div class="accordion-item">
+										<div class="accordion-header">
+											<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#plegableTRES">
+												Gestión Administrativa
+											</button>
+										</div>
+										<div id="plegableTRES" class="accodion-collapse collapse" data-bs-parent="#EjemploAcordeon">
+											<div class="accordion-body">
+												2000 horas de formación. Este profesional ejerce su actividad tanto en grandes como en medianas y pequeñas empresas, particularmente en el sector servicios, así como en las administraciones públicas, ofreciendo apoyo administrativo en las tareas de administración y gestión.
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="modal-footer">
+									<button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cerrar</button>
+								</div>
+                            </div>
+	                    </div>
+                    </div>
+                </div>
+			</div>
+			<div class="col-12 col-lg-4 d-flex justify-content-center">
+				<div class="card mb-3" style="max-width:300px; border: 3px solid #6EAC23;">
+                    <img class="card-img-top" src="images/daw.jpg" alt="Ciclos Formativos de Grado Superior" style="width: 100%; height: 250px;">
+                    <div class="card-body text-center">
+                        <h4 class="card-title">Ciclos Formativos de Grado Superior</h4>
+                        <button type="button" class="btn1 btn" data-bs-toggle="modal" data-bs-target="#myModal6">Saber más</button>  
+                    </div>
+                    <div class="modal fade" id="myModal6">
+	                    <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-lg"> 
+                            <div class="modal-content text-justified">
+                                <div class="modal-header">
+                                    <h4 class="modal-title"><span class="badge rounded-pill">Etapa Post-Obligatoria</span></h4>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                                </div>
+                                <div class="modal-body">
+                                	<div class="carousel slide" data-bs-ride="carousel" id="ejemplo-carousel2">
+			                            <div class="carousel-inner">
+											<div class="carousel-item active">
+												<img src="images/daw.jpg" class="d-block w-100" style="max-width: 100%; height: 275px;">
+											</div>
+											<div class="carousel-item">
+												<img src="images/educacion-infantil.webp" class="d-block w-100" style="max-width: 100%; height: 275px;">
+											</div>
+				                        </div>   
+										<button class="carousel-control-prev" type="button" data-bs-slide="prev" data-bs-target="#ejemplo-carousel2">
+											<span class="carousel-control-prev-icon"></span>
+										</button>
+										<button class="carousel-control-next" type="button" data-bs-slide="next" data-bs-target="#ejemplo-carousel2">
+											<span class="carousel-control-next-icon"></span>
+										</button>
+										<div class="carousel-indicators">
+											<button type="button" data-bs-target="#ejemplo-carousel2" data-bs-slide-to="0" class="active"></button>
+											<button type="button" data-bs-target="#ejemplo-carousel2" data-bs-slide-to="1"></button>
+										</div>
+				                    </div>
+                                </div>
+								<div class="accordion" id="EjemploAcordeon2">
+									<div class="accordion-item">
+										<div class="accordion-header">
+											<button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#plegableCUATRO">
+												Desarrollo de Aplicaciones Web
+											</button>
+										</div>
+										<div id="plegableCUATRO" class="accodion-collapse collapse" data-bs-parent="#EjemploAcordeon2">
+											<div class="accordion-body">
+												2000 horas de formación. Desarrollar, implantar, y mantener aplicaciones web, con independencia del modelo empleado y utilizando tecnologías específicas, garantizando el acceso a los datos de forma segura y cumpliendo los criterios de accesibilidad, usabilidad y calidad exigidas en los estándares establecidos.
+											</div>
+										</div>
+									</div>
+									<div class="accordion-item">
+										<div class="accordion-header">
+											<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#plegableCINCO">
+												Educación Infantil
+											</button>
+										</div>
+										<div id="plegableCINCO" class="accodion-collapse collapse" data-bs-parent="#EjemploAcordeon2">
+											<div class="accordion-body">
+												2000 horas de formación. Para programar, diseñar y llevar a cabo actividades de intervención educativa y de atención social con la infancia y sus familias.
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="modal-footer">
+									<button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cerrar</button>
+								</div>
+							</div>  
+                        </div>
+	                </div>
+                </div>
+            </div>
+		</div>
+	</section>
+	<footer class="d-flex justify-content-around pt-4 pb-4 mt-3">
+		<div class="row">
+			<div class="col-12 mb-3 col-md-6 col-lg-auto text-center text-lg-start">
+				<h5>Información</h5>
+				<p><a href="https://ces-vegamedia.es/aviso-legal/">Aviso legal</a></p>
+				<p><a href="https://ces-vegamedia.es/privacidad/">Política de privacidad</a></p>
+				<p><a href="https://ces-vegamedia.es/cookies/">Política de cookies</a></p>
+				<p><a href="https://ces-vegamedia.es/condiciones-de-compra/">Condiciones generales de contratación</a></p>
+			</div>
+			<div class="col-12 mb-3 col-md-6 col-lg-auto text-center text-lg-start">
+				<h5>Formación</h5>
+				<p><a href="etapas.html#ancla01">Infantil</a></p>
+				<p><a href="etapas.html#ancla02">Primaria</a></p>
+				<p><a href="etapas.html#ancla03">Secundaria</a></p>
+				<p><a href="etapas.html#ancla04">Ciclos formativos</a></p>
+			</div>
+			<div class="col-12 mb-3 col-md-6 col-lg-auto text-center text-lg-start">
+				<h5>Visítanos</h5>
+				<p>CES VEGA MEDIA, S. COOP.</p>
+				<p>Ctra. De Mula, 37 - Alguazas</p>
+				<p>30560 - Murcia</p>
+				<p><a style="color: #aff55f;" href="https://www.google.es/maps/place/CES+Vega+Media/@38.0515582,-1.2558907,17z/data=!3m1!4b1!4m5!3m4!1s0xd647ed425284579:0xc1fae33ccb32d958!8m2!3d38.0515582!4d-1.253702">Ver mapa</a></p>
+			</div>
+			<div class="col-12 mb-3 col-md-6 col-lg-auto text-center text-lg-start">
+				<h5>Contacto</h5>
+				<p>Tlfn: 968 620 913</p>
+				<p>vegamedia@ces-vegamedia.es</p>
+				<a class="logo" href="https://www.facebook.com/CESVegaMedia" target="_blank"><img src="images/facebook.svg" alt="Facebook"></a>
+				<a class="logo" href="https://twitter.com/cesvegamedia" target="_blank"><img src="images/twitter-x.svg" alt="Twitter"></a>
+				<a class="logo" href="https://www.youtube.com/user/CESVEGAMEDIA" target="_blank"><img src="images/youtube.svg" alt="Youtube"></a>
+				<a class="logo" href="https://www.instagram.com/cesvegamedia" target="_blank"><img src="images/instagram.svg" alt="Instagram"></a>
+			</div>
+			<div class="col-12 col-lg-auto d-flex justify-content-center mt-4">
+				<a href="principal.html" target="_parent"><img src="images/logoVM_blanco.png" alt="C.E.S. Vega Media"></a>
+			</div>
+		</div>
+	</footer>
+</body>
+</html>

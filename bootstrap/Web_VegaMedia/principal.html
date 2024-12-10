@@ -27,12 +27,23 @@
 		body{
 			padding-top: 40px;
 		}
+		article h2{
+			color: #6EAC23;
+		}
+		.btn1{
+			background-color: #6EAC23;
+			margin-bottom: 20px;
+			color: white;
+		}
+		.btn1:hover{
+			background-color: #aff55f;
+		}
 		footer{
 			background-color: #2d2e2c;
 			color: #6EAC23;
 		}
 		footer h5{
-			margin-bottom: 25px;
+			margin-bottom: 5px;
 		}
 		footer p{
 			color: white;
@@ -91,60 +102,60 @@
 	</nav>
 	<section class="container mt-5">
 		<div class="row">
-			<!-- Parte principal -->
-			<main class="col-sm-9">
-				<article>
-					<h2>Artículo 1</h2>
-					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem aliquid id asperiores dignissimos odio earum illum, aspernatur laudantium vero blanditiis magnam modi perspiciatis velit, laboriosam, molestiae distinctio eos consequatur deserunt.</p>
-				</article>
-				<article>
-					<h2>Artículo 2</h2>
-					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem aliquid id asperiores dignissimos odio earum illum, aspernatur laudantium vero blanditiis magnam modi perspiciatis velit, laboriosam, molestiae distinctio eos consequatur deserunt.</p>
-				</article>
-			</main>
 			<!-- Barra lateral -->
-			<aside class="col-sm-3">
-				<h2>ASIDE</h2>
-				<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Libero earum labore odit, eum, similique magni quo voluptatem? Optio reiciendis sint quaerat libero ad nisi dolor, quis sit facere asperiores inventore.</p>
+			<aside class="col-12 col-md-6 text-center">
+				<iframe width="560" height="315" src="https://www.youtube.com/embed/5UAOIlSOYPE?si=R8nJUTAqnIcZzTzl" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 			</aside>
+			<!-- Parte principal -->
+			<main class="col-12 col-md-6 text-start">
+				<article>
+					<h2>Carta de presentación</h2>
+					<p>El CES Vega Media es un centro concertado donde la enseñanza es totalmente gratuita, gestionado por una cooperativa de profesores con vocación por la formación, que forman una plantilla estable imprescindible para conseguir un verdadero trabajo de equipo.</p>
+					<p>Hemos crecido y seguimos creciendo por nuestro Proyecto Cooperativo, dónde las personas y una fuerte apuesta por un proyecto de calidad, son los elementos fundamentales de nuestra organización.</p>
+                    <button type="button" class="btn1 btn" data-bs-toggle="collapse" data-bs-target="#plegable1">Seguir leyendo</button>
+                    <div id="plegable1" class="collapse">
+                        <p>El C.E.S. Vega Media es un centro dinámico, con una actitud abierta al cambio, siempre buscando nuestro espacio dónde compartimos muchas cosas con otras Cooperativas pero dónde también tenemos nuestra propia identidad que nos hace diferentes.</p>
+                        <p>Aquí se mezclan la experiencia, madurez y estabilidad que aportan los socios más antiguos, con la frescura y la ilusión que nos traen las últimas generaciones, pero todos con un denominador común: “Seguir trabajando por nuestro Centro, por una mayor calidad en nuestros servicios, siendo flexibles a los cambios constantes de la sociedad para adaptarnos a ellos en las mejores condiciones, y aprovechando la creatividad y la iniciativa que sólo las personas pueden aportar”.</p>
+                        <p>Por todo ello, estamos y seguiremos estando al servicio de nuestra Comunidad Educativa.</p>
+                        <p>El órgano responsable de la alta gestión de la cooperativa, es el Consejo Rector que está formado por siete personas, en las que recaen las funciones de organización y gestión del centro, a nivel empresarial y pedagógico.</p>
+                    </div>
+				</article>
+			</main>	
 		</div>
-		
-
-		
 	</section>
 	<footer class="d-flex justify-content-around pt-4 pb-4 mt-3"> <!-- p: el padding -->
-		<div class="row mt-2">
-			<div class="col-auto me-2">
+		<div class="row">
+			<div class="col-12 mb-3 col-md-6 col-lg-auto text-center text-lg-start">
 				<h5>Información</h5>
 				<p><a href="https://ces-vegamedia.es/aviso-legal/">Aviso legal</a></p>
 				<p><a href="https://ces-vegamedia.es/privacidad/">Política de privacidad</a></p>
 				<p><a href="https://ces-vegamedia.es/cookies/">Política de cookies</a></p>
 				<p><a href="https://ces-vegamedia.es/condiciones-de-compra/">Condiciones generales de contratación</a></p>
 			</div>
-			<div class="col-auto me-2">
+			<div class="col-12 mb-3 col-md-6 col-lg-auto text-center text-lg-start">
 				<h5>Formación</h5>
-				<p><a href="">Infantil</a></p>
-				<p><a href="">Primaria</a></p>
-				<p><a href="">Secundaria</a></p>
-				<p><a href="">Ciclos formativos</a></p>
+				<p><a href="etapas.html#ancla01">Infantil</a></p>
+				<p><a href="etapas.html#ancla02">Primaria</a></p>
+				<p><a href="etapas.html#ancla03">Secundaria</a></p>
+				<p><a href="etapas.html#ancla04">Ciclos formativos</a></p>
 			</div>
-			<div class="col-auto me-2">
+			<div class="col-12 mb-3 col-md-6 col-lg-auto text-center text-lg-start">
 				<h5>Visítanos</h5>
 				<p>CES VEGA MEDIA, S. COOP.</p>
 				<p>Ctra. De Mula, 37 - Alguazas</p>
 				<p>30560 - Murcia</p>
 				<p><a style="color: #aff55f;" href="https://www.google.es/maps/place/CES+Vega+Media/@38.0515582,-1.2558907,17z/data=!3m1!4b1!4m5!3m4!1s0xd647ed425284579:0xc1fae33ccb32d958!8m2!3d38.0515582!4d-1.253702">Ver mapa</a></p>
 			</div>
-			<div class="col-auto me-2">
+			<div class="col-12 mb-3 col-md-6 col-lg-auto text-center text-lg-start">
 				<h5>Contacto</h5>
 				<p>Tlfn: 968 620 913</p>
 				<p>vegamedia@ces-vegamedia.es</p>
-				<a class="logo" href="" target="_blank"><img src="images/facebook.svg" alt="Facebook"></a>
-				<a class="logo" href="" target="_blank"><img src="images/twitter-x.svg" alt="Twitter"></a>
-				<a class="logo" href="" target="_blank"><img src="images/youtube.svg" alt="Youtube"></a>
-				<a class="logo" href="" target="_blank"><img src="images/instagram.svg" alt="Instagram"></a>
+				<a class="logo" href="https://www.facebook.com/CESVegaMedia" target="_blank"><img src="images/facebook.svg" alt="Facebook"></a>
+				<a class="logo" href="https://twitter.com/cesvegamedia" target="_blank"><img src="images/twitter-x.svg" alt="Twitter"></a>
+				<a class="logo" href="https://www.youtube.com/user/CESVEGAMEDIA" target="_blank"><img src="images/youtube.svg" alt="Youtube"></a>
+				<a class="logo" href="https://www.instagram.com/cesvegamedia" target="_blank"><img src="images/instagram.svg" alt="Instagram"></a>
 			</div>
-			<div class="col-auto d-flex align-items-center">
+			<div class="col-12 col-lg-auto d-flex justify-content-center mt-4">
 				<a href="principal.html" target="_parent"><img src="images/logoVM_blanco.png" alt="C.E.S. Vega Media"></a>
 			</div>
 		</div>
