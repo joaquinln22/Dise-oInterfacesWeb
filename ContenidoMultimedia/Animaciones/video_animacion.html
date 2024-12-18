@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Video y Animación CSS</title>
+	<style>
+		.box {
+			width: 100px;
+			height: 100px;
+			background-color: red;
+			position: relative;
+			transition: transform 1s;
+		}
+
+		/* Animación de la caja cuando el video llega a un punto específico */
+		.box.animated {
+			transform: translateX(300px);
+		}
+
+		@keyframes scroll {
+			0% {
+				transform: translateX(-100%);
+			}
+			100% {
+				transform: translateX(0%);
+			}
+		}
+	</style>
+</head>
+<body>
+	<video id="video" width="400" controls>
+		<source src="./recursos/video.mp4" type="video/mp4">
+		Tu navegador no soporta el elemento video.
+	</video>
+
+	<div class="box" id="box"></div>
+
+	<script>
+		
+	</script>
+</body>
+</html>
