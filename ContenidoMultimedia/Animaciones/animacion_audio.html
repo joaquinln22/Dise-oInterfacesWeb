@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Audio y Animación CSS</title>
+	<style>
+		.circle{
+			width: 100px;
+			height: 100px;
+			background-color: blue;
+			border-radius: 50%;
+			position: relative;
+			transition: transform 1s;
+		}
+
+		.circle.animated {
+			transform: scale(1.5);
+		}
+	</style>
+</head>
+<body>
+	<audio id="audio" controls>
+		<source src="./recursos/audio.mp3" type="audio/mpeg">
+		Tu navegador no soporta el elemento audio.
+	</audio>
+	<div id="circle" class="circle"></div>
+	<script>
+		const audio = document.getElementById('audio');
+		const circle = document.getElementById('circle');
+		// Iniciar la animación cuando el audio alcance 3 segundos
+		audio.addEventListener('timeupdate', () => {
+			if(audio.currentTime >= 3){
+				circle.classList.add('animated');
+			}
+		});
+	</script>
+</body>
+</html>

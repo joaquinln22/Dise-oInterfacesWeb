@@ -17,14 +17,8 @@
 		.box.animated {
 			transform: translateX(300px);
 		}
-
-		@keyframes scroll {
-			0% {
-				transform: translateX(-100%);
-			}
-			100% {
-				transform: translateX(0%);
-			}
+		.box.animated2 {
+			transform: translateX(0px);
 		}
 	</style>
 </head>
@@ -37,7 +31,18 @@
 	<div class="box" id="box"></div>
 
 	<script>
-		
+		const video = document.getElementById('video');
+		const box = document.getElementById('box');
+
+		// Añade una animación cuando el video alcance los 5 segundos
+		video.addEventListener('timeupdate', () => {
+			if(video.currentTime >= 5){
+				box.classList.add('animated');
+			}
+			if(video.currentTime >= 10){
+				box.classList.add('animated2');
+			}
+		});
 	</script>
 </body>
 </html>
