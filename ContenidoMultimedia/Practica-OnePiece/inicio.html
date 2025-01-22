@@ -8,40 +8,178 @@
 	<script src="./js/bootstrap.bundle.min.js"></script>
     <title>One Piece</title>
     <link rel="icon" href="./recursos/jollyroger.png" type="image/webp">
+    <style>
+        .nav-link{
+			color: #dc3545;
+		}
+		.nav-link:hover{
+			color: white;
+		}
+		.fade-out{
+			height: 60px;
+			transition: opacity 1s;
+		}
+
+		.fade-out:hover{
+			opacity: 0.5;
+		}
+
+        .fade-out2{
+			transition: opacity 1s;
+		}
+
+		.fade-out2:hover{
+			opacity: 0.5;
+		}
+
+        .typing{
+			width: 0px;
+			border-right: 2px solid transparent;
+			white-space: nowrap;
+			overflow: hidden;
+			animation: typing 2s steps(30) forwards;
+		}
+
+		@keyframes typing {
+			from { width: 0; }
+			to { width: 20%; }
+		}
+
+        .recuadro {
+            border: 2px solid #dc3545;
+            border-radius: 15px;
+            padding: 20px;
+        }
+	</style>
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-            <div class="container justify-content-center text-center">
-                <a class="navbar-brand mx-auto" href="inicio.html">
-                    <img src="./recursos/jollyroger.png" alt="Logo" height="50">
+        <div class="container-fluid bg-danger">
+            <!-- Fila superior -->
+            <div class="row justify-content-center align-items-center">
+                <!-- Texto a la izquierda -->
+                <span class="col-md-auto d-none d-md-block text-white text-center me-3 typing" style="font-size: 1.5em; font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">¿Eres un nakama más?</span>
+                <!-- Imagen central -->
+                <a href="https://www.crunchyroll.com/es-es/series/GRMG8ZQZR/one-piece?srsltid=AfmBOoqtB8ekKef_widuQFwZu2osOkqFBWcEuEhhMUGjhxX5CxHuR3sn" class="col-auto"><img src="recursos/logo.png" alt="logo" class="img-fluid fade-out2" style="width: 300px;"></a>
+                <!-- Texto a la derecha -->
+                <span class="col-md-auto d-none d-md-block text-white text-center ms-3 typing" style="font-size: 1.5em; font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">¡Enbarcate en el viaje!</span>
+            </div>
+        
+            <!-- Fila inferior -->
+            <div class="row justify-content-center align-items-center">
+                <!-- Texto "Pincha aquí" -->
+                <span class="col-12 text-white text-center" style="font-size: 1.2em; font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;"><i class="bi bi-arrow-up"></i> Pincha en el enlace <i class="bi bi-arrow-up"></i></span>
+            </div>
+        </div>
+               
+        <nav class="navbar navbar-expand-md bg-dark navbar-dark sticky-top">
+            <div class="container-fluid">
+                <!-- Logotipo -->
+                <a href="inicio.html" class="navbar-brand">
+                    <img src="./recursos/jollyroger.svg" alt="One Piece" class="fade-out">
+                    <span style="font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">One Piece Fan page</span>
                 </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        
+                <!-- Botón toggler -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-plegable">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
-                    <ul class="navbar-nav">
+        
+                <!-- Enlaces -->
+                <div class="collapse navbar-collapse " id="navbar-plegable">
+                    <ul class="navbar-nav ms-auto">
                         <li class="nav-item"><a class="nav-link" href="inicio.html">Inicio</a></li>
                         <li class="nav-item"><a class="nav-link" href="personajes.html">Personajes</a></li>
                         <li class="nav-item"><a class="nav-link" href="galeria.html">Galería</a></li>
                         <li class="nav-item"><a class="nav-link" href="recomendaciones.html">Recomendaciones</a></li>
                     </ul>
                 </div>
+
             </div>
         </nav>
     </header>
 
-    <main class="container mt-5 pt-5">
-        <div class="text-center">
-            <h1 class="mt-4">Bienvenidos a la Página Principal</h1>
-            <p class="lead">Explora las diferentes secciones para descubrir más contenido interesante.</p>
+    <!-- Audio -->
+    <audio id="audio-typing" src="./recursos/luffy.mp3"></audio>
+
+    <script>
+        // Seleccionar los elementos que tienen la animación typing
+        const typingElements = document.querySelectorAll('.typing');
+        const audio = document.getElementById('audio-typing');
+
+        // Escuchar cuando termine la animación
+        typingElements.forEach((el) => {
+            el.addEventListener('animationend', () => {
+                audio.play(); // Reproducir el audio
+            });
+        });
+    </script>
+    
+
+    <main class="container">
+        <div class="container mt-5 mb-5">
+            <!-- Div centrado con título e introducción -->
+            <div class="row justify-content-center text-center mb-4">
+                <div class="col-12 col-md-8">
+                    <h1 class="text-danger">Introducción</h1>
+                    <p>
+                        Bienvenido a la fan page de One Piece, donde exploramos el increíble mundo de los piratas, las aventuras de Luffy y su tripulación en busca del legendario tesoro, ¡el One Piece!
+                        En esta página descubriras información sobre una de las mayores obras, tanto literaria, como audiovisual, de nuestra era contemporanea. 
+                    </p>
+                </div>
+            </div>
+    
+            <!-- Div dividido en dos columnas para pantallas grandes -->
+            <div class="row justify-content-between align-items-center">
+                <!-- Div izquierdo -->
+                <div class="col-12 col-lg-6 mb-4 mb-lg-0 recuadro bg-light">
+                    <h2 class="text-danger text-center">Sinopsis</h2>
+                    <p>
+                        One Piece es un anime y manga creado por <strong>Eiichiro Oda</strong>, que narra una épica aventura en un vasto mundo lleno de piratas, tesoros ocultos y misterios.<br><br>
+                        
+                        La historia sigue a <strong>Monkey D. Luffy</strong>, un joven con un sueño: convertirse en el <strong>Rey de los Piratas</strong>.
+                        Luffy, inspirado por este sueño, decide zarpar hacia el Grand Line, en busca del legendario tesoro, el <strong>One Piece</strong>.
+                        <br><br>
+                        A lo largo de su viaje, Luffy forma una tripulación conocida como los <strong>Mugiwara (Sombrero de Paja)</strong>. 
+                        Con la que enfrenta grandes peligros, al enemistarse con la Marina, el Gobierno Mundial y otros piratas.
+                        <br><br>
+                        A medida que se acercan al tesoro, la tripulación de Luffy se enfrenta a desafíos que ponen a prueba su determinación y fortalecen sus lazos.
+                        A fin de cuentas, One Piece no es solo una búsqueda del tesoro, sino un viaje en busqueda de la libertad y los sueños.
+                        <br><br>
+                        Con <strong>más de 1,000 episodios (anime) y capítulos (manga)</strong>, One Piece es una de las historias más grandes y queridas del mundo del entretenimiento.
+                    </p>
+                </div>
+                <!-- Imagen con animación -->
+                <div class="col-12 col-lg-6 text-center">
+                    <img src="recursos/sinopsis.webp" alt="One Piece" class="img-fluid rounded">
+                </div>
+            </div>
         </div>
     </main>
 
     <footer class="bg-dark text-white text-center py-3">
         <div class="container">
-            <img src="./recursos/jollyroger.png" alt="Logo" height="100" class="mb-2">
-            <p class="mb-0" xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/"><span property="dct:title">One Piece Fan page</span> by <span property="cc:attributionName">Joaquín Lorca Nieto</span> is licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">CC BY-NC-SA 4.0<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1" alt=""><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1" alt=""><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/nc.svg?ref=chooser-v1" alt=""><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/sa.svg?ref=chooser-v1" alt=""></a></p>
+            <!-- Fila de imágenes -->
+            <div class="row justify-content-center mb-3">
+                <div class="col-4 col-lg-2">
+                    <a href="https://onepiece.store/es/"><img src="recursos/tesoro.svg" alt="One Piece - Tienda" style="height: 60px;"></a>
+                </div>
+                <div class="col-4 col-lg-2">
+                    <a href="https://onepiece.fandom.com/es/wiki/One_Piece_Wiki"><img src="recursos/wiki.svg" alt="One Piece - Wiki" style="height: 60px;"></a>
+                </div>
+                <div class="col-4 col-lg-2">
+                    <a href="https://www.crunchyroll.com/es-es/series/GRMG8ZQZR/one-piece?srsltid=AfmBOoqtB8ekKef_widuQFwZu2osOkqFBWcEuEhhMUGjhxX5CxHuR3sn"><img src="recursos/tv.svg" alt="One Piece - Ver serie" style="height: 60px;"></a>
+                </div>
+            </div>
+            <!-- Fila del párrafo -->
+            <div class="row justify-content-center">
+                <div class="col-12">
+                    <p class="mb-0" xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/"><span property="dct:title">One Piece Fan page</span> by <span property="cc:attributionName">Joaquín Lorca Nieto</span> is licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">CC BY-NC-SA 4.0<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1" alt=""><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1" alt=""><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/nc.svg?ref=chooser-v1" alt=""><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/sa.svg?ref=chooser-v1" alt=""></a></p>
+                    <p class="mb-0"><a href="https://www.flaticon.es/iconos-gratis/internet" title="internet iconos">Internet iconos creados por bqlqn - Flaticon</a></p>
+                    <p class="mb-0"><a href="https://www.flaticon.es/iconos-gratis/tu-tv" title="tu tv iconos">Tu tv iconos creados por Iconpro86 - Flaticon</a></p>
+                    <p class="mb-0"><a href="https://www.flaticon.es/iconos-gratis/cofre" title="cofre iconos">Cofre iconos creados por Nikita Golubev - Flaticon</a></p>
+                </div>
+            </div>
         </div>
     </footer>
 </body>

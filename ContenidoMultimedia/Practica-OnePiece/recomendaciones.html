@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.1/font/bootstrap-icons.css">
+	<script src="./js/bootstrap.bundle.min.js"></script>
+    <title>One Piece</title>
+    <link rel="icon" href="./recursos/jollyroger.png" type="image/webp">
+    <style>
+        .nav-link{
+			color: #dc3545;
+		}
+		.nav-link:hover{
+			color: white;
+		}
+		.fade-out{
+			height: 60px;
+			transition: opacity 1s;
+		}
+
+		.fade-out:hover{
+			opacity: 0.5;
+		}
+
+        .fade-out2{
+			transition: opacity 1s;
+		}
+
+		.fade-out2:hover{
+			opacity: 0.5;
+		}
+
+        .typing{
+			width: 0px;
+			border-right: 2px solid transparent;
+			white-space: nowrap;
+			overflow: hidden;
+			animation: typing 2s steps(30) forwards;
+		}
+
+		@keyframes typing {
+			from { width: 0; }
+			to { width: 20%; }
+		}
+
+        .box{
+            margin: 0 auto;
+            margin-top: 20px;
+            border-radius: 15px;
+            width: 130px;
+            height: 50px;
+            background-color: #3399ff;
+            opacity: 0; /* Empieza invisible */
+            transition: opacity 0.5s ease-out;
+        }
+
+        @keyframes expand {
+            0% {
+                transform: scale(1);
+                background-color: #e74c3c;
+            }
+            100% {
+                transform: scale(1.5);
+                background-color: #3399ff;
+            }
+        }
+
+        .active{
+            animation: expand 2s forwards; /* La animación dura 2 segundos y se mantiene */
+            opacity: 1; /* Hace visible el cuadro */
+        }
+	</style>
+</head>
+<body>
+    <header>
+        <div class="container-fluid bg-danger">
+            <!-- Fila superior -->
+            <div class="row justify-content-center align-items-center">
+                <!-- Texto a la izquierda -->
+                <span class="col-md-auto d-none d-md-block text-white text-center me-3 typing" style="font-size: 1.5em; font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">¿Eres un nakama más?</span>
+                <!-- Imagen central -->
+                <a href="https://www.crunchyroll.com/es-es/series/GRMG8ZQZR/one-piece?srsltid=AfmBOoqtB8ekKef_widuQFwZu2osOkqFBWcEuEhhMUGjhxX5CxHuR3sn" class="col-auto"><img src="recursos/logo.png" alt="logo" class="img-fluid fade-out2" style="width: 300px;"></a>
+                <!-- Texto a la derecha -->
+                <span class="col-md-auto d-none d-md-block text-white text-center ms-3 typing" style="font-size: 1.5em; font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">¡Enbarcate en el viaje!</span>
+            </div>
+        
+            <!-- Fila inferior -->
+            <div class="row justify-content-center align-items-center">
+                <!-- Texto "Pincha aquí" -->
+                <span class="col-12 text-white text-center" style="font-size: 1.2em; font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;"><i class="bi bi-arrow-up"></i> Pincha en el enlace <i class="bi bi-arrow-up"></i></span>
+            </div>
+        </div>
+               
+        <nav class="navbar navbar-expand-md bg-dark navbar-dark sticky-top">
+            <div class="container-fluid">
+                <!-- Logotipo -->
+                <a href="inicio.html" class="navbar-brand">
+                    <img src="./recursos/jollyroger.svg" alt="One Piece" class="fade-out">
+                    <span style="font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">One Piece Fan page</span>
+                </a>
+        
+                <!-- Botón toggler -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-plegable">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+        
+                <!-- Enlaces -->
+                <div class="collapse navbar-collapse " id="navbar-plegable">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="inicio.html">Inicio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="personajes.html">Personajes</a></li>
+                        <li class="nav-item"><a class="nav-link" href="galeria.html">Galería</a></li>
+                        <li class="nav-item"><a class="nav-link" href="recomendaciones.html">Recomendaciones</a></li>
+                    </ul>
+                </div>
+
+            </div>
+        </nav>
+    </header>
+
+    <!-- Audio -->
+    <audio id="audio-typing" src="./recursos/luffy.mp3"></audio>
+
+    <script>
+        // Seleccionar los elementos que tienen la animación typing
+        const typingElements = document.querySelectorAll('.typing');
+        const audio = document.getElementById('audio-typing');
+
+        // Escuchar cuando termine la animación
+        typingElements.forEach((el) => {
+            el.addEventListener('animationend', () => {
+                audio.play(); // Reproducir el audio
+            });
+        });
+    </script>
+    
+
+    <main class="container mt-5 mb-5">
+        <div class="row justify-content-center text-center mb-4">
+            <div class="col-12 col-md-8">
+                <h1 class="text-danger">Recomendaciones</h1>
+                <p>
+                    Estas series son altamente recomendadas por sus emocionantes tramas, personajes inolvidables y momentos épicos.
+                    Además son el salto perfecto para iniciarse en el mundo del manga y el anime, son muy dinámicas y faciles de seguir.
+                </p>
+            </div>
+        </div>
+
+        <!-- Fila de videos -->
+        <div class="row text-center">
+            <!-- Video 1: Blue Lock -->
+            <div class="col-xl-4 col-sm-12 mb-4">
+                <h2 class="text-center">Blue Lock</h2>
+                <video width="400px" controls poster="/recursos/lock.webp">
+                    <source src="recursos/blue.mp4" type="video/mp4">
+                    <source src="recursos/blue.ogv" type="video/ogg">
+                    Tu navegador no soporta el reproductor de video.
+                </video>
+                <p class="mt-2"><strong>Blue Lock</strong>: un programa competitivo diseñado para crear al mejor delantero de fútbol de Japón, destacando rivalidad y desarrollo personal.</p>
+            </div>
+
+            <!-- Video 2: Dandadan -->
+            <div class="col-xl-4 col-sm-12 mb-4">
+                <h2 class="text-center">Dandadan</h2>
+                <video id="video" width="400px" controls poster="/recursos/dan.webp">
+                    <source src="recursos/dandadan.mp4" type="video/mp4">
+                    <source src="recursos/dandadan.ogv" type="video/ogg">
+                    Tu navegador no soporta el reproductor de video.
+                </video>
+                <p class="mt-2"><strong>Dandadan</strong>: Una serie alocada con giros inesperados, humor y ciencia ficción que te atrapará.</p>
+                <div id="animatedBox" class="box">¡Recomendación del día!</div>
+                <script>
+                    document.addEventListener("DOMContentLoaded", function() {
+                        const video = document.getElementById("video");
+                        const animatedBox = document.getElementById("animatedBox");
+
+                        video.addEventListener("timeupdate", () => {
+                            // Comprobando si el video ha alcanzado 3 segundos
+                            if (video.currentTime >= 3) {
+                                // Agregamos la clase que activa la animación CSS
+                                animatedBox.classList.add("active");
+                            }
+                        });
+                    });
+                </script>
+            </div>
+
+            <!-- Video 3: Dragon Ball -->
+            <div class="col-xl-4 col-sm-12 mb-4">
+                <h2 class="text-center">Dragon Ball Daima</h2>
+                <video width="400px" controls poster="/recursos/daima.webp">
+                    <source src="recursos/dragonball.mp4" type="video/mp4">
+                    <source src="recursos/dragonball.ogv" type="video/ogg">
+                    Tu navegador no soporta el reproductor de video.
+                </video>
+                <p class="mt-2"><strong>Dragon Ball Daima</strong>: La aventura épica que definió generaciones con combates intensos y personajes icónicos.</p>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-dark text-white text-center py-3">
+        <div class="container">
+            <!-- Fila de imágenes -->
+            <div class="row justify-content-center mb-3">
+                <div class="col-4 col-lg-2">
+                    <a href="https://onepiece.store/es/"><img src="recursos/tesoro.svg" alt="One Piece - Tienda" style="height: 60px;"></a>
+                </div>
+                <div class="col-4 col-lg-2">
+                    <a href="https://onepiece.fandom.com/es/wiki/One_Piece_Wiki"><img src="recursos/wiki.svg" alt="One Piece - Wiki" style="height: 60px;"></a>
+                </div>
+                <div class="col-4 col-lg-2">
+                    <a href="https://www.crunchyroll.com/es-es/series/GRMG8ZQZR/one-piece?srsltid=AfmBOoqtB8ekKef_widuQFwZu2osOkqFBWcEuEhhMUGjhxX5CxHuR3sn"><img src="recursos/tv.svg" alt="One Piece - Ver serie" style="height: 60px;"></a>
+                </div>
+            </div>
+            <!-- Fila del párrafo -->
+            <div class="row justify-content-center">
+                <div class="col-12">
+                    <p class="mb-0" xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/"><span property="dct:title">One Piece Fan page</span> by <span property="cc:attributionName">Joaquín Lorca Nieto</span> is licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">CC BY-NC-SA 4.0<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1" alt=""><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1" alt=""><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/nc.svg?ref=chooser-v1" alt=""><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/sa.svg?ref=chooser-v1" alt=""></a></p>
+                    <p class="mb-0"><a href="https://www.flaticon.es/iconos-gratis/internet" title="internet iconos">Internet iconos creados por bqlqn - Flaticon</a></p>
+                    <p class="mb-0"><a href="https://www.flaticon.es/iconos-gratis/tu-tv" title="tu tv iconos">Tu tv iconos creados por Iconpro86 - Flaticon</a></p>
+                    <p class="mb-0"><a href="https://www.flaticon.es/iconos-gratis/cofre" title="cofre iconos">Cofre iconos creados por Nikita Golubev - Flaticon</a></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
